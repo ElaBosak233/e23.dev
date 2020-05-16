@@ -13,9 +13,6 @@
                 "$ref": "/donate/buymeacoffee.json"
             },
             {
-                "$ref": "/donate/afdian.json"
-            },
-            {
                 "$ref": "/donate/patreon.json"
             },
             {
