@@ -93,9 +93,12 @@ footer:
         Attribution 4.0 International:
             icon: fab fa-creative-commons-by
             url: 'https://creativecommons.org/licenses/by/4.0/'
-        GitHub:
-            icon: fab fa-github
-            url: 'https://github.com/ElaBosak233'
+        NonCommercial:
+            icon: fab fa-creative-commons-sa
+            url: 'https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en'
+        ShareAlike:
+            icon: fab fa-creative-commons-sa
+            url: 'https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en'
 # Article related configurations
 article:
     # Code highlight settings
@@ -193,6 +196,9 @@ widgets:
             Twitter:
                 icon: fab fa-twitter
                 url: 'https://twitter.com/ElaBosakCN'
+            Afdian:
+                icon: fas fa-bolt
+                url: 'https://afdian.net/@ElaBosak233'
             # Dribbble:
             #     icon: fab fa-dribbble
             #     url: 'https://dribbble.com'
