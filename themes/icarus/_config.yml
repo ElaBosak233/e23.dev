@@ -135,7 +135,7 @@ donates:
     -
         type: alipay
         # Alipay qrcode image URL
-        qrcode: ''
+        qrcode: '/img/alipay.png'
     # "Buy me a coffee" donate button configurations
     -
         type: buymeacoffee
