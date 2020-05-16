@@ -247,7 +247,7 @@ widgets:
         # Hint text under the email input
         description: 
         # Feedburner ID
-        feedburner_id: ''
+        feedburner_id: 'ElaBosak233'
     # Google AdSense unit configurations
     # -
     #     # Where should the widget be placed, left sidebar or right sidebar 谷歌广告
