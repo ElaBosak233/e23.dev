@@ -6,14 +6,14 @@
 title: Elaの个人博客
 subtitle: ''
 description: ''
-keywords:
+keywords: java, Minecraft, Ela, ElaBosak, ElaBosak233, python, golang, C
 author: Ela
-language: zh_CN
+language: en
 timezone: ''
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://www.elabosak.com
+url: http://elabosak.com
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:

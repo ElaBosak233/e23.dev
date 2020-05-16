@@ -94,7 +94,7 @@ footer:
             icon: fab fa-creative-commons-by
             url: 'https://creativecommons.org/licenses/by/4.0/'
         NonCommercial:
-            icon: fab fa-creative-commons-sa
+            icon: fab fa-creative-commons-nc
             url: 'https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en'
         ShareAlike:
             icon: fab fa-creative-commons-sa
