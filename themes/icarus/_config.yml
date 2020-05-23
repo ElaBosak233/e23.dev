@@ -3,32 +3,32 @@ version: 3.0.0
 # Icarus theme variant, can be "default" or "cyberpunk"
 variant: default
 # Path or URL to the website's logo
-logo: /img/logo.svg
+logo: /img/elabosak.svg
 # Page metadata configurations
 head:
     # URL or path to the website's icon
-    favicon: /img/favicon.svg
+    favicon: /img/fav-e.svg
     # Open Graph metadata
     # https://hexo.io/docs/helpers.html#open-graph
     open_graph:
         # Page title (og:title) (optional)
         # You should leave this blank for most of the time
-        title: Elaの个人博客
+        title:
         # Page type (og:type) (optional)
         # You should leave this blank for most of the time
-        type: blog
+        type:
         # Page URL (og:url) (optional)
         # You should leave this blank for most of the time
-        url: 
+        url:
         # Page cover (og:image) (optional) Default to the Open Graph image or thumbnail of the page
         # You should leave this blank for most of the time
-        image: 
+        image:
         # Site name (og:site_name) (optional)
         # You should leave this blank for most of the time
-        site_name: 
+        site_name:
         # Page author (article:author) (optional)
         # You should leave this blank for most of the time
-        author: Ela
+        author:
         # Page description (og:description) (optional)
         # You should leave this blank for most of the time
         description: 
@@ -49,19 +49,19 @@ head:
     structured_data:
         # Page title (optional)
         # You should leave this blank for most of the time
-        title: Elaの个人博客
+        title:
         # Page description (optional)
         # You should leave this blank for most of the time
-        description: 
+        description:
         # Page URL (optional)
         # You should leave this blank for most of the time
-        url: 
+        url:
         # Page author (article:author) (optional)
         # You should leave this blank for most of the time
-        author: Ela
+        author:
         # Page images (optional) Default to the Open Graph image or thumbnail of the page
         # You should leave this blank for most of the time
-        image: 
+        image:
     # Additional HTML meta tags in an array
     meta:
         # Meta tag specified in <attribute>=<value> style
@@ -178,11 +178,11 @@ widgets:
         # Author's current location
         location: China
         # URL or path to the avatar image
-        avatar: 
+        avatar: /img/avatar.png
         # Whether show the rounded avatar image
         avatar_rounded: true
         # Email address for the Gravatar
-        gravatar: ElaBosak233@163.com
+        gravatar: 
         # URL or path for the follow button
         follow_link: 'https://github.com/ElaBosak233'
         # Links to be shown on the bottom of the profile widget
@@ -217,7 +217,7 @@ widgets:
         type: links
         # Names and URLs of the sites
         links:
-            Hexo: 'https://hexo.io'
+            XiaoYiUce: 'https://xiaoyiblog.cc/'
             Bulma: 'https://bulma.io'
     # Categories widget configurations
     -
