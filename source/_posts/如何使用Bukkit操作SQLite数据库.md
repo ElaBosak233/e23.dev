@@ -118,3 +118,7 @@ public class SQLite {
        con.close();
    }
 ```
+
+## ⭐**示例仓库**
+
+ [**https://github.com/ElaBosak233/MailW/tree/master/src/main/java/cn/elabosak/mailw/sql**](https://github.com/ElaBosak233/MailW/tree/master/src/main/java/cn/elabosak/mailw/sql)
