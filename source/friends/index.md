@@ -1,4 +1,4 @@
-title: 友情链接
+title: 友链
 toc: true
 ---
 
