@@ -77,6 +77,7 @@ navbar:
         归档: /archives
         分类: /categories
         标签: /tags
+        友链: /friends
         关于: /about
     # Links to be shown on the right of the navigation bar
     links:
@@ -174,9 +175,9 @@ widgets:
         # Author name
         author: Ela
         # Author title
-        author_title: 一个普通的学生码农
+        author_title: ⛰️PROTECTED
         # Author's current location
-        location: China
+        location: HangZhou, China
         # URL or path to the avatar image
         avatar: /img/avatar.png
         # Whether show the rounded avatar image
@@ -217,8 +218,7 @@ widgets:
         type: links
         # Names and URLs of the sites
         links:
-            XiaoYiUce: 'https://xiaoyiblog.cc/'
-            Bulma: 'https://bulma.io'
+            Valkyie: 'https://valkyrie.elabosak.cn'
     # Categories widget configurations
     -
         # Where should the widget be placed, left sidebar or right sidebar
