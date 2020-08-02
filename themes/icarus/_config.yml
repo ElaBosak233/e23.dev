@@ -218,7 +218,7 @@ widgets:
         type: links
         # Names and URLs of the sites
         links:
-            Valkyie: 'https://valkyrie.elabosak.cn'
+            Valkyie: 'https://valkyrie.ela.ac.cn'
     # Categories widget configurations
     -
         # Where should the widget be placed, left sidebar or right sidebar
