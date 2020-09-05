@@ -1,0 +1,166 @@
+version: 4.0.0
+variant: default
+logo: /img/elabosak.svg
+head:
+    favicon: /img/favicon.svg
+    open_graph:
+        title: 
+        type: 
+        url: 
+        image: 
+        site_name: 
+        author: 
+        description: 
+        twitter_card: 
+        twitter_id: 
+        twitter_site: 
+        google_plus: 
+        fb_admins: 
+        fb_app_id: 
+    structured_data:
+        title: 
+        description: 
+        url: 
+        author: 
+        image: 
+    meta:
+        - ''
+    rss: /atom.xml
+navbar:
+    menu:
+        主页: /
+        归档: /archives
+        分类: /categories
+        标签: /tags
+        友链: /friends
+        关于: /about
+    links:
+        GitHub:
+            icon: fab fa-github
+            url: 'https://github.com/ElaBosak233'
+footer:
+    links:
+        Creative Commons:
+            icon: fab fa-creative-commons
+            url: 'https://creativecommons.org/'
+        Attribution 4.0 International:
+            icon: fab fa-creative-commons-by
+            url: 'https://creativecommons.org/licenses/by/4.0/'
+        NonCommercial:
+            icon: fab fa-creative-commons-nc
+            url: 'https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en'
+        ShareAlike:
+            icon: fab fa-creative-commons-sa
+            url: 'https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en'
+article:
+    highlight:
+        theme: atom-one-light
+        clipboard: true
+        fold: unfolded
+    thumbnail: true
+    readtime: true
+search:
+    type: insight
+comment:
+    type: gitalk
+    client_id: 8687afbf31f0041f005d
+    client_secret: 9949b2971fa855443467af73220daa9e8c0612fd
+    repo: ElaBosak233.github.io
+    owner: ElaBosak233
+    admin:
+        - ElaBosak233
+donates:
+    -
+        type: alipay
+        qrcode: /img/alipay.png
+    -
+        type: afdian
+        url: 'https://afdian.net/@ElaBosak233'
+    -
+        type: buymeacoffee
+        url: 'https://www.buymeacoffee.com/ElaBosak233'
+    -
+        type: wechat
+        qrcode: ''
+share:
+    type: sharethis
+    install_url: 'https://platform-api.sharethis.com/js/sharethis.js#property=5ebf74e940b52d00198b513b&product=inline-share-buttons&cms=sop'
+sidebar:
+    left:
+        sticky: false
+    right:
+        sticky: false
+widgets:
+    -
+        position: left
+        type: profile
+        author: Ela
+        author_title: ⛰️PROTECTED
+        location: 'HangZhou, China'
+        avatar: /img/avatar.png
+        avatar_rounded: true
+        gravatar: 
+        follow_link: 'https://github.com/ElaBosak233'
+        social_links:
+            Github:
+                icon: fab fa-github
+                url: 'https://github.com/ElaBosak233'
+            Facebook:
+                icon: fab fa-facebook
+                url: 'https://www.facebook.com/ela.bosak.92372'
+            Twitter:
+                icon: fab fa-twitter
+                url: 'https://twitter.com/ElaBosakCN'
+            Afdian:
+                icon: fas fa-bolt
+                url: 'https://afdian.net/@ElaBosak233'
+            RSS:
+                icon: fas fa-rss
+                url: /atom.xml
+    -
+        position: left
+        type: toc
+    -
+        position: left
+        type: links
+        links:
+            Valkyie: 'https://valkyrie.ela.ac.cn'
+    -
+        position: left
+        type: categories
+    -
+        position: right
+        type: recent_posts
+    -
+        position: right
+        type: archives
+    -
+        position: left
+        type: tags
+    -
+        position: right
+        type: subscribe_email
+        description: 
+        feedburner_id: ElaBosak233
+plugins:
+    animejs: true
+    back_to_top: true
+    baidu_analytics:
+        tracking_id: 
+    busuanzi: false
+    cnzz:
+        id: 
+        web_id: 
+    gallery: true
+    google_analytics:
+        tracking_id: 
+    hotjar:
+        site_id: 
+    katex: false
+    mathjax: false
+    outdated_browser: false
+    progressbar: true
+providers:
+    cdn: loli
+    fontcdn: loli
+    iconcdn: loli
