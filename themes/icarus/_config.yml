@@ -139,6 +139,9 @@ donates:
         qrcode: '/img/alipay.png'
     # "Buy me a coffee" donate button configurations
     -
+        type: afdian
+        url: 'https://afdian.net/@ElaBosak233'
+    -
         type: buymeacoffee
         # URL to the "Buy me a coffee" page
         url: 'https://www.buymeacoffee.com/ElaBosak233'
@@ -306,8 +309,8 @@ plugins:
 # https://ppoffice.github.io/hexo-theme-icarus/Configuration/Theme/speed-up-your-site-with-custom-cdn/
 providers:
     # Name or URL template of the JavaScript and/or stylesheet CDN provider
-    cdn: unpkg
+    cdn: loli
     # Name or URL template of the webfont CDN provider
-    fontcdn: google
+    fontcdn: loli
     # Name or URL of the fontawesome icon font CDN provider
     iconcdn: loli
