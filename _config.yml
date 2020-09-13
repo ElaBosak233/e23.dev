@@ -3,10 +3,10 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: ELA.AC.CN
-subtitle: '博客'
-description: '原 Ela の 个人博客'
-keywords: Ela的个人博客,Elaの个人博客,java, Minecraft, Ela, ElaBosak, ElaBosak233, python, golang, C
+title: Ela の 个人博客
+subtitle: ''
+description: ''
+keywords: Ela的个人博客, Elaの个人博客, java, Minecraft, Ela, ElaBosak, ElaBosak233, python, golang, C
 author: Ela
 language: zh-CN
 timezone: ''
