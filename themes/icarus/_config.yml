@@ -161,6 +161,6 @@ plugins:
     outdated_browser: false
     progressbar: true
 providers:
-    cdn: loli
+    cdn: unpkg
     fontcdn: loli
     iconcdn: loli
