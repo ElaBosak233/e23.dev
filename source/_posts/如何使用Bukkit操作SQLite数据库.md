@@ -5,9 +5,9 @@ tags:
   - Java
   - MineCraft
 ---
-编写**Bukkit**和**Spigot**插件时，经常遇到存储永久数据困难的情况，大多时候我会用**Json**来解决此问题，但是**Json**经常出现读写速度慢、代码复杂的情况，但可以达到相同目标的**SQLite**数据库能轻松解决问题，可以尝试使用下面的方法对**SQLite**进行控制（另外，此方法全**Java**工程通用）：
+编写 **Bukkit** 和 **Spigot** 插件时，经常遇到存储永久数据困难的情况，大多时候我会用**JSON** 来解决此问题，但是 **JSON** 经常出现读写速度慢、代码复杂的情况，但可以达到相同目标的 **SQLite** 数据库能轻松解决问题，可以尝试使用下面的方法对 **SQLite** 进行控制（另外，此方法全 **Java** 工程通用）：
 <!-- more -->
-## ⭐**控制类**SQLite.java
+## ⭐**控制类** SQLite.java
 
 ```java
 public class SQLite {
@@ -115,7 +115,3 @@ public class SQLite {
        con.close();
    }
 ```
-
-## ⭐**示例仓库**
-
- [**https://github.com/ElaBosak233/MailW/tree/master/src/main/java/cn/elabosak/mailw/sql**](https://github.com/ElaBosak233/MailW/tree/master/src/main/java/cn/elabosak/mailw/sql)

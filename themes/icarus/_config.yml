@@ -79,9 +79,9 @@ donates:
     -
         type: buymeacoffee
         url: 'https://www.buymeacoffee.com/ElaBosak233'
-    -
-        type: wechat
-        qrcode: ''
+    # -
+    #     type: wechat
+    #     qrcode: ''
 share:
     type: sharethis
     install_url: 'https://platform-api.sharethis.com/js/sharethis.js#property=5ebf74e940b52d00198b513b&product=inline-share-buttons&cms=sop'
