@@ -7,7 +7,7 @@ toc: false
 <i class="fas fa-info-circle mr-2"></i>排序无规律
 </article>
 
-<section class="hero is-primary" target="https://blog.lesnow.tk">
+<a href="https://blog.lesnow.tk" target="_blank"><section class="hero is-primary">
   <div class="hero-body">
     <div class="container">
       <h1 class="title">
@@ -18,9 +18,11 @@ toc: false
       </h2>
     </div>
   </div>
-</section>
+</section></a>
 
-<section class="hero is-success" target="https://www.xiaoyiblog.cc">
+<br />
+
+<a href="https://www.xiaoyiblog.cc" target="_blank"><section class="hero is-success" target=>
   <div class="hero-body">
     <div class="container">
       <h1 class="title">
@@ -31,4 +33,4 @@ toc: false
       </h2>
     </div>
   </div>
-</section>
+</section></a>
