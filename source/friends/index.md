@@ -1,5 +1,5 @@
 title: 友链
-toc: true
+toc: false
 ---
 
 <article class="message message-immersive is-primary">
