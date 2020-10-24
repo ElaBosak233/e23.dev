@@ -156,9 +156,9 @@ plugins:
         tracking_id: 
     hotjar:
         site_id: 
-    katex: false
+    katex: true
     mathjax: false
-    outdated_browser: false
+    outdated_browser: true
     progressbar: true
 providers:
     cdn: unpkg
