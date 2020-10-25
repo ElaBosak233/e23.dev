@@ -4,8 +4,8 @@ categories: Daily
 tags:
   - Daily
   - CTF
-cover: https://i.loli.net/2020/10/24/NIB1J7jnQPztOGf.png
-thumbnail: https://i.loli.net/2020/10/24/NIB1J7jnQPztOGf.png
+cover: https://i.loli.net/2020/10/24/RuAjPDwrlVz5xsM.jpg
+thumbnail: https://i.loli.net/2020/10/24/RuAjPDwrlVz5xsM.jpg
 ---
 
 > ***作为程序员的，真正意义上的第一个程序员日，在 B 站度过...***
