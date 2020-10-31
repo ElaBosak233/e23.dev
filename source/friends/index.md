@@ -2,10 +2,14 @@ title: 友链
 toc: false
 ---
 
-<article class="message message-immersive is-primary">
+<!-- <article class="message message-immersive is-primary">
 <div class="message-body">
 <i class="fas fa-info-circle mr-2"></i>排序无规律
-</article>
+</article> -->
+
+{% raw %}<article class="message is-info"><div class="message-body">{% endraw %}
+<i class="fas fa-info-circle mr-2"></i>排序无规律
+{% raw %}</div></article>{% endraw %}
 
 <section class="hero is-primary">
   <div class="hero-body">
@@ -15,7 +19,7 @@ toc: false
       </h1>
       <h2 class="subtitle">
         <a href="https://blog.lesnow.tk" target="_blank">https://blog.lesnow.tk</a>
-      </h2>
+      </h 2>
     </div>
   </div>
 </section>

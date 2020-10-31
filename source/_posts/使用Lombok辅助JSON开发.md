@@ -19,7 +19,7 @@ cover: https://i.loli.net/2020/10/31/iJD9MKCLsVzgf3A.png
 
 如百度百科所示，Lombok 可以让开发者告别繁琐的 **样板代码**，样板代码是什么，如下所示
 
-```java
+```java User.java (未使用 Lombok) >folded
 public class User {
 
     public long uid;
@@ -55,7 +55,7 @@ public class User {
 
 如以上代码所示，这只是个普通的 User 类，里面包含了三个数据，但是想要使用这三个数据，就得自己手撸 Setter 和 Getter 方法，万一有 n 个数据，我该如何处理？难道我真的要手撸出 2n 个方法吗？显而易见，这十分疯狂，而且作为开发者，我们希望的是快速、高效地开发，而不是把生命耗在手撸重复的代码上，因此，Lombok 可以使用简短的注释，在开发过程中省略手撸重复的方法，以下是使用 Lombok 的半伪码
 
-```java
+```java User.java (使用 Lombok)
 public class User {
     
     @Data
