@@ -142,6 +142,11 @@ widgets:
         type: subscribe_email
         description: 
         feedburner_id: ElaBosak233
+    - 
+        position: right
+        type: adsense
+        client-id: ca-pub-5501586061537610
+        slot_id: 
 plugins:
     animejs: true
     back_to_top: true
