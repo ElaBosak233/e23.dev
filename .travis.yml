@@ -15,8 +15,8 @@ deploy:
   skip_cleanup: true
   local_dir: public
   github_token: $GH_TOKEN
-  target_branch: master
+  target_branch: main
   committer_from_gh: true
   keep_history: true
   on:
-    branch: site
+    branch: dev
