@@ -9,6 +9,8 @@ cover: https://i.loli.net/2020/10/31/iJD9MKCLsVzgf3A.png
 thumbnail: https://i.loli.net/2020/10/31/iJD9MKCLsVzgf3A.png
 ---
 
+> ***Lombok Reduces Java's Boilderplate code***
+
 <!--more-->
 
 ## Lombok 简介
@@ -71,3 +73,4 @@ public class User {
 当你使用了 Lombok 提供的 `@Data` 注释，那么你的 User 类下就会在编译的时候自动生成对应的 Getter 和 Setter 方法，从中还可以看出，Lombok 是只在编译的时候调用的库，就是说，如果你在写 Minecraft 的插件，它不应当被打包在插件的 Jar 里面
 
 ## 使用 Lombok
+
