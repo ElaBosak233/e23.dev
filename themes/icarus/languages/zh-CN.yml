@@ -33,6 +33,11 @@ article:
     word_count:
         one: '大约%d个字'
         other: '大约%d个字'
+    licensing:
+        author: '作者'
+        created_at: '发布于'
+        updated_at: '更新于'
+        licensed_under: '许可协议'
 donate:
     title: '喜欢这篇文章？打赏一下作者吧'
     afdian: '爱发电'
@@ -45,6 +50,13 @@ plugin:
     backtotop: '回到顶端'
     visit_count: '%s次访问'
     visitor_count: '共%s个访客'
+    cookie_consent:
+      message: 此网站使用Cookie来改善您的体验。
+      dismiss: 知道了！
+      allow: 允许使用Cookie
+      deny: 拒绝
+      link: 了解更多
+      policy: Cookie政策
 search:
     search: '搜索'
     hint: '想要查找什么...'

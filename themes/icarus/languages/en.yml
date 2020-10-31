@@ -33,6 +33,11 @@ article:
     word_count:
         one: 'About %d word'
         other: 'About %d words'
+    licensing:
+        author: 'Author'
+        created_at: 'Posted on'
+        updated_at: 'Updated on'
+        licensed_under: 'Licensed under'
 donate:
     title: 'Like this article? Support the author with'
     afdian: 'Afdian.net'
@@ -45,6 +50,13 @@ plugin:
     backtotop: 'Back to top'
     visit_count: '%s&nbsp;visits'
     visitor_count: 'Visited by %s users'
+    cookie_consent:
+      message: This website uses cookies to improve your experience.
+      dismiss: Got it!
+      allow: Allow cookies
+      deny: Decline
+      link: Learn more
+      policy: Cookie Policy
 search:
     search: 'Search'
     hint: 'Type something...'

@@ -33,6 +33,11 @@ article:
     word_count:
         one: '約%d語'
         other: '約%d語'
+    licensing:
+        author: 'Author'
+        created_at: 'Posted on'
+        updated_at: 'Updated on'
+        licensed_under: 'Licensed under'
 donate:
     title: 'この記事は気に入りましたか？ 著者をサポートする'
     afdian: 'Afdian.net'
@@ -45,6 +50,13 @@ plugin:
     backtotop: 'トップに戻る'
     visit_count: '%s回の訪問'
     visitor_count: '%s人のユーザーがアクセス'
+    cookie_consent:
+      message: このウェブサイトはあなたの経験を改善するためにCookieを使用しています。
+      dismiss: 了解しました
+      allow: Cookiesを許可する
+      deny: 拒否する
+      link: もっと詳しく知る
+      policy: Cookieポリシー
 search:
     search: '検索'
     hint: '何かを入力してください...'

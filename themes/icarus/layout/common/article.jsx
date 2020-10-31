@@ -3,6 +3,7 @@ const { Component, Fragment } = require('inferno');
 const Share = require('./share');
 const Donates = require('./donates');
 const Comment = require('./comment');
+const ArticleLicensing = require('hexo-component-inferno/lib/view/misc/article_licensing');
 
 /**
  * Get the word count of text.
@@ -20,25 +21,26 @@ module.exports = class extends Component {
     render() {
         const { config, helper, page, index } = this.props;
         const { article, plugins } = config;
-        const { has_thumbnail, get_thumbnail, url_for, date, date_xml, __, _p } = helper;
+        const { url_for, date, date_xml, __, _p } = helper;
 
         const indexLaunguage = config.language || 'en';
         const language = page.lang || page.language || config.language || 'en';
+        const cover = page.cover ? url_for(page.cover) : null;
 
         return <Fragment>
             {/* Main content */}
             <div class="card">
                 {/* Thumbnail */}
-                {has_thumbnail(page) ? <div class="card-image">
+                {cover ? <div class="card-image">
                     {index ? <a href={url_for(page.link || page.path)} class="image is-7by3">
-                        <img class="thumbnail" src={get_thumbnail(page)} alt={page.title || get_thumbnail(page)} />
+                        <img class="fill" src={cover} alt={page.title || cover} />
                     </a> : <span class="image is-7by3">
-                        <img class="thumbnail" src={get_thumbnail(page)} alt={page.title || get_thumbnail(page)} />
+                        <img class="fill" src={cover} alt={page.title || cover} />
                     </span>}
                 </div> : null}
                 {/* Metadata */}
                 <article class={`card-content article${'direction' in page ? ' ' + page.direction : ''}`} role="article">
-                    {page.layout !== 'page' ? <div class="article-meta size-small is-uppercase level is-mobile">
+                    {page.layout !== 'page' ? <div class="article-meta is-size-7 is-uppercase level is-mobile">
                         <div class="level-left">
                             {/* Creation Date */}
                             {page.date && <span class="level-item" dangerouslySetInnerHTML={{
@@ -83,15 +85,18 @@ module.exports = class extends Component {
                     </h1>
                     {/* Content/Excerpt */}
                     <div class="content" dangerouslySetInnerHTML={{ __html: index && page.excerpt ? page.excerpt : page.content }}></div>
+                    {/* Licensing block */}
+                    {!index && article && article.licenses && Object.keys(article.licenses)
+                        ? <ArticleLicensing.Cacheable page={page} config={config} helper={helper} /> : null}
                     {/* Tags */}
-                    {!index && page.tags && page.tags.length ? <div class="article-tags size-small mb-4">
+                    {!index && page.tags && page.tags.length ? <div class="article-tags is-size-7 mb-4">
                         <span class="mr-2">#</span>
                         {page.tags.map(tag => {
                             return <a class="link-muted mr-2" rel="tag" href={url_for(tag.path)}>{tag.name}</a>;
                         })}
                     </div> : null}
                     {/* "Read more" button */}
-                    {index && page.excerpt ? <a class="article-more button is-small size-small" href={`${url_for(page.link || page.path)}#more`}>{__('article.more')}</a> : null}
+                    {index && page.excerpt ? <a class="article-more button is-small is-size-7" href={`${url_for(page.link || page.path)}#more`}>{__('article.more')}</a> : null}
                     {/* Share button */}
                     {!index ? <Share config={config} page={page} helper={helper} /> : null}
                 </article>

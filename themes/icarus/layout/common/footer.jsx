@@ -15,14 +15,25 @@ class Footer extends Component {
             visitorCounterTitle
         } = this.props;
 
+        let footerLogo = '';
+        if (logo) {
+            if (logo.text) {
+                footerLogo = logo.text;
+            } else {
+                footerLogo = <img src={logoUrl} alt={siteTitle} height="28" />;
+            }
+        } else {
+            footerLogo = siteTitle;
+        }
+
         return <footer class="footer">
             <div class="container">
                 <div class="level">
                     <div class="level-start">
                         <a class="footer-logo is-block mb-2" href={siteUrl}>
-                            {logo && logo.text ? logo.text : <img src={logoUrl} alt={siteTitle} height="28" />}
+                            {footerLogo}
                         </a>
-                        <p class="size-small">
+                        <p class="is-size-7">
                             <span dangerouslySetInnerHTML={{ __html: `&copy; ${siteYear} ${author || siteTitle}` }}></span>
                             &nbsp;&nbsp;Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>&nbsp;&&nbsp;
                             <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a>
