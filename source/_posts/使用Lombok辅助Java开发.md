@@ -71,7 +71,7 @@ public class User {
 
 当你使用了 Lombok 提供的 `@Data` 注释，那么你的 User 类下就会在编译的时候自动生成对应的 Getter 和 Setter 方法，从中还可以看出，Lombok 是只在编译的时候调用的库，就是说，如果你在写 Minecraft 的插件，它不应当被打包在插件的 Jar 里面
 
-# 使用 Lombok
+# 安装 Lombok
 
 {% raw %}<div class="notification is-danger">{% endraw %}
 以下两个步骤都需要执行，首先是依赖，这样才能使用 Lombok 提供的类似于 *@Data* 的方法，但是仅仅有这个还不行，因为 IDE 不知道你有 Getter 和 Setter 方法，添加 Lombok 的 IDE 插件，才能让你的 IDE 知道这些方法的存在
@@ -130,3 +130,26 @@ function onTabClick (event) {
 ### 安装 IntelliJ IDEA 的 Lombok 插件
 
 ![](https://i.loli.net/2020/10/31/47ULRmzwQgY3JPi.png)
+
+# Lombok 常用功能表
+
+{% raw %}<article class="message is-info"><div class="message-body">{% endraw %}
+本文只展现几种常见的 Lombok 功能，如果想要了解更多功能，参见 **[Project Lombok](https://projectlombok.org/features/all)**
+{% raw %}</div></article>{% endraw %}
+
+注释|功能
+:-:|:-:
+@Getter / @Setter|自动生成 Getter 或 Setter 方法，可作用在成员变量或者类上（作用在类上默认给所有成员变量生成 Getter 或 Setter 方法）
+@ToString|作用于类，覆盖默认的toString()方法
+@EqualsAndHashCode|作用于类，覆盖默认的equals和hashCode
+@NonNull|标注给成员变量，要求标识不能为空，否则抛出空指针异常
+@NoArgsConstructor / @RequiredArgsConstructor / @AllArgsConstructor|作用于类上，生成不同的构造器（无参、包含 final 和 @NonNull 注解的参数、全参）
+@Data|作用于类或者成员变量上，是前面介绍的几种注释的合集，根据情况自动转换，包含了 @ToString @EqualsAndHashCode @Getter @Setter @RequiredArgsConstructor
+@Log|作用于类上，生成日志变量，针对不同的日志实现产品，有不同的注解
+@Cleanup|自动关闭资源，如 IO 流
+@Synchronized|给方法加上同步锁，在做线程安全的时候会用到
+
+# Lombok 应用场景
+
+### GSON / FastJSON 开发
+
