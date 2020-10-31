@@ -59,6 +59,11 @@ article:
         fold: unfolded
     thumbnail: true
     readtime: true
+    licenses:
+        Creative Commons:
+            icon: fab fa-creative-commons
+            url: 'https://creativecommons.org/'
+        'CC BY-NC-SA 4.0': 'https://creativecommons.org/licenses/by-nc-sa/4.0/'
 search:
     type: insight
 comment:
