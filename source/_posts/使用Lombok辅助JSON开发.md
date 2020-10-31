@@ -3,8 +3,7 @@ date: 2020-10-31
 categories: Java
 tags:
   - Java
-  - JSON
-  - IntelliJ IDEA
+toc: true
 cover: https://i.loli.net/2020/10/31/iJD9MKCLsVzgf3A.png
 <!-- thumbnail: https://i.loli.net/2020/10/31/iJD9MKCLsVzgf3A.png -->
 ---
@@ -13,7 +12,7 @@ cover: https://i.loli.net/2020/10/31/iJD9MKCLsVzgf3A.png
 
 <!--more-->
 
-## Lombok 简介
+# Lombok 简介
 
 > ~~龙目岛 *(Lombok island)* 位于印度尼西亚西南部的西努沙登加拉省...~~ **Lombok** 项目是一个 Java 库，它会自动插入编辑器和构建工具中，Lombok 提供了一组 **有用的注释**，用来 **消除** Java 类中的 **大量样板代码**，仅五个字符 (@Data) 就可以替换数百行代码从而产生干净，简洁且易于维护的 Java 类 **———— 转自【百度百科】**
 
@@ -72,5 +71,5 @@ public class User {
 
 当你使用了 Lombok 提供的 `@Data` 注释，那么你的 User 类下就会在编译的时候自动生成对应的 Getter 和 Setter 方法，从中还可以看出，Lombok 是只在编译的时候调用的库，就是说，如果你在写 Minecraft 的插件，它不应当被打包在插件的 Jar 里面
 
-## 使用 Lombok
+# 使用 Lombok
 

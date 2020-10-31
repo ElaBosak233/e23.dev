@@ -1,5 +1,6 @@
 title: 关于
 toc: true
+cover: https://i.loli.net/2020/10/31/kwSsWKv3L4pcPJF.png
 ---
 
 ## 自我介绍

@@ -1,14 +1,14 @@
 title: 讲一讲今天 B 站玩 CTF 的经历
 date: 2020-10-24
-categories: Daily
+categories: Diary
+toc: true
 tags:
-  - Daily
   - CTF
 cover: https://i.loli.net/2020/10/24/RuAjPDwrlVz5xsM.jpg
 <!-- thumbnail: https://i.loli.net/2020/10/24/RuAjPDwrlVz5xsM.jpg -->
 ---
 
-> ***作为程序员的，真正意义上的第一个程序员日，在 B 站度过...***
+> ***Coder makes web powerful with Bilibili***
 
 <!-- more -->
 

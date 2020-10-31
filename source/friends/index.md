@@ -1,5 +1,6 @@
 title: 友链
 toc: false
+cover: https://i.loli.net/2020/10/31/R6FPxjq2sJfoia1.png
 ---
 
 <!-- <article class="message message-immersive is-primary">

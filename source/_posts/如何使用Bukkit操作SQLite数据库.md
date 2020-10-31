@@ -4,9 +4,16 @@ categories: Java
 tags:
   - Java
   - Minecraft
+toc: true
+cover: https://i.loli.net/2020/10/31/xnL3rSFp5eHZiXP.png
 ---
-编写 Bukkit 和 Spigot 插件时，经常遇到存储永久数据困难的情况，大多时候我会用 JSON 来解决此问题，但是 JSON 经常出现读写速度慢、代码复杂的情况，但可以达到相同目标的 SQLite 数据库能轻松解决问题，可以尝试使用下面的方法对 SQLite 进行控制（另外，此方法全 Java 工程通用）：
+
+> ***Mixed SQLite with Bukkit to build a powerful Data storage layer***
+
 <!-- more -->
+
+编写 Bukkit 和 Spigot 插件时，经常遇到存储永久数据困难的情况，大多时候我会用 JSON 来解决此问题，但是 JSON 经常出现读写速度慢、代码复杂的情况，但可以达到相同目标的 SQLite 数据库能轻松解决问题，可以尝试使用下面的方法对 SQLite 进行控制（另外，此方法全 Java 工程通用）：
+
 ## ⭐**控制类** SQLite.java
 
 ```java
