@@ -5,7 +5,7 @@ tags:
   - Java
   - JSON
   - IntelliJ IDEA
-<!-- cover: https://i.loli.net/2020/10/31/iJD9MKCLsVzgf3A.png -->
+cover: https://i.loli.net/2020/10/31/iJD9MKCLsVzgf3A.png
 thumbnail: https://i.loli.net/2020/10/31/iJD9MKCLsVzgf3A.png
 ---
 
