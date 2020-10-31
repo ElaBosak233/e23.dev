@@ -3,11 +3,6 @@ toc: false
 cover: https://i.loli.net/2020/10/31/R6FPxjq2sJfoia1.png
 ---
 
-<!-- <article class="message message-immersive is-primary">
-<div class="message-body">
-<i class="fas fa-info-circle mr-2"></i>排序无规律
-</article> -->
-
 {% raw %}<article class="message is-info"><div class="message-body">{% endraw %}
 <i class="fas fa-info-circle mr-2"></i>排序无规律
 {% raw %}</div></article>{% endraw %}
