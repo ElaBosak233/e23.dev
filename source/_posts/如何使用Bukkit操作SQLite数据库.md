@@ -1,6 +1,6 @@
 title: 如何使用 Bukkit 操作 SQLite 数据库
 date: 2020-06-30
-categories: Minecraft
+categories: Java
 tags:
   - Java
   - Minecraft
