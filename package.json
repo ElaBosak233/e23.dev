@@ -26,6 +26,7 @@
     "hexo-renderer-marked": "^2.0.0",
     "hexo-renderer-stylus": "^1.1.0",
     "hexo-server": "^1.0.0",
+    "hexo-theme-icarus": "^4.1.0",
     "hexo-util": "^2.4.0",
     "inferno": "^7.3.3",
     "inferno-create-element": "^7.3.3"

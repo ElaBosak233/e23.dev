@@ -57,13 +57,13 @@ article:
         theme: atom-one-light
         clipboard: true
         fold: unfolded
-    thumbnail: true
+    # thumbnail: true
     readtime: true
     licenses:
         Creative Commons:
             icon: fab fa-creative-commons
             url: 'https://creativecommons.org/'
-        # 'CC BY-NC-SA 4.0': 'https://creativecommons.org/licenses/by-nc-sa/4.0/'
+        'CC BY-NC-SA 4.0': 'https://creativecommons.org/licenses/by-nc-sa/4.0/'
 search:
     type: insight
 comment:
@@ -147,11 +147,11 @@ widgets:
         type: subscribe_email
         description: 
         feedburner_id: ElaBosak233
-    - 
-        position: right
-        type: adsense
-        client-id: ca-pub-5501586061537610
-        slot_id: 
+    # - 
+    #     position: right
+    #     type: adsense
+    #     client-id: ca-pub-5501586061537610
+    #     slot_id: 
 plugins:
     animejs: true
     back_to_top: true
