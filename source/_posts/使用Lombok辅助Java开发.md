@@ -77,7 +77,7 @@ public class User {
 以下两个步骤都需要执行，首先是依赖，这样才能使用 Lombok 提供的类似于 *@Data* 的方法，但是仅仅有这个还不行，因为 IDE 不知道你有 Getter 和 Setter 方法，添加 Lombok 的 IDE 插件，才能让你的 IDE 知道这些方法的存在
 {% raw %}</div>{% endraw %}
 
-### 添加 Lombok 作为依赖
+## 添加 Lombok 作为依赖
 
 <div class="tabs is-toggle"><ul>
 <li class="is-active"><a onclick="onTabClick(event)">
@@ -127,7 +127,7 @@ function onTabClick (event) {
 }
 </script>
 
-### 安装 IntelliJ IDEA 的 Lombok 插件
+## 安装 IntelliJ IDEA 的 Lombok 插件
 
 ![](https://i.loli.net/2020/10/31/47ULRmzwQgY3JPi.png)
 
@@ -148,8 +148,3 @@ function onTabClick (event) {
 @Log|作用于类上，生成日志变量，针对不同的日志实现产品，有不同的注解
 @Cleanup|自动关闭资源，如 IO 流
 @Synchronized|给方法加上同步锁，在做线程安全的时候会用到
-
-# Lombok 应用场景
-
-### GSON / FastJSON 开发
-

@@ -92,9 +92,9 @@ share:
     install_url: 'https://platform-api.sharethis.com/js/sharethis.js#property=5ebf74e940b52d00198b513b&product=inline-share-buttons&cms=sop'
 sidebar:
     left:
-        sticky: false
+        sticky: true
     right:
-        sticky: false
+        sticky: true
 widgets:
     -
         position: left
