@@ -3,17 +3,17 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Ela の 个人博客
+title: 埃拉拉の空间站
 subtitle: ''
 description: ''
-keywords: Ela的个人博客, Elaの个人博客, java, Minecraft, Ela, ElaBosak, ElaBosak233, python, golang, C
+keywords: 埃拉拉の空间站, 埃拉拉的空间站, java, Minecraft, Ela, ElaBosak, ElaBosak233, python, golang, C
 author: Ela
 language: zh-CN
 timezone: ''
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://ela.ac.cn
+url: http://e23.in
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:

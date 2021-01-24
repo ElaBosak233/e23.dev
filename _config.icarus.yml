@@ -99,7 +99,7 @@ widgets:
     -
         position: left
         type: profile
-        author: Ela
+        author: Elzbieta
         author_title: 🍀SPRING !
         location: 'HangZhou, China'
         avatar: /img/avatar.png
@@ -129,7 +129,7 @@ widgets:
         position: left
         type: links
         links:
-            Valkyie: 'https://valkyrie.ela.ac.cn'
+            Valkyie: 'https://valkyrie.e23.in'
     -
         position: left
         type: categories
