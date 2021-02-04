@@ -139,7 +139,7 @@ widgets:
     # -
     #     position: right
     #     type: archives
-    # -
+    -
         position: left
         type: tags
     # -
