@@ -94,7 +94,7 @@ sidebar:
     left:
         sticky: true
     right:
-        sticky: true
+        sticky: false
 widgets:
     -
         position: left
@@ -133,20 +133,20 @@ widgets:
     -
         position: left
         type: categories
-    -
-        position: right
-        type: recent_posts
-    -
-        position: right
-        type: archives
-    -
+    # -
+    #     position: right
+    #     type: recent_posts
+    # -
+    #     position: right
+    #     type: archives
+    # -
         position: left
         type: tags
-    -
-        position: right
-        type: subscribe_email
-        description: 
-        feedburner_id: ElaBosak233
+    # -
+    #     position: right
+    #     type: subscribe_email
+    #     description: 
+    #     feedburner_id: ElaBosak233
     # - 
     #     position: right
     #     type: adsense
