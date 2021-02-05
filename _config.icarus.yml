@@ -98,6 +98,9 @@ sidebar:
 widgets:
     -
         position: left
+        type: toc
+    -
+        position: left
         type: profile
         author: Elzbieta
         author_title: 🍀SPRING !
@@ -122,9 +125,6 @@ widgets:
             RSS:
                 icon: fas fa-rss
                 url: /atom.xml
-    -
-        position: left
-        type: toc
     -
         position: left
         type: links
