@@ -84,9 +84,9 @@ donates:
     -
         type: buymeacoffee
         url: 'https://www.buymeacoffee.com/ElaBosak233'
-    # -
-    #     type: wechat
-    #     qrcode: ''
+    -
+        type: wechat
+        qrcode: /img/wechat.png
 share:
     type: sharethis
     install_url: 'https://platform-api.sharethis.com/js/sharethis.js#property=5ebf74e940b52d00198b513b&product=inline-share-buttons&cms=sop'
@@ -102,8 +102,8 @@ widgets:
     -
         position: left
         type: profile
-        author: Elzbieta
-        author_title: 🍀SPRING !
+        author: 埃拉拉
+        author_title: 🍀 ElaBosak233
         location: 'HangZhou, China'
         avatar: /img/avatar.png
         avatar_rounded: true
@@ -113,15 +113,15 @@ widgets:
             Github:
                 icon: fab fa-github
                 url: 'https://github.com/ElaBosak233'
+            Bilibili:
+                icon: fas fa-bolt
+                url: 'https://space.bilibili.com/155510267'    
             Facebook:
                 icon: fab fa-facebook
-                url: 'https://www.facebook.com/ela.bosak.92372'
+                url: 'https://www.facebook.com/e23.in'
             Twitter:
                 icon: fab fa-twitter
                 url: 'https://twitter.com/ElaBosakCN'
-            Afdian:
-                icon: fas fa-bolt
-                url: 'https://afdian.net/@ElaBosak233'
             RSS:
                 icon: fas fa-rss
                 url: /atom.xml
@@ -171,6 +171,6 @@ plugins:
     outdated_browser: true
     progressbar: true
 providers:
-    cdn: unpkg
-    fontcdn: loli
+    cdn: jsdelivr
+    fontcdn: google
     iconcdn: loli
