@@ -31,5 +31,5 @@ jobs:
       - name: Deploy to Github Pages # 部署到 Github Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
-          deploy_key: ${{ secrets.HEXO_DEPLOY_KEY }} # 这里就是刚刚 Secrets 中设置的私钥的名称，所以我说不要太为难自己嘛
+          deploy_key: ${{ secrets.HEXO_DEPLOY_PRI }} # 这里就是刚刚 Secrets 中设置的私钥的名称，所以我说不要太为难自己嘛
           publish_dir: ./public # 项目构建静态文件的目录
