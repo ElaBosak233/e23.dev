@@ -11,6 +11,14 @@ cover: https://i.loli.net/2021/02/07/BYSkUyhngV1FHOp.jpg
 
 大家好，我叫 **Ela**，一个高一学生党，人生历程是从一个普通的游戏玩家慢慢发展成了开发者，喜好 **Java, Python, Vue.js**，现在尤其热爱 Java 开发，比如给 Minecraft 写小插件或者使用 Spring 做应用，当然，从 1024 那一天我发现玩 **CTF** 也挺适合我的，另外，编程只是我的其中一个兴趣爱好，所以这个博客中，可能也会有些与编程无关的博文，希望不要太介意 awa
 
+{% raw %}<article class="message is-success"><div class="message-header">{% endraw %}
+Why "She" ♀
+{% raw %}</div><div class="message-body"><center>{% endraw %}
+
+**这个嘛...看看下面这张图，你就知道为什么了 qwq**
+
+{% raw %}<img src="https://i.loli.net/2021/02/08/qdolQf8ibXEzD7c.jpg" width=70% height=70%></center></div></article>{% endraw %}
+
 ## 关于文章
 
 上面也提到过啦，编程只是我的一个兴趣爱好，与编程无关的文章肯定不会少的！但请不要忘记，不仅仅是在我的博客上，我还会在其他地方——包括但不限于 [**知乎**](https://www.zhihu.com/people/elabosak) | [**哔哩哔哩专栏**](https://space.bilibili.com/155510267/article) | [**我的世界中文论坛**](https://www.mcbbs.net)
