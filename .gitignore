@@ -5,3 +5,8 @@ db.json
 node_modules/
 public/
 .deploy*/
+
+gh-pages
+gh-pages.pub
+
+./public

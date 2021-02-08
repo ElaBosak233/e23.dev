@@ -10,12 +10,17 @@ cover: https://i.loli.net/2020/10/31/R6FPxjq2sJfoia1.png
 <section class="hero is-primary">
   <div class="hero-body">
     <div class="container">
-      <h1 class="title">
-        索菲缇娅 の Blog
-      </h1>
-      <h2 class="subtitle">
-        <a href="https://blog.lesnow.tk" target="_blank">https://blog.lesnow.tk</a>
-      </h 2>
+      <div class="media">
+        <div class="media-left">
+          <figure class="image is-96x96">
+            <img class="is-rounded" src="https://cdn.jsdelivr.net/gh/LeSnow-Ye/CDN/Blog/avatar.png">
+          </figure>
+        </div>
+        <div class="media-content">
+          <p class="title is-3">索菲缇娅 の Blog</p>
+          <p class="subtitle is-4"><a href="https://blog.lesnow.tk" target="_blank">https://blog.lesnow.tk</a></p>
+      </div>
+    </div>
     </div>
   </div>
 </section>
@@ -25,12 +30,17 @@ cover: https://i.loli.net/2020/10/31/R6FPxjq2sJfoia1.png
 <section class="hero is-success">
   <div class="hero-body">
     <div class="container">
-      <h1 class="title">
-        XiaoYiUce's Blog 
-      </h1>
-      <h2 class="subtitle">
-        <a href="https://www.xiaoyiblog.cc" target="_blank">https://www.xiaoyiblog.cc</a>
-      </h2>
+      <div class="media">
+        <div class="media-left">
+          <figure class="image is-96x96">
+            <img class="is-rounded" src="https://www.xiaoyiblog.cc/usr/uploads/logo.jpg">
+          </figure>
+        </div>
+        <div class="media-content">
+          <p class="title is-3">XiaoYiUce's Blog</p>
+          <p class="subtitle is-4"><a href="https://www.xiaoyiblog.cc" target="_blank">https://www.xiaoyiblog.cc</a></p>
+      </div>
+    </div>
     </div>
   </div>
 </section>
