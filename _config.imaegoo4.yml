@@ -159,7 +159,7 @@ plugins:
     back_to_top: true
     baidu_analytics:
         tracking_id: 
-    busuanzi: true
+    busuanzi: false
     cnzz:
         id: 
         web_id: 
