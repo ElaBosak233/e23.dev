@@ -39,8 +39,8 @@ cover: https://i.loli.net/2020/10/31/R6FPxjq2sJfoia1.png
         <div class="media-content">
           <p class="title is-3">XiaoYiUce's Blog</p>
           <p class="subtitle is-4"><a href="https://www.xiaoyiblog.cc" target="_blank">https://www.xiaoyiblog.cc</a></p>
+        </div>
       </div>
-    </div>
     </div>
   </div>
 </section>
