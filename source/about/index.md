@@ -4,18 +4,20 @@ cover: https://i.loli.net/2021/02/07/BYSkUyhngV1FHOp.jpg
 ---
 
 {% raw %}<div class="notification is-info">{% endraw %}
-<i class="fas fa-home"></i> My name is <strong>Ela</strong>, and JUST <strong>Ela</strong>.
+<i class="fas fa-home"></i> My name is Ela, and JUST Ela.
 {% raw %}</div>{% endraw %}
 
 ## 关于我
 
-一个普普通通的高中生。*女生。*
+一个普普通通的高中生。*女生*。年龄起码 15 岁，出生于 2 月，双鱼座。
+
+网名用的最多的是 **ElaBosak233**，或许有 **Ela**，**ElaBosak**，**Elzbieta**，**埃拉拉**，**埃尔兹比塔**之类的说法，反正都是我啦！
 
 会一点 **Java, Python, Vue.js**，但对 Java 情有独钟。玩的最久的游戏是 [**IntelliJ IDEA**](https://www.jetbrains.com/idea/)，其次是 [**Rainbow Six | Siege**](https://www.ubisoft.com/en-gb/game/rainbow-six/siege)，但排名赛只在 紫铜 V，然后就是 **Minecraft**。
 
-于 2020 年正式加入 [**我的世界中文论坛**](https://www.mcbbs.net)，并加入了 [**PluginsCDTribe**](https://www.mcbbs.net/group-1330-1.html) 小组，没什么突出的贡献，还惹过次麻烦。
+于 2019 年 12 月 28 日正式加入 [**我的世界中文论坛**](https://www.mcbbs.net)，并加入了 [**PluginsCDTribe**](https://www.mcbbs.net/group-1330-1.html) 小组，没什么突出的贡献，还惹过次麻烦。
 
-Bilibili 忠实大会员，看番不多，但肯定追 [**名侦探柯南**](https://www.bilibili.com/bangumi/play/ss33378/?from=search&seid=5147689953934329939) 和 [**RE：从零开始的异世界生活**](https://www.bilibili.com/bangumi/play/ss29590/?from=search&seid=13935164015385549637)。
+Bilibili 忠实大会员，看番不多，但肯定追 [**《名侦探柯南》**](https://www.bilibili.com/bangumi/play/ss33378/?from=search&seid=5147689953934329939) 和 [**《RE：从零开始的异世界生活》**](https://www.bilibili.com/bangumi/play/ss29590/?from=search&seid=13935164015385549637)。
 
 网易云刚开黑胶没几个月，但都听有点年代的老歌，偏向粤语，喜欢的乐队是 **Beyond**，喜欢的歌手是 **谭咏麟**，但 **周杰伦** 从小听到大。
 
