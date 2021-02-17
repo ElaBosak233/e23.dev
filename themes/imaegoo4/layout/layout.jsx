@@ -43,7 +43,7 @@ module.exports = class extends Component {
 
                 <script type="text/javascript" src="/js/imaegoo/imaegoo.js"></script>
                 <script type="text/javascript" src="/js/imaegoo/universe.js"></script>
-                <script type="text/javascript" src="/js/live2d/autoload.js"></script>
+                {/* <script type="text/javascript" src="/js/live2d/autoload.js"></script> */}
             </body>
         </html>;
     }
