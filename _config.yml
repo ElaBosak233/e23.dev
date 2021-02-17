@@ -97,7 +97,7 @@ theme: imaegoo4
 
 #RSS订阅
 plugin:
-- hexo-generator-feed
+  - hexo-generator-feed
 #Feed Atom
 feed:
 type: atom
