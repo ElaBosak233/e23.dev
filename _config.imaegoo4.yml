@@ -149,11 +149,11 @@ widgets:
     #     type: subscribe_email
     #     description: 
     #     feedburner_id: ElaBosak233
-    - 
-        position: left
-        type: adsense
-        client-id: 'ca-pub-5501586061537610'
-        slot_id: '4608659776'
+    # - 
+    #     position: left
+    #     type: adsense
+    #     client-id: 'ca-pub-5501586061537610'
+    #     slot_id: '4608659776'
 plugins:
     animejs: false
     back_to_top: true
