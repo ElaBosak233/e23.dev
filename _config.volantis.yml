@@ -2,8 +2,8 @@ use_cdn: false
 
 navbar:
   visiable: always
-  logo:
-    icon: https://i.loli.net/2021/03/13/Ir7THeBNfAmZsFi.png
+  logo: 
+    img: /fav-suitable.svg
   menu:
     - name: 博客
       icon: fad fa-book faa-tada
