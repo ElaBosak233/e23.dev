@@ -1,13 +1,13 @@
-title: 关于
-toc: true
-cover: https://i.loli.net/2021/02/18/vcaJwG3z57Njyfe.jpg
 ---
-
-{% raw %}<div class="notification is-info">{% endraw %}
-<i class="fas fa-home"></i> My name is Ela, and JUST Ela.
-{% raw %}</div>{% endraw %}
-
+layout: docs
+cover: true
+seo_title: 关于
+bottom_meta: false
+sidebar: []
+---
 ## 关于我
+
+{% note success, **埃拉拉** 真的 **很平凡** 好吗... %}
 
 一个普普通通的高中生。*人设为女生*。年龄起码 15 岁，出生于 2 月，双鱼座。
 
@@ -21,13 +21,11 @@ Bilibili 忠实大会员，看番不多，但肯定追 [**《名侦探柯南》*
 
 网易云刚开黑胶没几个月，但都听有点年代的老歌，偏向粤语，喜欢的乐队是 **Beyond**，喜欢的歌手是 **谭咏麟**，但 **周杰伦** 从小听到大。
 
-{% raw %}<article class="message is-success"><div class="message-header">{% endraw %}
-Why "She" ♀
-{% raw %}</div><div class="message-body"><center>{% endraw %}
-
+{% folding green, Why "She" ♀ %}
 **这个嘛...看看下面这张图，你就知道为什么了 qwq**
 
-{% raw %}<img src="https://i.loli.net/2021/02/08/qdolQf8ibXEzD7c.jpg" width=70% height=70%></center></div></article>{% endraw %}
+![](https://i.loli.net/2021/02/08/qdolQf8ibXEzD7c.jpg)
+{% endfolding %}
 
 ## 关于文章
 
@@ -35,4 +33,4 @@ Why "She" ♀
 
 ## 关于 **e23.in**
 
-**e23.in** 不仅是作为我的个人顶级域名进行个人使用，还是我的博客唯一地址，我的博客上会时不时更新优质内容（当然，是我认为的优质内容qwq），你可以使用博客内置的 **ShareIt** 进行分享，或者使用 **支付宝 | 爱发电 | BuyMeACoffee | 微信** 等赞助渠道给我点小支持，另外，这个博客是开源的 (虽然我也不知道一个博客开源的意义何在)，遵循 **CC BY-NC-SA 4.0** 协议进行开源，简单的说下这个开源协议吧，分享请注明出处，除非与我联系进行商用，一切与商业沾边的事情都不要做，多谢啦，另外，不仅仅是这个博客，我在学生阶段的 **一切代码** 都会且仅在 **[Github](https://github.com/ElaBosak233)** 开源，毕竟是 Github 给这个博客提供了 Pages 服务嘛，相比于国内的 Pages 服务，我觉得 Github 稳定多了
+**e23.in** 不仅是作为我的个人顶级域名进行个人使用，还是我的博客唯一地址，我的博客上会时不时更新优质内容（当然，是我认为的优质内容qwq），你可以使用文章下方的超链接进行分享，或者使用 **支付宝 | 爱发电 | BuyMeACoffee | 微信** 等赞助渠道给我点小支持，另外，这个博客是开源的 (虽然我也不知道一个博客开源的意义何在)，遵循 **CC BY-NC-SA 4.0** 协议进行开源，简单的说下这个开源协议吧，分享请注明出处，除非与我联系进行商用，一切与商业沾边的事情都不要做，多谢啦，另外，不仅仅是这个博客，我在学生阶段的 **一切代码** 都会且 **仅** 在 **[Github](https://github.com/ElaBosak233)** 开源，毕竟是 Github 给这个博客提供了 Pages 服务嘛，相比于国内的 Pages 服务，我觉得 Github 稳定多了

@@ -5,8 +5,7 @@ db.json
 node_modules/
 public/
 .deploy*/
+/package-lock.json
 
 gh-pages
 gh-pages.pub
-
-./public

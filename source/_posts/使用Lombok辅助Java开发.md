@@ -1,11 +1,10 @@
+---
 title: 使用 Lombok 辅助 Java 开发
 date: 2020-10-31
 categories: Java
 tags:
   - Java
-toc: true
-cover: https://i.loli.net/2020/10/31/iJD9MKCLsVzgf3A.png
-<!-- thumbnail: https://www.svgrepo.com/show/232473/java.svg -->
+headimg: https://i.loli.net/2020/10/31/iJD9MKCLsVzgf3A.png
 ---
 
 > ***Lombok Reduces Java's Boilderplate code***
@@ -18,7 +17,7 @@ cover: https://i.loli.net/2020/10/31/iJD9MKCLsVzgf3A.png
 
 如百度百科所示，Lombok 可以让开发者告别繁琐的 **样板代码**，样板代码是什么，如下所示
 
-```java User.java (未使用 Lombok) >folded
+```java User.java (未使用 Lombok)
 public class User {
 
     public long uid;
@@ -79,17 +78,8 @@ public class User {
 
 ## 添加 Lombok 作为依赖
 
-<div class="tabs is-toggle"><ul>
-<li class="is-active"><a onclick="onTabClick(event)">
-<span class="icon is-small"><i class="fas fa-feather-alt" aria-hidden="true"></i></span>
-<span>Maven</span>
-</a></li>
-<li><a onclick="onTabClick(event)">
-<span class="icon is-small"><i class="fab fa-google-drive" aria-hidden="true"></i></span>
-<span>Gradle</span>
-</a></li>
-</ul></div>
-{% raw %}<div id="Maven" class="tab-content" style="display: block;">{% endraw %}
+{% tabs tabs %}
+<!-- tab Maven -->
 ```xml pom.xml
 <dependencies>
     <dependency>
@@ -100,8 +90,8 @@ public class User {
     </dependency>
 </dependencies>
 ```
-{% raw %}</div>{% endraw %}
-{% raw %}<div id="Gradle" class="tab-content">{% endraw %}
+<!-- endtab -->
+<!-- tab Gradle -->
 ```gradle build.gradle
 dependencies {
 	compileOnly 'org.projectlombok:lombok:1.18.16'
@@ -110,22 +100,8 @@ dependencies {
 	testAnnotationProcessor 'org.projectlombok:lombok:1.18.16'
 }
 ```
-{% raw %}</div>{% endraw %}
-
-<style type="text/css">
-.content .tabs ul { margin: 0; }
-.tab-content { display: none; }
-</style>
-
-<script>
-function onTabClick (event) {
-    var tabTitle = $(event.currentTarget).children('span:last-child').text();
-    $('.article .content .tab-content').css('display', 'none');
-    $('.article .content .tabs li').removeClass('is-active');
-    $('#' + tabTitle).css('display', 'block');
-    $(event.currentTarget).parent().addClass('is-active');
-}
-</script>
+<!-- endtab -->
+{% endtabs %}
 
 ## 安装 IntelliJ IDEA 的 Lombok 插件
 

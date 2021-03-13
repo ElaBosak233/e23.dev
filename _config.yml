@@ -3,17 +3,19 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: 埃拉の空间站
+title: 埃拉の个人博客
 subtitle: ''
 description: ''
-keywords: 埃拉の空间站, 埃拉的空间站, java, Minecraft, Ela, ElaBosak, ElaBosak233, python, golang, C
-author: Ela
+keywords:
+author: ElaBosak233
 language: zh-CN
 timezone: ''
 
+favicon: /fav.svg
+
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://e23.in
+url: https://e23.in
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -51,6 +53,11 @@ highlight:
   tab_replace: ''
   wrap: true
   hljs: false
+prismjs:
+  enable: false
+  preprocess: true
+  line_number: true
+  tab_replace: ''
 
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
@@ -76,8 +83,8 @@ meta_generator: true
 ## http://momentjs.com/docs/#/displaying/format/
 date_format: YYYY-MM-DD
 time_format: HH:mm:ss
-## Use post's date for updated date unless set in front-matter
-updated_option: false
+## updated_option supports 'mtime', 'date', 'empty'
+updated_option: 'mtime'
 
 # Pagination
 ## Set per_page to 0 to disable pagination
@@ -93,16 +100,7 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: imaegoo4
-
-#RSS订阅
-plugin:
-  - hexo-generator-feed
-#Feed Atom
-feed:
-type: atom
-path: atom.xml
-limit: 20
+theme: volantis
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html

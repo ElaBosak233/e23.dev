@@ -1,0 +1,376 @@
+use_cdn: false
+
+navbar:
+  visiable: always
+  logo:
+    icon: https://cdn.jsdelivr.net/gh/ElaBosak233/ElaBosak233.github.io@latest/source/fav.svg
+  menu:
+    - name: 博客
+      icon: fad fa-book faa-tada
+      url: /
+      target: _self
+    - name: 归档
+      icon: fas fa-archive
+      url: /archives
+    - name: 友链
+      icon: fas fa-heart
+      url: /friends  
+    - name: 关于
+      icon: fad fa-play-circle faa-tada
+      url: /about  
+    - name: 更多
+      icon: fad fa-ellipsis-v
+      rows:
+        - name: 埃拉正在想办法填充呢...
+  search: 搜索
+
+cover:
+  height_scheme: full
+  layout_scheme: search # search (搜索), dock (坞), featured (精选), focus (焦点)
+  title: '埃拉の个人博客'
+  subtitle: ''
+  background: https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/016.jpg
+  display:
+    home: true
+    archive: true
+    others: false # can be written in front-matter'cover: true'      
+  search: 天呐，埃了爱了
+  features:
+    - name: 主页
+      icon: #
+      img: #https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f5c3.svg
+      url: /
+    - name: 归档
+      icon: #
+      img: #https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f516.svg
+      url: /archives
+    - name: 分类
+      icon: #
+      img: #https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f516.svg
+      url: /categories
+    - name: 标签
+      icon: #
+      img: #https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f516.svg
+      url: /tags   
+    - name: 源码
+      icon: #
+      img: #https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f9ec.svg
+      url: https://github.com/ElaBosak233/ElaBosak233.github.io/
+
+article:
+  preview:
+    scheme: landscape # landscape
+    # pin icon for post
+    pin_icon: https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f4cc.svg
+    # auto generate title if not exist
+    auto_title: true # false, true
+    # auto generate excerpt if not exist
+    auto_excerpt: false # false, true
+    author: true
+    # show readmore button
+    readmore: auto # auto, always
+  body:
+    # 文章顶部信息
+    # 从 meta_library 中取
+    top_meta: [author, category, date, counter] #启用评论数量需在此添加
+    # ----------------
+    # 文章页脚组件
+    footer_widget:
+      # ----------------
+      # 参考资料、相关资料等 (for layout: post/docs)
+      references:
+        title: 参考资料
+        icon: fas fa-quote-left
+        # 在 front-matter 中:
+        #   references:
+        #     - title: 某篇文章
+        #       url: https://
+        # 即可显示此组件。
+      # ----------------
+      # 相关文章，需要安装插件 (for layout: post)
+      # npm i hexo-related-popular-posts
+      related_posts:
+        enable: false
+        title: 相关文章
+        icon: fas fa-bookmark
+        max_count: 5
+        # 设为空则不使用文章头图
+        placeholder_img: https://uploadbeta.com/api/pictures/random/?key=BingEverydayWallpaperPicture
+      # ----------------
+      # 版权声明组件 (for layout: post)
+      copyright:
+        enable: true
+        permalink: '本文永久链接是：'
+        content:
+          - '博客内容遵循 署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议'
+          - permalink
+      # ----------------
+      # 打赏组件 (for layout: post)
+      donate:
+        enable: false
+        images:
+          - https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/qrcode/github@volantis.png
+          - https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/qrcode/github@volantis.png
+    # 文章底部信息
+    # 从 meta_library 中取
+    bottom_meta: [updated, tags, share]
+    # meta library
+    meta_library:
+      # 默认文章作者（可在 _data/author.yaml 中增加其他作者，并在 front-matter 中设置）
+      # https://volantis.js.org/advanced-settings/#多人协同
+      author:
+        avatar: https://i.loli.net/2021/03/13/RSLyWDlwuci1atf.jpg
+        name: 埃拉拉
+        url: https://github.com/ElaBosak233
+      # 文章创建日期
+      date:
+        icon: fas fa-calendar-alt
+        title: '发布于：'
+        format: 'll' # 日期格式 http://momentjs.com/docs/
+      # 文章更新日期
+      updated:
+        icon: fas fa-edit
+        title: '更新于：'
+        format: 'll' # 日期格式 http://momentjs.com/docs/
+      # 文章分类
+      category:
+        icon: fas fa-folder-open
+      # 文章浏览计数
+      counter:
+        icon: fas fa-eye
+        unit: '次浏览'
+      # 文章评论数量：支持 valine和waline
+      valinecount:
+        icon: fas fa-comment-dots
+        desc: '' # 条评论
+      walinecount:
+        icon: fas fa-comment-dots
+        desc: '' # 条评论
+      # 文章字数和阅读时长
+      wordcount:
+        icon_wordcount: fas fa-keyboard
+        icon_duration: fas fa-hourglass-half
+      # 文章标签
+      tags:
+        icon: fas fa-hashtag
+      # 分享
+      share:
+        - id: qq
+          img: https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qq.png
+        - id: qzone
+          img: https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qzone.png
+        - id: weibo
+          img: https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/weibo.png
+        - id: qrcode # 当id为qrcode时需要安装插件  npm i hexo-helper-qrcode
+          img: https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/wechat.png
+
+comments:
+  title: <i class='fas fa-comments'></i> 评论区
+  service: gitalk  
+  gitalk:
+    clientID: 8687afbf31f0041f005d
+    clientSecret: 9949b2971fa855443467af73220daa9e8c0612fd
+    repo: ElaBosak233.github.io
+    owner: ElaBosak233
+    admin: [ElaBosak233]
+    path: /
+
+sidebar:
+  for_page: [blogger, news, guide, category, tagcloud]
+  for_post: [blogger, news, guide, toc]
+  widget_library:
+    blogger:
+      class: blogger
+      display: [desktop] # [desktop, mobile]
+      avatar: https://i.loli.net/2021/03/13/RSLyWDlwuci1atf.jpg
+      shape: circle
+      title: 埃拉拉
+      subtitle: Null Girl Friend Exception
+      jinrishici: false # Poetry Today. You can set a string, and it will be displayed when loading fails.
+      social: 
+        - icon: fab fa-github
+          url: https://github.com/ElaBosak233
+        - icon: fab fa-facebook 
+          url: https://www.facebook.com/e23.in
+        - icon: fab fa-twitter
+          url: https://twitter.com/ElaBosakCN
+        - icon: fas fa-bolt
+          url: http://afdian.net/@ElaBosak233
+    toc:
+      class: toc
+      display: [desktop, mobile] # [desktop, mobile]
+      header:
+        icon: fas fa-list
+        title: 本文目录
+      list_number: true
+      min_depth: 2
+      max_depth: 5
+    # post:
+    #   class: text
+    #   display: [desktop, mobile] # [desktop, mobile]
+    #   header:
+    #     icon: fas fa-plus
+    #     title: 社区活动
+    #     url: /contributors/
+    #   content:
+    #     - '**如何让自己的文章收录到这里？**<br>官方网站是开源的，只要您的文章与 Hexo 博客搭建相关，就可以自助进行收录，详细的操作步骤请见：「[**发布与分享文章**](/contributors/#发布与分享文章)」。'
+    category:
+      class: category
+      display: [desktop] # [desktop, mobile]
+      header:
+        icon: fas fa-folder-open
+        url: /categories/
+    tagcloud:
+      class: tagcloud
+      display: [desktop] # [desktop, mobile]
+      header:
+        icon: fas fa-tags
+        url: /tags/
+      min_font: 14
+      max_font: 24
+      color: true
+      start_color: '#999'
+      end_color: '#555'    
+    # 文档导航
+    guide:
+      class: grid
+      display: [desktop, mobile] # [desktop, mobile]
+      header:
+        icon: fas fa-map-signs
+        title: 分类导航
+      fixed: true # 固定宽度
+      rows:
+        - name: 个人项目
+          icon: fab fa-github
+          url: /projects/
+        - name: 博客文章
+          icon: fas fa-file-alt
+          url: /archives/
+        - name: 更新日志
+          icon: fas fa-tags
+          url: https://github.com/ElaBosak233/ElaBosak233.github.io/releases
+          target: _blank
+
+    # qrcode widget
+    qrcode:
+      class: qrcode
+      display: [desktop] # [desktop, mobile]
+      header:
+        icon: fas fa-mobile
+        title: 手机观看
+      height: #64px  # Automatic height if not set
+      fancybox: #true
+      images:
+        - https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/qrcode/github@volantis.png
+
+    help:
+      class: page
+      display: [desktop, mobile]
+      header:
+        icon: fas fa-headset
+        title: 帮助
+      pid: faq
+      content: excerpt # excerpt, more, content
+
+    news:
+      class: list
+      display: [desktop, mobile] # [desktop, mobile]
+      header:
+        icon: fad fa-bullhorn
+        title: 近期公告
+      rows:
+        - name: 《埃拉の个人博客》已成功由 hexo-theme-icarus 转变为 hexo-theme-volantis
+          icon: fas fa-angle-double-up
+
+site_footer:
+  layout: [aplayer, social, source, analytics, copyright]
+  copyright: '[Copyright © 2019-2021 埃拉拉の个人博客](https://github.com/ElaBosak233/)'
+  social:
+    - img: https://cdn.jsdelivr.net/gh/volantis-x/cdn-org@1.1/icon/1322024-social-media/029-github.svg
+      url: https://github.com/ElaBosak233
+    - img: https://cdn.jsdelivr.net/gh/volantis-x/cdn-org@1.1/icon/1322024-social-media/010-facebook.svg
+      url: https://www.facebook.com/e23.in
+    - img: https://cdn.jsdelivr.net/gh/volantis-x/cdn-org@1.1/icon/1322024-social-media/018-twitter.svg
+      url: https://twitter.com/ElaBosakCN
+
+
+tag_plugins:
+  # {% note text %}
+  note: # style for default note:
+    iconfont: 'Font Awesome 5 Pro'
+
+plugins:
+  clipboard:
+    enable: true
+  fontawesome: https://cdn.jsdelivr.net/gh/volantis-x/cdn-fontawesome-pro@master/css/all.min.css
+  backstretch:
+    enable: false
+    images:               # For personal use only. At your own risk if used for commercial purposes !!!
+      - https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/016.jpg
+      - https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/019.jpg
+      - https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/025.jpg
+      - https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/033.jpg
+      - https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/052.jpg
+  parallax:
+    enable: true
+  aplayer:
+    enable: true
+    autoplay: flase
+    volume: 0.4
+    order: random
+    # id: 4917530132 # vol red
+    # id: 4917524698 # vol blue
+    # id: 76244489 # vol white
+    # id: 5135845906 # for Volantis 3.0
+    id: 5062959861 # TOP 30
+  darkmodejs:
+    enable: true
+
+analytics:
+  busuanzi: https://cdn.jsdelivr.net/gh/volantis-x/cdn-busuanzi@2.3/js/busuanzi.pure.mini.js
+  # leancloud:
+  #   app_id: GCYDRKI6XRkyC7EuEhJv90ia-MdYXbMMI
+  #   app_key: 4xKBXGBj6BgecU62vff5rJHs
+  #   custom_api_server: # 一般不需要写，除非自定义了 API Server
+
+custom_css:
+  font_smoothing: true
+  sidebar:
+    effect: [shadow] # [shadow, floatable, blur]
+  body:
+    effect: [shadow] # [shadow, floatable, blur]
+  fontfamily:
+    logofont:
+      fontfamily: 'Dosis, "PingFang SC", "Microsoft YaHei", Helvetica, Arial'
+      name: 'Dosis'
+      url: https://cdn.jsdelivr.net/gh/volantis-x/cdn-fonts@20.5.30/Dosis/Dosis-Medium.ttf
+      weight: normal
+      style: normal
+    bodyfont:
+      fontfamily: 'Dosis, "PingFang SC", "Microsoft YaHei", Helvetica, Arial'
+      name: 'Dosis'
+      url: https://cdn.jsdelivr.net/gh/volantis-x/cdn-fonts@20.5.30/Dosis/Dosis-Medium.ttf
+      weight: normal
+      style: normal
+
+############################### Rightmenu ############################### > start
+# 自定义右键菜单
+rightmenu:
+  enable: true
+  # hr: 分割线, music: 音乐控制器
+  layout: [home, help, hr, print, dark_mode, hr, music]
+  # 可选功能项
+  print:
+    name: 打印页面
+    icon: fa fa-print
+    onclick: document.execCommand('print')
+  # 自定义菜单的格式如下
+  help:
+    name: 常见问题
+    icon: fa fa-question
+    url: https://volantis.js.org/faqs/
+  dark_mode:
+    name: 暗黑 / 明亮
+    icon: fas fa-moon
+    toggle: darkmode
+############################### Rightmenu ############################### > end

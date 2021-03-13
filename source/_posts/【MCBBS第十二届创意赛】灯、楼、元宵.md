@@ -1,38 +1,20 @@
+---
 title: 【MCBBS第十二届创意赛】灯、楼、元宵
 date: 2021-02-26
 categories: Diary
 toc: true
 tags:
   - Minecraft
-cover: https://i.loli.net/2021/02/25/NLCRGOTV6IFzqKi.png
-<!-- thumbnail: https://i.loli.net/2020/10/24/RuAjPDwrlVz5xsM.jpg -->
+headimg: https://i.loli.net/2021/02/25/NLCRGOTV6IFzqKi.png
 ---
 
-
-
 ![](https://www.mcbbs.net/static/image/hrline/line8.png)
+
 <!-- more -->
+
 <center><p><font size="7" color="#8B0000" style="Font-Family: 楷体; font-weight: bold">= 灯、楼、元宵 =</font></p></center>
 
-<br/>
-
 ![](https://www.mcbbs.net/static/image/hrline/4.gif)
-
-<center><blockquote>
-<p><font size="5" style="font-weight: bold; Font-Family: 楷体">生查子·元夕</font><font size="3" style="Font-Family: 仿宋">[宋]欧阳修</font></p>
-<font size="4" style="Font-Family: 仿宋; font-weight: bold">
-去年元夜时，花市灯如昼。
-
-月上柳梢头，人约黄昏后。
-
-今年元夜时，月与灯依旧。
-
-不见去年人，泪湿春衫袖。
-</font>
-</blockquote></center>
-<br/>
-
-![](https://www.mcbbs.net/static/image/hrline/line8.png)
 
 <center><p><font size="6" color="#DC143C" style="Font-Family: 楷体; font-weight: bold">>>>【前言】<<<</font></p></center>
 
@@ -52,7 +34,7 @@ cover: https://i.loli.net/2021/02/25/NLCRGOTV6IFzqKi.png
 
 <center><p><font style="font-weight:bold; font-style: italic"><u>下面还有很多，流量党慎入！</u></font></p></center>
 <br/>
-<button class="button is-info is-fullwidth" onclick="showImages1(event)">显示/隐藏 更多图片</button>
+<center><button class="button is-info is-fullwidth" onclick="showImages1(event)">显示/隐藏 更多图片</button></center>
 <div id="img1" style="display: none">
 <br/>
 
@@ -100,9 +82,8 @@ cover: https://i.loli.net/2021/02/25/NLCRGOTV6IFzqKi.png
 ![](https://attachment.mcbbs.net/data/myattachment/forum/202102/25/114120awk9e7geneuuxqlk.jpg)
 
 <center><p><font style="font-weight:bold;">还有一些原版图...</font></p></center>
-<br/>
 
-<button class="button is-info is-fullwidth" onclick="showImages2(event)">显示/隐藏 更多图片</button>
+<center><button class="button is-info is-fullwidth" onclick="showImages2(event)">显示/隐藏 更多图片</button></center>
 <div id="img2" style="display: none">
 <br/>
 
@@ -123,7 +104,6 @@ cover: https://i.loli.net/2021/02/25/NLCRGOTV6IFzqKi.png
 <center><font size="4" style="font-weight: bold">🔨工具人们 @BG.K @埃拉拉</font></center>
 <center><font size="4" color="#DC143C" style="font-weight: bold">再祝每个小伙伴元宵快乐！</font><font size="3"><s>开学快乐！</s></font></center>
 <center><font size="3" color="#000000" style="font-weight: bold">本文原帖自 <a href="https://www.mcbbs.net/thread-1175860-1-1.html">MCBBS</a></font></center>
-<br/>
 
 ![](https://www.mcbbs.net/static/image/hrline/line8.png)
 

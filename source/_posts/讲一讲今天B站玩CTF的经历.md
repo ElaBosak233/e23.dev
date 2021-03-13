@@ -1,11 +1,11 @@
+---
 title: 讲一讲今天 B 站玩 CTF 的经历
 date: 2020-10-24
 categories: Diary
 toc: true
 tags:
   - CTF
-cover: https://i.loli.net/2020/10/24/RuAjPDwrlVz5xsM.jpg
-<!-- thumbnail: https://i.loli.net/2020/10/24/RuAjPDwrlVz5xsM.jpg -->
+headimg: https://i.loli.net/2020/10/24/RuAjPDwrlVz5xsM.jpg
 ---
 
 > ***Coder makes web powerful with Bilibili***

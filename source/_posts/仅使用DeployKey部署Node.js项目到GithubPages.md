@@ -1,3 +1,4 @@
+---
 title: 仅使用 Deploy Key 部署 Node.js 项目到 Github Pages
 date: 2021-02-07
 categories: Github
@@ -5,8 +6,7 @@ toc: true
 tags:
   - Github
   - Node.js
-cover: https://i.loli.net/2021/02/07/7ZUFuTlnDo6Q3A4.png
-<!-- thumbnail: https://i.loli.net/2020/10/24/RuAjPDwrlVz5xsM.jpg -->
+headimg: https://i.loli.net/2021/02/07/7ZUFuTlnDo6Q3A4.png
 ---
 
 在传统的 Node.js 项目构建、部署下，通常需要使用到 [**Personal access tokens**](https://github.com/settings/tokens)，想一想，如果我们对通过 Github Actions 部署项目到 Github Pages 服务的需求量非常大，那我们在 Github Personal access tokens 中保存的 Token 就会非常多，即使我们能对这些 Token 进行标注，但我们却 **不能** 更改它，这就很让人头疼了，那么有没有不使用 Personal access tokens 就能实现我们目的的呢？有，那就是使用 **Deploy Key**。

@@ -1,0 +1,15 @@
+- group: 好朋友
+  description: 阴差阳错之下认识的好朋友们
+  items:
+    - title: XiaoYiUce's Blog
+      avatar: https://www.xiaoyiblog.cc/usr/uploads/logo.jpg
+      url: https://www.xiaoyiblog.cc/
+      screenshot: # Screenshot
+      keywords: # Keywords
+      description: # description
+    - title: 索菲缇娅 の Blog
+      avatar: https://avatars.githubusercontent.com/u/40481418?s=460&u=548754c06023248a5b0f5bc02ca6d6edc1c1442b&v=4
+      url: https://blog.lesnow.tk/
+      screenshot: # Screenshot
+      keywords: # Keywords
+      description: # description

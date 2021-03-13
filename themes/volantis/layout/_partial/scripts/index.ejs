@@ -1,0 +1,99 @@
+<%- partial('global') %>
+<script>
+  <% if (theme.plugins.fontawesome) { %>
+  loadCSS("<%- theme.plugins.fontawesome %>", window.volantis.loadcss);
+  <% } %>
+  <% if (theme.plugins.fontawesome_animation.enable) { %>
+  loadCSS("<%- theme.plugins.fontawesome_animation.css %>", window.volantis.loadcss);
+  <% } %>
+  <% if (theme.plugins.nodewaves.enable) { %>
+  loadCSS("<%- theme.plugins.nodewaves.css %>", window.volantis.loadcss);
+  <% } %>
+  <% if ((theme.plugins.highlightjs.enable == true)&&(theme.plugins.highlightjs.css)) { %>
+  loadCSS("<%- theme.plugins.highlightjs.css %>", window.volantis.loadcss);
+  <% } %>
+</script>
+<!-- required -->
+<%- js(theme.plugins.jquery) %>
+<%- partial('../../_third-party/fancybox/script') %>
+
+<!-- internal -->
+<%- partial('cover') %>
+<% if (theme.rightmenu.enable == true) { %>
+  <%- partial('../rightmenu') %>
+<% } %>
+
+<%- partial('issues') %>
+
+<% if (theme.plugins.lazyload && theme.plugins.lazyload.enable) { %>
+  <%- partial('../../_third-party/lazyload/script') %>
+<% } %>
+
+<% if (theme.plugins.preload.enable && theme.plugins.preload.service) { %>
+  <%- partial('../../_third-party/preload/script') %>
+<% } %>
+
+<% if (theme.plugins.clipboard.enable && (theme.custom_css.body.highlight.copy_btn == true)) { %>
+  <%- partial('../../_third-party/clipboard/script') %>
+<% } %>
+
+<% if (theme.plugins.scrollreveal.enable && theme.plugins.scrollreveal.js) { %>
+   <%- partial('../../_third-party/scrollreveal/script') %>
+<% } %>
+
+<% if (theme.plugins.aplayer && theme.plugins.aplayer.enable && theme.plugins.aplayer.js) { %>
+  <%- partial('../../_third-party/aplayer/script') %>
+<% } %>
+
+<% if (theme.comments.service && theme.comments.service.length > 0) { %>
+  <%- partial('../../_third-party/comments/' + theme.comments.service + '/script') %>
+<% } %>
+
+<% if (theme.analytics.busuanzi) { %>
+  <script defer src="<%- theme.analytics.busuanzi %>" data-pjax></script>
+<% } %>
+
+<% if (theme.use_cdn && theme.info.cdn && theme.info.cdn.js) { %>
+  <%- js(theme.info.cdn.js) %>
+<% } else if(theme.use_cdn) { %>
+  <%- js(['https://cdn.jsdelivr.net/npm/hexo-theme-volantis@'+theme.info.theme_version+'/source/js/app.min.js']) %>
+<% } else { %>
+  <%- js(['js/app.js']) %>
+<% } %>
+
+<!-- optional -->
+<% if (theme.search && theme.search.enable) { %>
+  <%- partial('search') %>
+<% } %>
+
+
+<% if (theme.plugins.nodewaves.enable) { %>
+  <%- partial('../../_third-party/nodewaves/script') %>
+<% } %>
+
+<% if (theme.plugins.comment_typing.enable) { %>
+  <%- js(theme.plugins.comment_typing.js) %>
+<% } %>
+
+<% if (theme.plugins.highlightjs.enable) { %>
+  <%- partial('../../_third-party/highlightjs/script') %>
+<% } %>
+
+<% if (theme.analytics && theme.analytics.leancloud && theme.analytics.leancloud.app_id) { %>
+  <%- partial('counter') %>
+<% } %>
+
+<% if (theme.plugins.darkmodejs.enable) { %>
+  <%- partial('darkmode') %>
+<% } %>
+
+<%- partial('../../_third-party/analytics/script') %>
+
+<%- partial('../../_third-party/tidio/script') %>
+
+<%- partial('toc') %>
+
+<!-- more -->
+<% if (config.import && config.import.script) { %>
+  <%- partial('import') %>
+<% } %>
