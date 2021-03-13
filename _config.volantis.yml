@@ -3,7 +3,7 @@ use_cdn: false
 navbar:
   visiable: always
   logo:
-    icon: https://cdn.jsdelivr.net/gh/ElaBosak233/ElaBosak233.github.io@latest/source/fav.svg
+    icon: https://cdn.jsdelivr.net/gh/ElaBosak233/ElaBosak233.github.io@dev/source/fav.svg
   menu:
     - name: 博客
       icon: fad fa-book faa-tada
@@ -315,7 +315,7 @@ plugins:
     enable: true
   aplayer:
     enable: true
-    autoplay: flase
+    autoplay: false
     volume: 0.4
     order: random
     # id: 4917530132 # vol red
