@@ -3,7 +3,7 @@ use_cdn: false
 navbar:
   visiable: always
   logo:
-    icon: https://cdn.jsdelivr.net/gh/ElaBosak233/ElaBosak233.github.io@dev/source/fav.svg
+    icon: https://i.loli.net/2021/03/13/Ir7THeBNfAmZsFi.png
   menu:
     - name: 博客
       icon: fad fa-book faa-tada
