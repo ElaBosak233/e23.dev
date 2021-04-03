@@ -1,3 +1,7 @@
-# ElaBosak233.github.io
+# 🍀 埃拉拉の个人博客 🍀
 
-第二版的 ElaBosak233.github.io，加友链请发 issue 或者直接联系 Ela~
+<small>
+  
+> 虽然很麻烦，但是我觉得用自己的域名作为仓库名也不是坏事情，对吧，况且 `e23.in` 这么简短的域名，我应该不会换吧
+
+</small>
