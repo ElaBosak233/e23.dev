@@ -272,19 +272,19 @@ sidebar:
       pid: faq
       content: excerpt # excerpt, more, content
 
-    news:
-      class: list
-      display: [desktop, mobile] # [desktop, mobile]
-      header:
-        icon: fad fa-bullhorn
-        title: 近期公告
-      rows:
-        - name: 《埃拉の个人博客》已成功由 hexo-theme-icarus 转变为 hexo-theme-volantis
-          icon: fas fa-angle-double-up
+    # news:
+    #   class: list
+    #   display: [desktop, mobile] # [desktop, mobile]
+    #   header:
+    #     icon: fad fa-bullhorn
+    #     title: 近期公告
+    #   rows:
+    #     - name: 《埃拉の个人博客》已成功由 hexo-theme-icarus 转变为 hexo-theme-volantis
+    #       icon: fas fa-angle-double-up
 
 site_footer:
   layout: [aplayer, social, source, analytics, copyright]
-  copyright: '[Copyright © 2019-2021 埃拉拉の个人博客](https://github.com/ElaBosak233/)'
+  copyright: '[Copyright © 2019-2021 埃拉の个人博客](https://github.com/ElaBosak233/)'
   social:
     - img: https://cdn.jsdelivr.net/gh/volantis-x/cdn-org@1.1/icon/1322024-social-media/029-github.svg
       url: https://github.com/ElaBosak233
