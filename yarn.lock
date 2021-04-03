@@ -615,6 +615,11 @@ hexo-server@^2.0.0:
     open "^7.0.0"
     serve-static "^1.14.1"
 
+hexo-theme-volantis@^4.3.1:
+  version "4.3.1"
+  resolved "https://registry.npm.taobao.org/hexo-theme-volantis/download/hexo-theme-volantis-4.3.1.tgz#9f23a7b48cab089630e9344715e588ef29284eee"
+  integrity sha1-nyOntIyrCJYw6TRHFeWI7ykoTu4=
+
 hexo-util@^2.0.0, hexo-util@^2.1.0, hexo-util@^2.4.0, hexo-util@latest:
   version "2.4.0"
   resolved "https://registry.npm.taobao.org/hexo-util/download/hexo-util-2.4.0.tgz#f5c0099a0a1718b3ad27061e5e4d1fb9eb7f2b41"
