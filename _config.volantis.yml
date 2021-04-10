@@ -173,7 +173,6 @@ comments:
     repo: ElaBosak233.github.io
     owner: ElaBosak233
     admin: [ElaBosak233]
-    path: /
 
 sidebar:
   for_page: [blogger, news, guide, category, tagcloud]
