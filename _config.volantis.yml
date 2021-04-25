@@ -44,18 +44,18 @@ cover:
       icon: #
       img: #https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f516.svg
       url: /archives
-    - name: 分类
+    - name: 维基
       icon: #
       img: #https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f516.svg
-      url: /categories
-    - name: 标签
+      url: /wiki
+    - name: 项目
       icon: #
       img: #https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f516.svg
-      url: /tags   
-    - name: 源码
+      url: /projects   
+    - name: Github
       icon: #
       img: #https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f9ec.svg
-      url: https://github.com/ElaBosak233/ElaBosak233.github.io/
+      url: https://github.com/ElaBosak233
 
 article:
   preview:
@@ -249,6 +249,13 @@ sidebar:
           icon: fas fa-tags
           url: https://github.com/ElaBosak233/ElaBosak233.github.io/releases
           target: _blank
+    docs-api:
+      class: group
+      display: [desktop, mobile]
+      seo_title: Api
+      header:
+        icon: fa fa-book
+        title: API 文档  
 
     # qrcode widget
     qrcode:
