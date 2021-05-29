@@ -1,7 +1,7 @@
 ---
 title: 【MCBBS第十二届创意赛】灯、楼、元宵
 date: 2021-02-26
-categories: Diary
+categories: 日常
 toc: true
 tags:
   - Minecraft
