@@ -166,13 +166,12 @@ article:
 
 comments:
   title: <i class='fas fa-comments'></i> 评论区
-  service: gitalk  
-  gitalk:
-    clientID: 8687afbf31f0041f005d
-    clientSecret: 9949b2971fa855443467af73220daa9e8c0612fd
-    repo: e23.in
+  service: vssue  
+  vssue:
     owner: ElaBosak233
-    admin: [ElaBosak233]
+    repo: e23.in
+    clientId: 8687afbf31f0041f005d
+    clientSecret: c4fd25748d1fd6a2b3501f3909f6bb35bfb28888
 
 sidebar:
   for_page: [blogger, news, guide, category, tagcloud]
