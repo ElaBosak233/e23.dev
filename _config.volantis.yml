@@ -347,9 +347,9 @@ custom_css:
     effect: [shadow] # [shadow, floatable, blur]
   fontfamily:
     logofont:
-      fontfamily: 'Dosis, "PingFang SC", "Microsoft YaHei", Helvetica, Arial'
-      name: 'Dosis'
-      url: https://cdn.jsdelivr.net/gh/volantis-x/cdn-fonts@20.5.30/Dosis/Dosis-Medium.ttf
+      fontfamily: 'FZFWZhuZiAYuanJWM, "PingFang SC", "Microsoft YaHei", Helvetica, Arial'
+      name: 'FZFWZhuZiAYuanJWM'
+      url: https://e23.in/FZFWZhuZiAYuanJWM.TTF
       weight: normal
       style: normal
     bodyfont:
