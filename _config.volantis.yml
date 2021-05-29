@@ -353,7 +353,7 @@ custom_css:
       weight: normal
       style: normal
     bodyfont:
-      fontfamily: 'FZFWZhuZiAYuanJWM', 'Dosis', "PingFang SC", "Microsoft YaHei", Helvetica, Arial'
+      fontfamily: 'FZFWZhuZiAYuanJWM', "PingFang SC", "Microsoft YaHei", Helvetica, Arial'
       name: 'FZFWZhuZiAYuanJWM'
       url: https://e23.in/FZFWZhuZiAYuanJWM.TTF
       weight: normal
