@@ -9,3 +9,5 @@ public/
 
 gh-pages
 gh-pages.pub
+
+yarn.lock
