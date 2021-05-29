@@ -349,13 +349,13 @@ custom_css:
     logofont:
       fontfamily: 'FZFWZhuZiAYuanJWM, "PingFang SC", "Microsoft YaHei", Helvetica, Arial'
       name: 'FZFWZhuZiAYuanJWM'
-      url: https://e23.in/FZFWZhuZiAYuanJWM.TTF
+      url: /FZFWZhuZiAYuanJWM.TTF
       weight: normal
       style: normal
     bodyfont:
       fontfamily: 'FZFWZhuZiAYuanJWM, "PingFang SC", "Microsoft YaHei", Helvetica, Arial'
       name: 'FZFWZhuZiAYuanJWM'
-      url: https://e23.in/FZFWZhuZiAYuanJWM.TTF
+      url: /FZFWZhuZiAYuanJWM.TTF
       weight: normal
       style: normal
 
