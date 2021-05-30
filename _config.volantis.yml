@@ -325,7 +325,7 @@ plugins:
   parallax:
     enable: true
   aplayer:
-    enable: true
+    enable: false
     autoplay: false
     volume: 0.4
     order: random
