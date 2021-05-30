@@ -530,7 +530,7 @@ hexo-generator-json-content@^4.2.3:
     keyword-extractor latest
     moment latest
 
-hexo-generator-search@^2.4.1:
+hexo-generator-search@^2.4.2:
   version "2.4.2"
   resolved "https://registry.npm.taobao.org/hexo-generator-search/download/hexo-generator-search-2.4.2.tgz#622945bdc191e9c2461ce26b59ed57ec06b5d530"
   integrity sha1-YilFvcGR6cJGHOJrWe1X7Aa11TA=
@@ -578,21 +578,21 @@ hexo-renderer-ejs@^1.0.0:
   dependencies:
     ejs "^2.6.1"
 
-hexo-renderer-marked@^3.0.0:
-  version "3.3.0"
-  resolved "https://registry.npm.taobao.org/hexo-renderer-marked/download/hexo-renderer-marked-3.3.0.tgz#54bce9f00d356c71392b2fc3a881df7ff6dae8bd"
-  integrity sha1-VLzp8A01bHE5Ky/DqIHff/ba6L0=
+hexo-renderer-marked@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.npm.taobao.org/hexo-renderer-marked/download/hexo-renderer-marked-4.0.0.tgz#f6ad880a384be13c7ebc3fc8788f86fafcf15007"
+  integrity sha1-9q2ICjhL4Tx+vD/IeI+G+vzxUAc=
   dependencies:
     hexo-util "^2.1.0"
-    marked "^1.0.0"
+    marked "^2.0.0"
 
-hexo-renderer-stylus@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.npm.taobao.org/hexo-renderer-stylus/download/hexo-renderer-stylus-1.1.0.tgz#7a0a107bcf4b74fdf88f28da2db47b8dc9e208e5"
-  integrity sha1-egoQe89LdP34jyjaLbR7jcniCOU=
+hexo-renderer-stylus@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.npm.taobao.org/hexo-renderer-stylus/download/hexo-renderer-stylus-2.0.1.tgz#c65566e97e9058a52e46c82b0c45cf561f4b94cb"
+  integrity sha1-xlVm6X6QWKUuRsgrDEXPVh9LlMs=
   dependencies:
     nib "^1.1.2"
-    stylus "^0.54.5"
+    stylus "^0.54.8"
 
 hexo-server@^2.0.0:
   version "2.0.0"
@@ -627,7 +627,7 @@ hexo-util@^2.0.0, hexo-util@^2.1.0, hexo-util@^2.4.0, hexo-util@latest:
     prismjs "^1.17.1"
     strip-indent "^3.0.0"
 
-hexo@^5.0.2:
+hexo@^5.4.0:
   version "5.4.0"
   resolved "https://registry.npm.taobao.org/hexo/download/hexo-5.4.0.tgz?cache=0&sync_timestamp=1613894935063&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fhexo%2Fdownload%2Fhexo-5.4.0.tgz#77d57fa1c29f3ab05964fe4ebd9c44e23df51b37"
   integrity sha1-d9V/ocKfOrBZZP5OvZxE4j31Gzc=
@@ -803,10 +803,10 @@ lower-case@^2.0.2:
   dependencies:
     tslib "^2.0.3"
 
-marked@^1.0.0:
-  version "1.2.9"
-  resolved "https://registry.nlark.com/marked/download/marked-1.2.9.tgz?cache=0&sync_timestamp=1622132278486&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fmarked%2Fdownload%2Fmarked-1.2.9.tgz#53786f8b05d4c01a2a5a76b7d1ec9943d29d72dc"
-  integrity sha1-U3hviwXUwBoqWna30eyZQ9Kdctw=
+marked@^2.0.0:
+  version "2.0.6"
+  resolved "https://registry.nlark.com/marked/download/marked-2.0.6.tgz?cache=0&sync_timestamp=1622132278486&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fmarked%2Fdownload%2Fmarked-2.0.6.tgz#c3ab1403b9b70f26acd92590fc272eb1718e778c"
+  integrity sha1-w6sUA7m3Dyas2SWQ/CcusXGOd4w=
 
 micromatch@^4.0.2:
   version "4.0.4"
@@ -1203,7 +1203,7 @@ stylus@0.54.5:
     sax "0.5.x"
     source-map "0.1.x"
 
-stylus@^0.54.5:
+stylus@^0.54.8:
   version "0.54.8"
   resolved "https://registry.npm.taobao.org/stylus/download/stylus-0.54.8.tgz#3da3e65966bc567a7b044bfe0eece653e099d147"
   integrity sha1-PaPmWWa8Vnp7BEv+DuzmU+CZ0Uc=
