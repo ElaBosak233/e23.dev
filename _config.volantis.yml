@@ -164,6 +164,11 @@ article:
         - id: qrcode # 当id为qrcode时需要安装插件  npm i hexo-helper-qrcode
           img: https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/wechat.png
 
+pages:
+  # 友链页面配置
+  friends:
+    layout_scheme: sites # simple: 简单布局, traditional: 传统布局,  sites: 网站卡片布局
+
 comments:
   title: <i class='fas fa-comments'></i> 评论区
   service: gitalk
