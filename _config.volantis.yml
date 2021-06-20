@@ -329,10 +329,6 @@ plugins:
     autoplay: false
     volume: 0.4
     order: random
-    # id: 4917530132 # vol red
-    # id: 4917524698 # vol blue
-    # id: 76244489 # vol white
-    # id: 5135845906 # for Volantis 3.0
     id: 5062959861 # TOP 30
   darkmodejs:
     enable: true
