@@ -29,8 +29,8 @@ cover:
   layout_scheme: search # search (搜索), dock (坞), featured (精选), focus (焦点)
   logo: /assets/img/logo.png
   title: ''
-  subtitle: 你的时间有限，不要用你的生命去重复别人的人生
-  background: /assets/img/background.png # https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/016.jpg
+  subtitle: Infp-T With Creative.
+  background: # https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/016.jpg
   display:
     home: true
     archive: true
@@ -190,7 +190,7 @@ sidebar:
       avatar: https://i.loli.net/2021/03/13/RSLyWDlwuci1atf.jpg
       shape: circle
       title: 埃拉拉
-      subtitle: Null Girl Friend Exception
+      subtitle: Infp-T With Creative.
       jinrishici: false # Poetry Today. You can set a string, and it will be displayed when loading fails.
       social: 
         - icon: fab fa-github
@@ -210,15 +210,6 @@ sidebar:
       list_number: true
       min_depth: 2
       max_depth: 5
-    # post:
-    #   class: text
-    #   display: [desktop, mobile] # [desktop, mobile]
-    #   header:
-    #     icon: fas fa-plus
-    #     title: 社区活动
-    #     url: /contributors/
-    #   content:
-    #     - '**如何让自己的文章收录到这里？**<br>官方网站是开源的，只要您的文章与 Hexo 博客搭建相关，就可以自助进行收录，详细的操作步骤请见：「[**发布与分享文章**](/contributors/#发布与分享文章)」。'
     category:
       class: category
       display: [desktop] # [desktop, mobile]
@@ -284,26 +275,10 @@ sidebar:
       pid: faq
       content: excerpt # excerpt, more, content
 
-    # news:
-    #   class: list
-    #   display: [desktop, mobile] # [desktop, mobile]
-    #   header:
-    #     icon: fad fa-bullhorn
-    #     title: 近期公告
-    #   rows:
-    #     - name: 《埃复爱兮》已成功由 hexo-theme-icarus 转变为 hexo-theme-volantis
-    #       icon: fas fa-angle-double-up
-
 site_footer:
-  layout: [aplayer, social, source, analytics, copyright]
+  layout: [copyright, source, analytics, social]
   copyright: '[Copyright © 2019-2021 埃拉の小破站](https://github.com/ElaBosak233/)'
-  social:
-    - img: https://cdn.jsdelivr.net/gh/volantis-x/cdn-org@1.1/icon/1322024-social-media/029-github.svg
-      url: https://github.com/ElaBosak233
-    - img: https://cdn.jsdelivr.net/gh/volantis-x/cdn-org@1.1/icon/1322024-social-media/010-facebook.svg
-      url: https://www.facebook.com/e23.in
-    - img: https://cdn.jsdelivr.net/gh/volantis-x/cdn-org@1.1/icon/1322024-social-media/018-twitter.svg
-      url: https://twitter.com/ElaBosakCN
+  social: false
 
 
 tag_plugins:
@@ -333,14 +308,10 @@ plugins:
     fade: 1500  
     images:               # For personal use only. At your own risk if used for commercial purposes !!!
       # 尺寸一致图片测试
-      - /assets/img/background.png
+      - /assets/img/background/3.jpg
 
 analytics:
   busuanzi: https://cdn.jsdelivr.net/gh/volantis-x/cdn-busuanzi@2.3/js/busuanzi.pure.mini.js
-  # leancloud:
-  #   app_id: GCYDRKI6XRkyC7EuEhJv90ia-MdYXbMMI
-  #   app_key: 4xKBXGBj6BgecU62vff5rJHs
-  #   custom_api_server: # 一般不需要写，除非自定义了 API Server
 
 custom_css:
   font_smoothing: true
@@ -382,13 +353,15 @@ color_scheme:
     inner: '#fff'
     # 选中区域文字的背景颜色
     selection: 'alpha(#81C784, 0.2)'
+  light:
+    site_footer: '#fff'
 
 ############################### Rightmenu ############################### > start
 # 自定义右键菜单
 rightmenu:
   enable: true
   # hr: 分割线, music: 音乐控制器
-  layout: [home, help, hr, print, dark_mode, hr, music]
+  layout: [home, help, hr, print, dark_mode]
   # 可选功能项
   print:
     name: 打印页面
@@ -412,17 +385,8 @@ search:
   enable: true
   service: hexo  # hexo, google, algolia, azure, baidu
   js: https://cdn.jsdelivr.net/gh/volantis-x/cdn-volantis@2.6.4/js/search.js
-  google:
-    apiKey:
-    engineId:
   algolia:
     applicationID:
     apiKey:
     indexName:
-  azure:
-    serviceName:
-    indexName:
-    queryKey:
-  baidu:
-    apiId:
 ############################### Search ############################### > end
