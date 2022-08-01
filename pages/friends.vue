@@ -1,7 +1,7 @@
 <template>
     <NuxtLayout name="page">
-        <div v-if="hero">
-            <img :src="hero" alt="HeroImage" class="rounded-t-md" />
+        <div v-if="heroImg">
+            <img :src="heroImg" alt="HeroImage" class="rounded-t-md" />
         </div>
         <div class="w-full py-6 px-8 text-xl text-gray-800 leading-normal">
             <!-- 标题 -->
@@ -25,7 +25,7 @@
             <!-- Grid Content -->
             <div class="grid grid-cols-3 gap-4 pt-6">
                 <!-- 索菲缇娅 -->
-                <div class="container">
+                <div class="container col-span-3 lg:col-span-1">
                     <div class="w-full overflow-hidden bg-white rounded-lg shadow-md">
                         <img class="rounded-t-lg object-cover object-center"
                             src="https://urlscan.io/liveshot/?width=1280&height=720&url=https://blog.lesnow.top"
@@ -40,7 +40,7 @@
                     </div>
                 </div>
                 <!-- 小易 -->
-                <div class="container">
+                <div class="container col-span-3 lg:col-span-1">
                     <div class="w-full overflow-hidden bg-white rounded-lg shadow-md">
                         <img class="rounded-t-lg object-cover object-center"
                             src="https://urlscan.io/liveshot/?width=1280&height=720&url=https://www.xiaoyiblog.cc/"
@@ -55,7 +55,7 @@
                     </div>
                 </div>
                 <!-- 索菲缇娅 -->
-                <div class="container">
+                <div class="container col-span-3 lg:col-span-1">
                     <div class="w-full overflow-hidden bg-white rounded-lg shadow-md">
                         <img class="rounded-t-lg object-cover object-center"
                             src="https://urlscan.io/liveshot/?width=1280&height=720&url=https://blog.ssxx.site/"
@@ -76,7 +76,7 @@
 
 <script setup lang="ts">
 import { CheckCircleIcon } from "@heroicons/vue/solid";
-const hero = "https://s3.bmp.ovh/imgs/2022/08/01/d3079ae4802538fa.webp";
+const heroImg = "https://s3.bmp.ovh/imgs/2022/08/01/d3079ae4802538fa.webp";
 const title = "友链";
 
 useHead({

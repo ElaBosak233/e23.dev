@@ -2,7 +2,7 @@
 title: 「MCBBS第十二届创意赛」灯、楼、元宵
 date: "2021-02-26"
 categories: 日常
-hero: https://i.loli.net/2021/02/25/NLCRGOTV6IFzqKi.png
+heroImg: https://i.loli.net/2021/02/25/NLCRGOTV6IFzqKi.png
 ---
 
 存档因为埃拉的一个不小心，消失殆尽了，这些图片是埃拉、冰箱与这个建筑的唯一留念

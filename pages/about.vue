@@ -1,7 +1,7 @@
 <template>
   <NuxtLayout name="page">
-    <div v-if="hero">
-      <img :src="hero" alt="HeroImage" class="rounded-t-md" />
+    <div v-if="heroImg">
+      <img :src="heroImg" alt="HeroImage" class="rounded-t-md" />
     </div>
     <div class="w-full py-6 px-8 text-xl text-gray-800 leading-normal">
       <!--⚡ 文章内容-->
@@ -23,7 +23,7 @@
 <script setup lang="ts">
 const { data: data } = await useAsyncData("about", () => queryContent(`/about`).findOne());
 const title = data.value.title;
-const hero = data.value.hero;
+const heroImg = data.value.heroImg;
 
 useHead({
   title: title

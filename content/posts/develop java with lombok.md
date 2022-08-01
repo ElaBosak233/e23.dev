@@ -2,7 +2,7 @@
 title: 使用 Lombok 辅助 Java 开发
 date: "2020-10-31"
 categories: Java
-hero: https://i.loli.net/2020/10/31/iJD9MKCLsVzgf3A.png
+heroImg: https://i.loli.net/2020/10/31/iJD9MKCLsVzgf3A.png
 ---
 
 > ***Lombok Reduces Java's Boilderplate code***

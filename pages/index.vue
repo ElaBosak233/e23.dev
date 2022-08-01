@@ -18,8 +18,8 @@
         <NuxtLayout name="index" class="pt-8">
             <div class="grid grid-cols-12 gap-2">
                 <div class="xl:col-span-9 col-span-12">
-                    <div v-for="{ _path: slug, title, date, category, hero, description } in posts" class="px-4">
-                        <PostCard class="pb-6" :title="title" :date="date" :category="category" :hero="hero" :slug="slug" :description="description" />
+                    <div v-for="{ _path: slug, title, date, category, heroImg, description } in posts" class="px-4">
+                        <PostCard class="pb-6" :title="title" :date="date" :category="category" :heroImg="heroImg" :slug="slug" :description="description" />
                     </div>
                 </div>
                 <div class="xl:col-span-3 hidden xl:block">

@@ -2,8 +2,8 @@
     <div>
         <div class="w-full mx-auto overflow-hidden bg-white rounded-lg shadow-md">
             <img class="object-cover w-full h-64 transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-1000"
-                v-if="hero"
-                :src="hero"
+                v-if="heroImg"
+                :src="heroImg"
                 alt="HeroImg" />
             <div class="p-6">
                 <div>
@@ -23,7 +23,7 @@
                                 src="/avatar.jpg"
                                 alt="Avatar">
                         </div>
-                        <span class="mx-2 text-xs text-gray-600 ">{{ date }} · {{ category}}</span>
+                        <span class="mx-2 text-xs text-gray-600 ">{{ date }} · {{ category }}</span>
                         <a
                             :href="slug"
                             @click="scrollTop"
@@ -59,7 +59,7 @@ defineProps({
         type: String,
         default: ""
     },
-    hero: {
+    heroImg: {
         type: String,
         default: ""
     },

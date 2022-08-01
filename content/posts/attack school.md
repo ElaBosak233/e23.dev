@@ -2,7 +2,7 @@
 title: 「危」暴力攻入学校的后台系统
 date: "2021-05-29"
 categories: 日常
-hero: https://www.hualigs.cn/image/60b24cbc1d501.jpg
+heroImg: https://www.hualigs.cn/image/60b24cbc1d501.jpg
 ---
 
 危险操作，请酌情采用，本文仅提供暴力破解的思路，从一个实例中学习

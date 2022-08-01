@@ -1,7 +1,7 @@
 <template>
   <NuxtLayout name="page">
-    <div v-if="hero">
-      <img :src="hero" alt="HeroImage" class="rounded-t-md" />
+    <div v-if="heroImg">
+      <img :src="heroImg" alt="HeroImage" class="rounded-t-md" />
     </div>
     <div class="w-full py-6 px-8 text-xl text-gray-800 leading-normal">
       <!--⚡ 文章内容-->
@@ -34,7 +34,7 @@ const slug = route.params.slug.toString().replace(/,/g, "/");
 const { data: data } = await useAsyncData(slug, () => queryContent(`/posts/${slug}`).findOne());
 const title = data.value.title;
 const date = data.value.date;
-const hero = data.value.hero;
+const heroImg = data.value.heroImg;
 
 useHead({
   title: title
