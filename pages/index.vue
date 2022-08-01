@@ -5,7 +5,7 @@
                 class="unselectable flex items-center justify-center min-w-full min-h-screen">
                 <div
                     class="py-8 px-4 mx-auto max-w-screen-xl text-center items-center lg:py-16 lg:px-12 flex flex-col space-y-0">
-                    <img src="https://e23.dev/assets/img/logo.png" alt="" style="width:50%; height:auto;" />
+                    <img src="/logo.png" alt="" style="width:50%; height:auto;" />
                     <p class="py-2 text-lg font-normal text-gray-400 lg:text-xl sm:px-16 xl:px-48">
                         Infp-T With Creative.
                     </p>
