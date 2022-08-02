@@ -1,4 +1,5 @@
 import { defineNuxtConfig } from "nuxt";
+import { resolve } from "path";
 
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
@@ -26,7 +27,14 @@ export default defineNuxtConfig({
     },
     content: {
         sources: [
-            "content"
+            "content",
+            {
+                name: 'posts',
+                prefix: '/posts', // All contents inside this source will be prefixed with `/fa`
+                driver: 'fs',
+                // ...driverOptions
+                base: resolve(__dirname, 'posts') // Path for source directory
+            }
         ],
         highlight: {
             theme: "github-dark",
