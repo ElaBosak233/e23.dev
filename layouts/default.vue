@@ -9,7 +9,3 @@
         </div>
     </div>
 </template>
-
-<script setup lang="ts">
-import { ArrowCircleLeftIcon } from "@heroicons/vue/solid";
-</script>

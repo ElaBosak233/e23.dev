@@ -29,7 +29,7 @@
 <script setup lang="ts">
 import { ArrowCircleLeftIcon } from "@heroicons/vue/solid";
 const route = useRoute();
-const slug = route.params.slug.toString().replace(/,/g, "/");
+const slug = route.params.slug;
 const { data: data } = await useAsyncData(`/posts/${slug}`, () => queryContent(`/posts/${slug}`).findOne());
 const title = data.value.title;
 const date = data.value.date;
