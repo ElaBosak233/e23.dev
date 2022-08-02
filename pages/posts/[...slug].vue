@@ -23,7 +23,6 @@
         </ContentRenderer>
       </article>
     </div>
-
   </NuxtLayout>
 </template>
 
@@ -31,7 +30,7 @@
 import { ArrowCircleLeftIcon } from "@heroicons/vue/solid";
 const route = useRoute();
 const slug = route.params.slug.toString().replace(/,/g, "/");
-const { data: data } = await useAsyncData(slug, () => queryContent(`/posts/${slug}`).findOne());
+const { data: data } = await useAsyncData(`/posts/${slug}`, () => queryContent(`/posts/${slug}`).findOne());
 const title = data.value.title;
 const date = data.value.date;
 const heroImg = data.value.heroImg;
