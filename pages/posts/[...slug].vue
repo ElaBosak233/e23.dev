@@ -35,6 +35,8 @@ const title = data.value.title;
 const date = data.value.date;
 const heroImg = data.value.heroImg;
 
+console.log(title + date + heroImg);
+
 useHead({
   title: title
 });
