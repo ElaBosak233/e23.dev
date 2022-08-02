@@ -1,7 +1,7 @@
 <template>
     <NuxtLayout name="page">
         <div v-if="heroImg">
-            <img :src="heroImg" alt="HeroImage" class="rounded-t-md" />
+            <img :src="heroImg" alt="" class="rounded-t-md" />
         </div>
         <div class="w-full py-6 px-8 text-xl text-gray-800 leading-normal">
             <!-- 标题 -->

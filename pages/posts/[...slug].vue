@@ -1,7 +1,7 @@
 <template>
   <NuxtLayout name="page">
     <div v-if="heroImg">
-      <img :src="heroImg" alt="HeroImage" class="rounded-t-md" />
+      <img :src="heroImg" alt="" class="rounded-t-md" />
     </div>
     <div class="w-full py-6 px-8 text-xl text-gray-800 leading-normal">
       <!--⚡ 文章内容-->
@@ -12,9 +12,12 @@
       </NuxtLink>
       <article class="prose min-w-full">
         <div class="font-sans">
-          <h1 class="font-bold font-sans break-normal text-gray-900 pt-3 text-3xl md:text-4xl unselectable">{{ title }}
+          <h1 class="font-bold font-sans break-normal text-gray-900 pt-3 text-3xl md:text-4xl unselectable">
+            {{ data }}
           </h1>
-          <div class="text-sm md:text-base font-normal text-gray-400 unselectable" v-if="date">编辑于 {{ date }}</div>
+          <div class="text-sm md:text-base font-normal text-gray-400 unselectable" v-if="date">
+            编辑于 {{ date }}
+          </div>
         </div>
         <ContentRenderer :value="data">
           <template #empty>
@@ -28,14 +31,13 @@
 
 <script setup lang="ts">
 import { ArrowCircleLeftIcon } from "@heroicons/vue/solid";
-const route = useRoute();
-const slug = route.params.slug;
+const slug = useRoute().params.slug;
 const { data: data } = await useAsyncData(`/posts/${slug}`, () => queryContent(`/posts/${slug}`).findOne());
 const title = data.value.title;
 const date = data.value.date;
 const heroImg = data.value.heroImg;
 
-useHead({
-  title: title
-});
+// useHead({
+//   title: title
+// });
 </script>

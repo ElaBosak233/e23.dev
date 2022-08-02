@@ -4,7 +4,7 @@
             <img class="object-cover w-full h-64 transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-1000"
                 v-if="heroImg"
                 :src="heroImg"
-                alt="HeroImg" />
+                alt="" />
             <div class="p-6">
                 <div>
                     <a :href="slug"

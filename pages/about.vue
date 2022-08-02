@@ -1,13 +1,14 @@
 <template>
   <NuxtLayout name="page">
     <div v-if="heroImg">
-      <img :src="heroImg" alt="HeroImage" class="rounded-t-md" />
+      <img :src="heroImg" alt="" class="rounded-t-md" />
     </div>
     <div class="w-full py-6 px-8 text-xl text-gray-800 leading-normal">
       <!--⚡ 文章内容-->
       <article class="prose min-w-full">
         <div class="font-sans">
-          <h1 class="font-bold font-sans break-normal text-gray-900 pt-3 text-3xl md:text-4xl unselectable">{{ title }}
+          <h1 class="font-bold font-sans break-normal text-gray-900 pt-3 text-3xl md:text-4xl unselectable">
+            {{ title }}
           </h1>
         </div>
         <ContentRenderer :value="data">
