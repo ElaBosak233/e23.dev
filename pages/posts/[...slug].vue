@@ -12,9 +12,9 @@
       </NuxtLink>
       <article class="prose min-w-full">
         <div class="font-sans">
-          <h1 class="font-bold font-sans break-normal text-gray-900 pt-3 text-3xl md:text-4xl unselectable">
+          <!-- <h1 class="font-bold font-sans break-normal text-gray-900 pt-3 text-3xl md:text-4xl unselectable">
             {{ data.value.title }}
-          </h1>
+          </h1> -->
           <div class="text-sm md:text-base font-normal text-gray-400 unselectable" v-if="date">
             编辑于 {{ date }}
           </div>
