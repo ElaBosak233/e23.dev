@@ -1,7 +1,7 @@
 <template>
   <NuxtLayout name="page">
-    <div v-if="heroImg">
-      <img :src="heroImg" alt="" class="rounded-t-md" />
+    <div v-if="data.heroImg">
+      <img :src="data.heroImg" alt="" class="rounded-t-md" />
     </div>
     <div class="w-full py-6 px-8 text-xl text-gray-800 leading-normal">
       <!--⚡ 文章内容-->
@@ -13,10 +13,10 @@
       <article class="prose min-w-full">
         <div class="font-sans">
           <h1 class="font-bold font-sans break-normal text-gray-900 pt-3 text-3xl md:text-4xl unselectable">
-            {{ title }}
+            {{ data.title }}
           </h1>
           <div class="text-sm md:text-base font-normal text-gray-400 unselectable" v-if="date">
-            编辑于 {{ date }}
+            编辑于 {{ data.date }}
           </div>
         </div>
         <ContentRenderer :value="data">
