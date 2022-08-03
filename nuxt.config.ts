@@ -38,7 +38,7 @@ export default defineNuxtConfig({
         ],
         highlight: {
             theme: "github-dark",
-            preload: ["javascript", "java", "python", "markdown", "vue", "xml"]
+            preload: ["javascript", "java", "python", "markdown", "vue", "xml", "html", "typescript"]
         }
     }
 })

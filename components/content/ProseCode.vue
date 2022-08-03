@@ -27,15 +27,40 @@ const languageMap: Record<
     { text: string; color: string; background: string }
 > = {
     vue: {
-        text: 'vue',
+        text: "vue",
         background: '#42b883',
-        color: 'white',
+        color: "white",
     },
     js: {
-        text: 'js',
+        text: "JS",
         background: '#f7df1e',
-        color: 'black',
+        color: "black",
     },
+    java: {
+        text: "Java",
+        background: "#eb7134",
+        color: "white"
+    },
+    ts: {
+        text: "TS",
+        background: "#3480eb",
+        color: "white"
+    },
+    html: {
+        text: "HTML",
+        background: "#17ad50",
+        color: "white"
+    },
+    python: {
+        text: "Python",
+        background: "#175dad",
+        color: "white"
+    },
+    xml: {
+        text: "XML",
+        background: "#038594",
+        color: "white"
+    }
 };
 
 const languageText = computed(() =>
@@ -88,7 +113,6 @@ const languageColor = computed(() =>
     right: 1em;
     padding: 0.25em 0.5em;
     font-size: 14px;
-    text-transform: uppercase;
     border-bottom-right-radius: 0.25em;
     border-bottom-left-radius: 0.25em;
 }
