@@ -1,7 +1,7 @@
 ---
 title: 「危」暴力攻入学校的后台系统
 date: "2021-05-29"
-categories: 日常
+category: 日常
 heroImg: https://www.hualigs.cn/image/60b24cbc1d501.jpg
 ---
 
