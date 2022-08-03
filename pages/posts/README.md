@@ -1,3 +1,3 @@
 # pages/posts
 
-本文件夹仅存放一个有效文件 `[...slug].vue`，用于解析位于 _posts/ 目录下的所有博文，采用 layouts/post.vue 布局
+不要手贱去随便乱动 `[...slug].vue`，如果不会写了，看看[人家的](https://github.com/kkeisuke/kkeisuke-blog-2/blob/main/pages/articles/)呐 0w<

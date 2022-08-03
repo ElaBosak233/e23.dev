@@ -24,13 +24,13 @@
                                 alt="Avatar">
                         </div>
                         <span class="mx-2 text-xs text-gray-600 ">{{ date }} · {{ category }}</span>
-                        <NuxtLink
+                        <a
                             :href="slug"
                             @click="scrollTop"
                             class="absolute right-6 text-base font-bold rounded-lg hover:bg-green-200 text-green-600 hover:text-green-800 px-2 py-2 transition duration-300 ease-in-out"
                         >
                             阅读全文
-                        </NuxtLink>
+                        </a>
                     </div>
                 </div>
             </div>
