@@ -1,6 +1,6 @@
 ---
 title: 使用 Lombok 辅助 Java 开发
-date: "2020-10-31"
+createdAt: "2020-10-31"
 category: 开发
 heroImg: https://i.loli.net/2020/10/31/iJD9MKCLsVzgf3A.png
 ---

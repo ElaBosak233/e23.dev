@@ -26,6 +26,6 @@ const _path = "/about"
 const { data: article } = await useAsyncData(_path, () => queryContent().where({ _path }).findOne())
 
 article.value && useHead({
-  title: article.value.title
+  title: `${article.value.title} - ${useConfig().title}`
 });
 </script>

@@ -1,6 +1,6 @@
 ---
 title: 如何使用 Bukkit 操作 SQLite 数据库
-date: "2020-06-30"
+createdAt: "2020-06-30"
 heroImg: https://i.loli.net/2020/10/31/xnL3rSFp5eHZiXP.png
 category: 开发
 ---

@@ -5,7 +5,7 @@
                 <div
                     class="py-8 px-4 mx-auto max-w-screen-xl text-center items-center lg:py-16 lg:px-12 flex flex-col space-y-0">
                     <p class="py-2 text-lg font-normal text-white lg:text-4xl sm:px-16 xl:px-48">
-                        分类：{{ category }}
+                        分类: {{ category }}
                     </p>
                 </div>
             </div>
@@ -21,14 +21,14 @@
                             <div class="px-6 py-6">
                                 <!-- ⚡ 时间轴核心 -->
                                 <ol class="relative border-l border-gray-200">
-                                    <li class="mb-4 ml-4" v-for="{ _path: slug, title, date, category, description } in posts">
+                                    <li class="mb-4 ml-4" v-for="{ _path: slug, title, createdAt, category, description } in posts">
                                         <div
                                             class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white">
                                         </div>
                                         <time
                                             class="mb-1 text-sm font-normal leading-none text-gray-400"
                                         >
-                                            {{ date }}
+                                            {{ createdAt }}
                                         </time>
                                         <a
                                             :href = "slug"
@@ -58,15 +58,16 @@
 
 <script setup lang="ts">
 import { ChevronDownIcon } from "@heroicons/vue/solid";
+
 const { fullPath, params } = useRoute();
 const category = `${params.slug[0]}`
 const posts = await queryContent('/posts')
-    .sort({ date: -1 })
+    .sort({ createdAt: -1 })
     .where({ _partial: false, category: category })
     .find();
 
 useHead({
-    title: "分类：" + category
+    title: `分类: ${category} - ${useConfig().title}`
 });
 
 </script>

@@ -22,14 +22,14 @@
                             <div class="px-6 py-6">
                                 <!-- ⚡ 时间轴核心 -->
                                 <ol class="relative border-l border-gray-200">
-                                    <li class="mb-4 ml-4" v-for="{ _path: slug, title, date, category, description } in posts">
+                                    <li class="mb-4 ml-4" v-for="{ _path: slug, title, createdAt, category, description } in posts">
                                         <div
                                             class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white">
                                         </div>
                                         <time
                                             class="mb-1 text-sm font-normal leading-none text-gray-400"
                                         >
-                                            {{ date }}
+                                            {{ createdAt }}
                                         </time>
                                         <a
                                             :href = "slug"
@@ -50,7 +50,7 @@
                     </div>
                 </div>
                 <div class="xl:col-span-3 hidden xl:block">
-                    <BasicSideBar />
+                    <BasicSideBar class="sticky top-24" />
                 </div>
             </div>
         </NuxtLayout>
@@ -61,11 +61,13 @@
 import { ChevronDownIcon } from "@heroicons/vue/solid";
 
 const posts = await queryContent('/posts')
-    .sort({ date: -1 })
+    .sort({ createdAt: -1 })
     .where({ _partial: false })
     .find();
 
+console.log(posts[0]);
+
 useHead({
-    title: "归档"
+    title: `归档 - ${useConfig().title}`
 });
 </script>

@@ -17,13 +17,13 @@
         <NuxtLayout name="index" class="pt-8">
             <div class="grid grid-cols-12 gap-2">
                 <div class="xl:col-span-9 col-span-12">
-                    <div v-for="{ _path: slug, title, date, category, heroImg, description } in posts" class="px-4">
-                        <PostCard class="pb-6" :title="title" :date="date" :category="category" :heroImg="heroImg"
+                    <div v-for="{ _path: slug, title, createdAt, category, heroImg, description } in posts" class="px-4">
+                        <PostCard class="pb-6" :title="title" :createdAt="createdAt" :category="category" :heroImg="heroImg"
                             :slug="slug" :description="description" />
                     </div>
                 </div>
                 <div class="xl:col-span-3 hidden xl:block">
-                    <BasicSideBar />
+                    <BasicSideBar class="sticky top-24" />
                 </div>
             </div>
         </NuxtLayout>
@@ -33,13 +33,14 @@
 <script setup lang="ts">
 import { ChevronDownIcon } from "@heroicons/vue/solid";
 
+const config = useConfig();
 const posts = await queryContent('/posts')
-    .sort({ date: -1 })
+    .sort({ createdAt: -1 })
     .where({ _partial: false })
     .limit(10)
     .find();
 
 useHead({
-    title: "埃拉の小破站"
+    title: config.title
 });
 </script>

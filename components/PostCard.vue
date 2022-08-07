@@ -20,13 +20,12 @@
                     <div class="unselectable flex items-center relative">
                         <div class="flex items-center">
                             <img class="object-cover h-8 rounded-full"
-                                src="/avatar.jpg"
-                                alt="Avatar">
+                                :src="config.author.avatar"
+                                alt="">
                         </div>
-                        <span class="mx-2 text-xs text-gray-600 ">{{ date }} · {{ category }}</span>
+                        <span class="mx-2 text-xs text-gray-600 ">{{ createdAt }} · {{ category }}</span>
                         <a
                             :href="slug"
-                            @click="scrollTop"
                             class="absolute right-6 text-base font-bold rounded-lg hover:bg-green-200 text-green-600 hover:text-green-800 px-2 py-2 transition duration-300 ease-in-out"
                         >
                             阅读全文
@@ -39,9 +38,7 @@
 </template>
 
 <script setup lang="ts">
-const scrollTop = () => {
-    window.scrollTo(0, 0)
-};
+const config = useConfig();
 defineProps({
     slug: {
         type: String,
@@ -55,7 +52,7 @@ defineProps({
         type: String,
         default: ""
     },
-    date: {
+    createdAt: {
         type: String,
         default: ""
     },

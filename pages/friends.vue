@@ -33,9 +33,9 @@
                         <div class="unselectable flex items-center pl-5 h-14">
                             <div class="flex">
                                 <img class="h-8 rounded-full" src="https://avatars.githubusercontent.com/u/40481418?v=4"
-                                    alt="Avatar">
+                                    alt="Avatar" />
                             </div>
-                            <a href="https://blog.lesnow.top" class="mx-2 text-lg font-semibold text-gray-600 ">索菲缇娅</a>
+                            <a href="https://blog.lesnow.top" class="mx-2 text-lg font-semibold text-gray-600">索菲缇娅</a>
                         </div>
                     </div>
                 </div>
@@ -48,9 +48,10 @@
                         <div class="unselectable flex items-center pl-5 h-14">
                             <div class="flex">
                                 <img class="h-8 rounded-full" src="https://www.xiaoyiblog.cc/usr/uploads/logo.jpg"
-                                    alt="Avatar">
+                                    alt="Avatar" />
                             </div>
-                            <a href="https://www.xiaoyiblog.cc/" class="mx-2 text-lg font-semibold text-gray-600 ">小易 Uce</a>
+                            <a href="https://www.xiaoyiblog.cc/" class="mx-2 text-lg font-semibold text-gray-600">小易
+                                Uce</a>
                         </div>
                     </div>
                 </div>
@@ -63,9 +64,9 @@
                         <div class="unselectable flex items-center pl-5 h-14">
                             <div class="flex">
                                 <img class="h-8 rounded-full" src="https://avatars.githubusercontent.com/u/64391901?v=4"
-                                    alt="Avatar">
+                                    alt="Avatar" />
                             </div>
-                            <a href="https://blog.ssxx.site/" class="mx-2 text-lg font-semibold text-gray-600 ">上杉夏相</a>
+                            <a href="https://blog.ssxx.site/" class="mx-2 text-lg font-semibold text-gray-600">上杉夏相</a>
                         </div>
                     </div>
                 </div>
@@ -76,10 +77,11 @@
 
 <script setup lang="ts">
 import { CheckCircleIcon } from "@heroicons/vue/solid";
+
 const heroImg = "https://s3.bmp.ovh/imgs/2022/08/01/d3079ae4802538fa.webp";
 const title = "友链";
 
 useHead({
-    title: title
+    title: `${title} - ${useConfig().title}`,
 });
 </script>
