@@ -23,7 +23,7 @@
                     </div>
                 </div>
                 <div class="xl:col-span-3 hidden xl:block">
-                    <ProfileBar />
+                    <BasicSideBar />
                 </div>
             </div>
         </NuxtLayout>

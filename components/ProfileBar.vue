@@ -3,7 +3,7 @@
         <div class="max-w-sm mx-auto overflow-hidden bg-white rounded-lg shadow-lg ">
             <img class="object-cover object-center w-full h-56"
                 src="/avatar.jpg"
-                alt="avatar">
+                alt="">
 
             <div class="flex items-center px-6 py-3 bg-gray-900">
                 <FingerPrintIcon class="w-6 h-6 text-white fill-current" />

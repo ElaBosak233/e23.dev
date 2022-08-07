@@ -4,9 +4,8 @@
             <div class="unselectable flex items-center justify-center min-w-full pt-24">
                 <div
                     class="py-8 px-4 mx-auto max-w-screen-xl text-center items-center lg:py-16 lg:px-12 flex flex-col space-y-0">
-                    <img src="/logo.png" alt="" style="width:50%; height:auto;" />
-                    <p class="py-2 text-lg font-normal text-gray-400 lg:text-xl sm:px-16 xl:px-48">
-                        Infp-T With Creative.
+                    <p class="py-2 text-lg font-normal text-white lg:text-4xl sm:px-16 xl:px-48">
+                        分类：{{ category }}
                     </p>
                 </div>
             </div>
@@ -59,13 +58,15 @@
 
 <script setup lang="ts">
 import { ChevronDownIcon } from "@heroicons/vue/solid";
-
+const { fullPath, params } = useRoute();
+const category = `${params.slug[0]}`
 const posts = await queryContent('/posts')
     .sort({ date: -1 })
-    .where({ _partial: false })
+    .where({ _partial: false, category: category })
     .find();
 
 useHead({
-    title: "归档"
+    title: "分类：" + category
 });
+
 </script>
