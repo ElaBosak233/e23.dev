@@ -4,6 +4,7 @@ html {
     height: 100.001%;
     overflow: auto;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 body::-webkit-scrollbar {
@@ -21,7 +22,6 @@ body {
 /*
     文字选中时的颜色
 */
-
 ::selection {
 	background:#4dc0b5; 
 	color:#fff;

@@ -6,11 +6,11 @@
         </div>
         <div class="mt-3 mb-4 px-4">
             <div v-for="category in categories" class="inline mx-1">
-                <a
-                    :href="'/category/' + category"
+                <NuxtLink
+                    :to="'/category/' + category"
                     class="px-3 py-1 text-xs transition duration-300 ease-in-out text-green-800 uppercase bg-green-200 hover:bg-green-400 rounded-full">
                         {{ category }}
-                </a>
+                </NuxtLink>
             </div>
         </div>
     </div>

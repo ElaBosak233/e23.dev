@@ -1,8 +1,7 @@
 <template>
     <div>
         <div class="relative w-full bg-center bg-cover h-screen">
-            <div
-                class="unselectable flex items-center justify-center min-w-full min-h-screen">
+            <div class="unselectable flex items-center justify-center min-w-full min-h-screen">
                 <div
                     class="py-8 px-4 mx-auto max-w-screen-xl text-center items-center lg:py-16 lg:px-12 flex flex-col space-y-0">
                     <img src="/logo.png" alt="" style="width:50%; height:auto;" />
@@ -19,7 +18,8 @@
             <div class="grid grid-cols-12 gap-2">
                 <div class="xl:col-span-9 col-span-12">
                     <div v-for="{ _path: slug, title, date, category, heroImg, description } in posts" class="px-4">
-                        <PostCard class="pb-6" :title="title" :date="date" :category="category" :heroImg="heroImg" :slug="slug" :description="description" />
+                        <PostCard class="pb-6" :title="title" :date="date" :category="category" :heroImg="heroImg"
+                            :slug="slug" :description="description" />
                     </div>
                 </div>
                 <div class="xl:col-span-3 hidden xl:block">
