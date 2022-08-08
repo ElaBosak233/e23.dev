@@ -32,6 +32,7 @@
 
 <script setup lang="ts">
 import { ChevronDownIcon } from "@heroicons/vue/solid";
+import BasicSideBar from "@/components/sidebar/BasicSideBar.vue";
 
 const config = useConfig();
 const posts = await queryContent('/posts')

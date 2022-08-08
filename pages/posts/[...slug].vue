@@ -52,6 +52,8 @@
 </template>
 
 <script setup lang="ts">
+import ProfileBar from "@/components/sidebar/ProfileBar.vue";
+
 const { fullPath, params } = useRoute();
 const _path = `/posts/${params.slug[0]}`;
 const { data: article } = await useAsyncData(_path, () =>

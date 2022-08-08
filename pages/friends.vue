@@ -33,7 +33,7 @@
                         <div class="unselectable flex items-center pl-5 h-14">
                             <div class="flex">
                                 <img class="h-8 rounded-full" src="https://avatars.githubusercontent.com/u/40481418?v=4"
-                                    alt="Avatar" />
+                                    alt="" />
                             </div>
                             <a href="https://blog.lesnow.top" class="mx-2 text-lg font-semibold text-gray-600">索菲缇娅</a>
                         </div>
@@ -48,7 +48,7 @@
                         <div class="unselectable flex items-center pl-5 h-14">
                             <div class="flex">
                                 <img class="h-8 rounded-full" src="https://www.xiaoyiblog.cc/usr/uploads/logo.jpg"
-                                    alt="Avatar" />
+                                    alt="" />
                             </div>
                             <a href="https://www.xiaoyiblog.cc/" class="mx-2 text-lg font-semibold text-gray-600">小易
                                 Uce</a>
@@ -64,7 +64,7 @@
                         <div class="unselectable flex items-center pl-5 h-14">
                             <div class="flex">
                                 <img class="h-8 rounded-full" src="https://avatars.githubusercontent.com/u/64391901?v=4"
-                                    alt="Avatar" />
+                                    alt="" />
                             </div>
                             <a href="https://blog.ssxx.site/" class="mx-2 text-lg font-semibold text-gray-600">上杉夏相</a>
                         </div>

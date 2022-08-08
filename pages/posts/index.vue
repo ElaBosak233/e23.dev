@@ -59,6 +59,7 @@
 
 <script setup lang="ts">
 import { ChevronDownIcon } from "@heroicons/vue/solid";
+import BasicSideBar from "@/components/sidebar/BasicSideBar.vue";
 
 const posts = await queryContent('/posts')
     .sort({ createdAt: -1 })

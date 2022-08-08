@@ -58,6 +58,7 @@
 
 <script setup lang="ts">
 import { ChevronDownIcon } from "@heroicons/vue/solid";
+import BasicSideBar from "@/components/sidebar/BasicSideBar.vue";
 
 const { fullPath, params } = useRoute();
 const category = `${params.slug[0]}`
