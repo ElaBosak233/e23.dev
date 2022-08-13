@@ -55,7 +55,7 @@
                         </div>
                     </div>
                 </div>
-                <!-- 索菲缇娅 -->
+                <!-- 上杉夏相 -->
                 <div class="container col-span-3 lg:col-span-1">
                     <div class="w-full overflow-hidden bg-white rounded-lg shadow-md">
                         <img class="rounded-t-lg object-cover object-center"
