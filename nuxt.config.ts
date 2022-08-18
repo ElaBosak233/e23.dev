@@ -38,10 +38,10 @@ export default defineNuxtConfig({
                 searchDepth: 3
             }
         }
-    },
-    nitro: {
-        prerender: {
-            routes: ["/sitemap.xml"]
-        }
     }
+    // nitro: {
+    //     prerender: {
+    //         routes: ["/sitemap.xml"]
+    //     }
+    // }
 })

@@ -8,7 +8,7 @@
     },
     "devDependencies": {
         "@nuxt/content": "^2.0.1",
-        "nuxt": "3.0.0-rc.6",
+        "nuxt": "3.0.0-rc.8",
         "sitemap": "^7.1.1"
     },
     "dependencies": {
