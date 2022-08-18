@@ -11,12 +11,8 @@ export default defineNuxtConfig({
     },
     modules: [
         "@nuxt/content",
-        "@nuxtjs/tailwindcss",
-        "@/modules/sitemap"
+        "@nuxtjs/tailwindcss"
     ],
-    sitemap: {
-        hostname: 'https://e23.dev',
-    },
     css: ["@/assets/css/base.css", "@/assets/css/transition.css"],
     build: {
         postcss: {
