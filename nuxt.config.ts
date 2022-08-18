@@ -11,8 +11,12 @@ export default defineNuxtConfig({
     },
     modules: [
         "@nuxt/content",
-        "@nuxtjs/tailwindcss"
+        "@nuxtjs/tailwindcss",
+        "@/modules/sitemap"
     ],
+    sitemap: {
+        hostname: 'https://e23.dev',
+    },
     css: ["@/assets/css/base.css", "@/assets/css/transition.css"],
     build: {
         postcss: {
@@ -39,9 +43,4 @@ export default defineNuxtConfig({
             }
         }
     }
-    // nitro: {
-    //     prerender: {
-    //         routes: ["/sitemap.xml"]
-    //     }
-    // }
 })
