@@ -11,8 +11,7 @@ export default defineNuxtConfig({
     },
     modules: [
         "@nuxt/content",
-        "@nuxtjs/tailwindcss",
-        "@pinia/nuxt"
+        "@nuxtjs/tailwindcss"
     ],
     css: ["@/assets/css/base.css", "@/assets/css/transition.css"],
     build: {
