@@ -16,7 +16,7 @@ export default defineNuxtModule({
     },
     async setup(options, nuxt) {
 
-        console.log("\x1b[34mi\x1b[0m Generating Sitemap");
+        console.info("Generating Sitemap");
 
         async function generateSitemap(routes) {
             const sitemapRoutes = routes.map((route) => route.path)

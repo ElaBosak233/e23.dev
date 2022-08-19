@@ -66,8 +66,6 @@ const posts = await queryContent('/posts')
     .where({ _partial: false })
     .find();
 
-console.log(posts[0]);
-
 useHead({
     title: `归档 - ${useConfig().title}`
 });
