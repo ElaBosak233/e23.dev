@@ -57,7 +57,7 @@
 </template>
 
 <script setup lang="ts">
-import { ChevronDownIcon } from "@heroicons/vue/solid";
+import { ChevronDownIcon } from "@heroicons/vue/solid/index.js";
 import BasicSideBar from "@/components/sidebar/BasicSideBar.vue";
 
 const { fullPath, params } = useRoute();

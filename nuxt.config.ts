@@ -1,17 +1,21 @@
 import { defineNuxtConfig } from "nuxt";
-import config from "./e23.config";
 
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
     meta: {
-        meta: [],
+        meta: [
+            { charset: "utf-8" },
+            { name: "viewport", content: "width=device-width,initial-scale=1.0,minimum-scale=1,maximum-scale=1,user-scalable=no" },
+            { name: "description", content: "埃拉想知道你到底看不看得到这条描述呐..." }
+        ],
         link: [
             { rel: "icon", href: "/fav.svg", type: "image/x-icon" }
         ]
     },
     modules: [
         "@nuxt/content",
-        "@nuxtjs/tailwindcss"
+        "@nuxtjs/tailwindcss",
+        "@/modules/sitemap"
     ],
     css: ["@/assets/css/base.css", "@/assets/css/transition.css"],
     build: {
@@ -38,5 +42,8 @@ export default defineNuxtConfig({
                 searchDepth: 3
             }
         }
+    },
+    sitemap: {
+        hostname: "https://e23.dev"
     }
 })

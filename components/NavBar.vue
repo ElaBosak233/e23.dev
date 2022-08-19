@@ -62,7 +62,7 @@
 </template>
 
 <script setup lang="ts">
-import { HomeIcon, ArchiveIcon, PlayIcon, HeartIcon } from "@heroicons/vue/solid";
+import { HomeIcon, ArchiveIcon, PlayIcon, HeartIcon } from "@heroicons/vue/solid/index.js";
 
 function toggle() {
 	document.getElementById("nav-content").classList.toggle("hidden");

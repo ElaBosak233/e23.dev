@@ -17,7 +17,7 @@
 </template>
 
 <script setup lang="ts">
-import { AcademicCapIcon } from '@heroicons/vue/solid';
+import { AcademicCapIcon } from '@heroicons/vue/solid/index.js';
 
 const categories = [];
 const posts = await queryContent('/posts')

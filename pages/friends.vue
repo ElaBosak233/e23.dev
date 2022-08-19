@@ -76,7 +76,7 @@
 </template>
 
 <script setup lang="ts">
-import { CheckCircleIcon } from "@heroicons/vue/solid";
+import { CheckCircleIcon } from "@heroicons/vue/solid/index.js";
 
 const heroImg = "https://s3.bmp.ovh/imgs/2022/08/01/d3079ae4802538fa.webp";
 const title = "友链";

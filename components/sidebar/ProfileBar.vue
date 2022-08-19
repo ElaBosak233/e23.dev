@@ -28,7 +28,7 @@
 </template>
 
 <script setup lang="ts">
-import { FingerPrintIcon, AtSymbolIcon, MusicNoteIcon, CalendarIcon } from "@heroicons/vue/solid";
+import { FingerPrintIcon, AtSymbolIcon, MusicNoteIcon, CalendarIcon } from "@heroicons/vue/solid/index.js";
 const config = useConfig();
 
 function redirect (src) {
