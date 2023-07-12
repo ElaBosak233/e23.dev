@@ -1,49 +1,65 @@
-import { defineNuxtConfig } from "nuxt";
+import { createResolver } from "@nuxt/kit";
+const { resolve } = createResolver(import.meta.url);
 
-// https://v3.nuxtjs.org/api/configuration/nuxt.config
+// https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-    meta: {
-        meta: [
-            { charset: "utf-8" },
-            { name: "viewport", content: "width=device-width,initial-scale=1.0,minimum-scale=1,maximum-scale=1,user-scalable=no" },
-            { name: "description", content: "埃拉想知道你到底看不看得到这条描述呐..." }
-        ],
-        link: [
-            { rel: "icon", href: "/fav.svg", type: "image/x-icon" }
-        ]
-    },
-    modules: [
-        "@nuxt/content",
-        "@nuxtjs/tailwindcss",
-        "@/modules/sitemap"
-    ],
-    css: ["@/assets/css/base.css", "@/assets/css/transition.css"],
-    build: {
-        postcss: {
-            postcssOptions: {
-                plugins: {
-                    tailwindcss: {},
-                    autoprefixer: {},
-                },
-            },
-        },
-    },
-    content: {
-        sources: [
-            "content"
-        ],
-        highlight: {
-            theme: "github-dark",
-            preload: ["javascript", "java", "python", "markdown", "vue", "xml", "html", "typescript"]
-        },
-        markdown: {
-            toc: {
-                depth: 3,
-                searchDepth: 3
-            }
-        }
-    },
-    sitemap: {
-        hostname: "https://e23.dev"
-    }
-})
+	// exp
+	experimental: {
+		localLayerAliases: true
+	},
+
+	// app config
+	app: {},
+
+	// modules
+	modules: [
+		// styling & ui
+		"@nuxtjs/tailwindcss",
+		"nuxt-headlessui",
+		"nuxt-icons",
+		"@nuxtjs/color-mode",
+		// management
+		"@pinia/nuxt",
+		"@vueuse/nuxt",
+		// contents,
+		"@nuxt/content",
+		"@nuxt/image"
+	],
+
+	css: [
+		resolve("./assets/scss/_variables.scss"),
+		resolve("./assets/scss/app.scss"),
+		resolve("./assets/css/utils.css"),
+		resolve("./assets/css/fonts.css")
+	],
+
+	imports: {
+		dirs: [resolve("./stores"), "@/stores"]
+	},
+
+	// module::pinia
+	pinia: {
+		autoImports: [["defineStore", "definePiniaStore"]]
+	},
+
+	// module::headlessui
+	headlessui: {
+		prefix: "Headless"
+	},
+
+	// module::color-mode
+	colorMode: {
+		classSuffix: ""
+	},
+
+	// module::content
+	content: {
+		documentDriven: true,
+		markdown: {
+			mdc: true
+		},
+		highlight: {
+			theme: "github-dark"
+		}
+	}
+});

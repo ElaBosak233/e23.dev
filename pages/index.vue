@@ -1,47 +1,68 @@
 <template>
-    <div>
-        <div class="relative w-full bg-center bg-cover h-screen">
-            <div class="unselectable flex items-center justify-center min-w-full min-h-screen">
-                <div
-                    class="py-8 px-4 mx-auto max-w-screen-xl text-center items-center lg:py-16 lg:px-12 flex flex-col space-y-0">
-                    <img src="/logo.png" alt="" style="width:50%; height:auto;" />
-                    <p class="py-2 text-lg font-normal text-gray-400 lg:text-xl sm:px-16 xl:px-48">
-                        Infp-T With Creative.
-                    </p>
-                </div>
-            </div>
-            <div class="flex items-center justify-center absolute bottom-2 inset-x-0">
-                <ChevronDownIcon class="animate-bounce w-11 h-11 text-gray-500"></ChevronDownIcon>
-            </div>
-        </div>
-        <NuxtLayout name="index" class="pt-8">
-            <div class="grid grid-cols-12 gap-2">
-                <div class="xl:col-span-9 col-span-12">
-                    <div v-for="{ _path: slug, title, createdAt, category, heroImg, description } in posts" class="px-4">
-                        <PostCard class="pb-6" :title="title" :createdAt="createdAt" :category="category" :heroImg="heroImg"
-                            :slug="slug" :description="description" />
-                    </div>
-                </div>
-                <div class="xl:col-span-3 hidden xl:block">
-                    <BasicSideBar class="sticky top-24" />
-                </div>
-            </div>
-        </NuxtLayout>
-    </div>
+	<NuxtLayout>
+		<div class="flex flex-1 flex-col justify-center items-center">
+			<Hero class="no-select px-10">
+				<div class="flex flex-col justify-start content-center">
+					<span class="text-green-400 my-2 font-semibold font-mono"
+						>Hi, this is</span
+					>
+					<span
+						class="text-sky-400 mb-2 text-3xl md:text-8xl font-bold font-serif"
+						>@ElaBosak233.</span
+					>
+					<span
+						class="text-red-300 mb-4 text-6xl font-bold font-serif"
+					>
+						A Chinese Pegasus & Student.
+					</span>
+					<div class="mb-4">
+						I am a full stack. However, I'm not skilled in any of my
+						languages.
+					</div>
+				</div>
+				<div class="md:flex md:justify-start">
+					<div class="pb-2 md:block">
+						<a href="/about">
+							<button
+								class="flex rounded-2xl bg-green px-4 mx-2 py-2 font-mono"
+							>
+								<nuxt-icon name="star" class="py-1 pr-2" />
+								About Me
+							</button>
+						</a>
+					</div>
+					<div class="pb-2 md:block">
+						<a
+							href="https://github.com/ElaBosak233"
+							target="_blank"
+						>
+							<button
+								class="flex rounded-2xl bg-blue px-4 mx-2 py-2 font-mono"
+							>
+								<nuxt-icon name="github" class="py-1 pr-2" />
+								Github
+							</button>
+						</a>
+					</div>
+					<div class="pb-2 md:block">
+						<a
+							href="https://space.bilibili.com/155510267"
+							target="_blank"
+						>
+							<button
+								class="flex rounded-2xl bg-pink-400 px-4 mx-2 py-2 font-mono"
+							>
+								<nuxt-icon name="bilibili" class="py-1 pr-2" />
+								Bilibili
+							</button>
+						</a>
+					</div>
+				</div>
+			</Hero>
+		</div>
+	</NuxtLayout>
 </template>
 
-<script setup lang="ts">
-import { ChevronDownIcon } from "@heroicons/vue/solid/index.js";
-import BasicSideBar from "@/components/sidebar/BasicSideBar.vue";
-
-const config = useConfig();
-const posts = await queryContent('/posts')
-    .sort({ createdAt: -1 })
-    .where({ _partial: false })
-    .limit(10)
-    .find();
-
-useHead({
-    title: config.title
-});
+<script lang="ts" setup>
+import Hero from "@/components/Hero.vue";
 </script>

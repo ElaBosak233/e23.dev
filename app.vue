@@ -1,13 +1,18 @@
 <template>
-    <div class="min-h-screen min-w-full bg-cover bg-center bg-fixed bg-no-repeat bg-gray-100"
-        style="background-image: url(/background.jpg);">
-        <NavBar />
-        <NuxtPage />
-        <Footer />
-    </div>
+	<Body
+		class="antialiased duration-300 transition-colors text-gray-200 bg-slate-900"
+	>
+		<NuxtLoadingIndicator />
+		<NuxtPage />
+	</Body>
 </template>
 
-<script setup lang="ts">
-import NavBar from "@/components/NavBar.vue";
-import Footer from "@/components/Footer.vue";
+<script lang="ts" setup>
+const { e23dev } = useAppConfig();
+
+useHead({
+	titleTemplate: (title) => {
+		return title ? `${title} - ${e23dev.name}` : e23dev.name;
+	}
+});
 </script>
