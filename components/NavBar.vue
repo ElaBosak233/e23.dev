@@ -2,7 +2,7 @@
 	<div class="fixed top-0 left-0 w-full py-4 px-6">
 		<div class="relative flex justify-between">
 			<div class="flex pr-6">
-				<nuxt-img src="/fav.svg" width="35" />
+				<img src="/fav.svg" width="35" draggable="false" alt="" />
 			</div>
 			<div class="flex-1 flex justify-center items-center pr-6">
 				<ul

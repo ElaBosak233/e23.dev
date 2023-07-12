@@ -1,7 +1,7 @@
 <template>
 	<div class="overflow-x-hidden">
 		<div class="cmc no-select hidden md:block">
-			<nuxt-img src="/cm.svg" width="150" draggable="false" />
+			<img src="/cm.svg" width="150" draggable="false" alt="" />
 		</div>
 		<Navbar class="no-select" />
 		<div

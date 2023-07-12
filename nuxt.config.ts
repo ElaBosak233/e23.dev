@@ -3,11 +3,6 @@ const { resolve } = createResolver(import.meta.url);
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-	// exp
-	experimental: {
-		localLayerAliases: true
-	},
-
 	// app config
 	app: {},
 
@@ -22,8 +17,7 @@ export default defineNuxtConfig({
 		"@pinia/nuxt",
 		"@vueuse/nuxt",
 		// contents,
-		"@nuxt/content",
-		"@nuxt/image"
+		"@nuxt/content"
 	],
 
 	css: [
@@ -33,9 +27,9 @@ export default defineNuxtConfig({
 		resolve("./assets/css/fonts.css")
 	],
 
-	imports: {
-		dirs: [resolve("./stores"), "@/stores"]
-	},
+	// imports: {
+	// 	dirs: [resolve("./stores"), "@/stores"]
+	// },
 
 	// module::pinia
 	pinia: {
@@ -50,16 +44,16 @@ export default defineNuxtConfig({
 	// module::color-mode
 	colorMode: {
 		classSuffix: ""
-	},
-
-	// module::content
-	content: {
-		documentDriven: true,
-		markdown: {
-			mdc: true
-		},
-		highlight: {
-			theme: "github-dark"
-		}
 	}
+
+	// // module::content
+	// content: {
+	// 	documentDriven: true,
+	// 	markdown: {
+	// 		mdc: true
+	// 	},
+	// 	highlight: {
+	// 		theme: "github-dark"
+	// 	}
+	// }
 });
