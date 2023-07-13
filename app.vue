@@ -1,7 +1,5 @@
 <template>
-	<Body
-		class="antialiased duration-300 transition-colors text-gray-200 bg-slate-900"
-	>
+	<Body class="antialiased duration-300 transition-colors text-gray-200 bg-slate-900">
 		<NuxtLoadingIndicator />
 		<NuxtPage />
 	</Body>

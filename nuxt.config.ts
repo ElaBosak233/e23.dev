@@ -20,12 +20,7 @@ export default defineNuxtConfig({
 		"@nuxt/content"
 	],
 
-	css: [
-		resolve("./assets/scss/_variables.scss"),
-		resolve("./assets/scss/app.scss"),
-		resolve("./assets/css/utils.css"),
-		resolve("./assets/css/fonts.css")
-	],
+	css: [resolve("./assets/scss/_variables.scss"), resolve("./assets/scss/app.scss")],
 
 	// imports: {
 	// 	dirs: [resolve("./stores"), "@/stores"]

@@ -6,6 +6,6 @@
 
 <script setup>
 useHead({
-	title: "友链"
+	title: "Friends"
 });
 </script>
