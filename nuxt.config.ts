@@ -3,6 +3,11 @@ const { resolve } = createResolver(import.meta.url);
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+	experimental: {
+		renderJsonPayloads: false,
+		payloadExtraction: false
+	},
+
 	// app config
 	app: {},
 
@@ -40,15 +45,4 @@ export default defineNuxtConfig({
 	colorMode: {
 		classSuffix: ""
 	}
-
-	// // module::content
-	// content: {
-	// 	documentDriven: true,
-	// 	markdown: {
-	// 		mdc: true
-	// 	},
-	// 	highlight: {
-	// 		theme: "github-dark"
-	// 	}
-	// }
 });
