@@ -1,7 +1,7 @@
 <template>
-	<div class="overflow-x-hidden">
+	<div>
 		<Navbar class="no-select" />
-		<div class="flex w-full pt-[64px]" :style="{ 'min-height': 'var(--layout-page-content-min-height)' }">
+		<div class="flex w-full pt-[64px] min-h-screen">
 			<slot />
 		</div>
 	</div>
