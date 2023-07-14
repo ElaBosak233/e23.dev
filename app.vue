@@ -1,7 +1,9 @@
 <template>
 	<Body class="antialiased duration-300 transition-colors text-gray-200 bg-slate-900">
-		<NuxtLoadingIndicator />
-		<NuxtPage />
+		<NuxtLayout>
+			<NuxtLoadingIndicator />
+			<NuxtPage />
+		</NuxtLayout>
 	</Body>
 </template>
 

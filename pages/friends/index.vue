@@ -1,7 +1,5 @@
 <template>
-	<NuxtLayout>
-		<div>friend</div>
-	</NuxtLayout>
+	<div>friend</div>
 </template>
 
 <script setup>
