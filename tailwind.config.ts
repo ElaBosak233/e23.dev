@@ -66,8 +66,6 @@ export default <Partial<Config>>{
 			},
 			colors: {
 				primary: Theme.colors.green,
-				// if want to change primary color to blue
-				// primary: MyTheme.colors.blue,
 				green: Theme.colors.green,
 				blue: Theme.colors.blue,
 				red: Theme.colors.red,
