@@ -16,11 +16,10 @@
 								my <span class="text-yellow-400 italic">cutie mark</span> 🌙.
 							</p>
 							<p class="text-lg py-2">
-								At present, I am still a student, focusing on
-								<span class="text-purple-400">computer science</span> knowledge, and I am good at
+								At present, I am still a undergraduate student, focusing on
+								<span class="text-purple-400">Cyberspace Security</span>, and I am also good at
 								<span class="text-blue-400">Python</span>, <span class="text-orange-500">Java</span> and
-								<span class="text-green-400">front-end</span> work. So I wish that I can become a full
-								stack engineer in the near future.
+								<span class="text-green-400">front-end</span> work.
 							</p>
 						</div>
 						<div class="hidden xl:block w-2/8 px-4 justify-end">

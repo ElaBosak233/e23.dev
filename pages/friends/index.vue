@@ -41,8 +41,7 @@
 				<span class="hover:text-pink-500">上杉夏相</span>
 			</template>
 			<template #description>
-				From his blog, it is clear that he is studying medicine. However, at least to me, he has not been heard
-				from in a long time.
+				From his blog, it is clear that he is studying medicine.
 			</template>
 			<template #link>
 				<a href="https://blog.ssxx.site/" class="hover:text-pink-500 hover:underline">https://blog.ssxx.site</a>
@@ -59,6 +58,19 @@
 			<template #description> A cute girl with a fantastic soul. </template>
 			<template #link>
 				<a href="https://www.qy.al/" class="hover:text-primary-500 hover:underline">https://www.qy.al</a>
+			</template>
+		</FCard>
+		<FCard
+			class="col-span-5 shadow-indigo-500/50"
+			github="https://github.com/ZerolAcqua"
+			avatar="https://avatars.githubusercontent.com/u/68687848"
+		>
+			<template #name>
+				<span class="hover:text-indigo-500">Zerol Acqua</span>
+			</template>
+			<template #description> A really adorable unicorn who loves water magic. </template>
+			<template #link>
+				<a href="https://zerolacqua.top/" class="hover:text-indigo-500 hover:underline">https://zerolacqua.top/</a>
 			</template>
 		</FCard>
 	</div>
