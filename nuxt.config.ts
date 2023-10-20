@@ -7,6 +7,8 @@ export default defineNuxtConfig({
 		payloadExtraction: false
 	},
 
+	ssr: false,
+
 	// app config
 	app: {},
 
