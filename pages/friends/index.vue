@@ -26,10 +26,10 @@
 				<span class="hover:text-indigo-500">LeSnow Ye</span>
 			</template>
 			<template #description>
-				A member of MCBBS BoneStudio, masters C# perfectly and is currently studying CS.
+				A member of MCBBS BoneStudio, who is currently studying Engineering.
 			</template>
 			<template #link>
-				<a href="http://lesnow.top/" class="hover:text-indigo-500 hover:underline">http://lesnow.top</a>
+				<a href="https://lesnow.top/" class="hover:text-indigo-500 hover:underline">https://lesnow.top</a>
 			</template>
 		</FCard>
 		<FCard
