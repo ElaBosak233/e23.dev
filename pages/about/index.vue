@@ -52,6 +52,55 @@
 				<div class="no-select">
 					<h1 class="text-2xl md:text-3xl font-serif py-4">
 						<span class="text-primary-500">#</span> About My
+						<span class="italic">Basic Info</span>
+					</h1>
+					<div class="pl-6">
+						<img class="float-left h-36 mr-4" draggable="false" src="/Ella.svg" alt="" />
+						<p class="text-lg">Born in February, 2005.</p>
+						<p class="text-lg">
+							The worldview belongs to
+							<span class="italic underline">My Little Pony: Friendship is Magic.</span>
+						</p>
+						<p class="text-lg">Don't have a fixed residence, can fall asleep with just a cloud.</p>
+						<p class="text-lg">Duty is to guard other ponies in the dark.</p>
+						<p class="text-lg">Capable of controlling small-scale storms.</p>
+					</div>
+				</div>
+				<div class="no-select">
+					<h1 class="text-2xl md:text-3xl font-serif py-4">
+						<span class="text-primary-500">#</span> About My
+						<span class="italic">Ponieality</span>
+					</h1>
+					<div class="pl-12">
+						<ul class="list-disc">
+							<li>Sensitive, causing a bit of nervousness.</li>
+							<li>Also eager to be cared for by other ponies.</li>
+							<li>Usually very gentle, but sometimes it becomes very irritable.</li>
+							<li>Flight speed is not fast, unless it is a critical moment.</li>
+							<li>Be very frank with friends. It's difficult for me to pretend emotions.</li>
+						</ul>
+					</div>
+				</div>
+				<div class="no-select">
+					<h1 class="text-2xl md:text-3xl font-serif py-4">
+						<span class="text-primary-500">#</span> About My
+						<span class="italic">Cutie Mark</span>
+					</h1>
+					<div class="pl-6">
+						<p class="text-lg">
+							The subject of my cutie mark is the moon. The moon represents guardianship.
+						</p>
+						<p class="text-lg">
+							During a flight, she encountered a storm, but rarely managed to manage it successfully. At
+							first, she didn't feel like she had done anything, until she realized that she had actually
+							saved several stray fillies from the storm's suffering. She found it great to guard other
+							ponies, so she obtained the cutie mark.
+						</p>
+					</div>
+				</div>
+				<div class="no-select">
+					<h1 class="text-2xl md:text-3xl font-serif py-4">
+						<span class="text-primary-500">#</span> About My
 						<span class="italic">Hobbies</span>
 					</h1>
 					<div class="pl-12">

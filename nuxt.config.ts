@@ -6,44 +6,20 @@ export default defineNuxtConfig({
 	experimental: {
 		payloadExtraction: false
 	},
-
 	ssr: false,
-
-	// app config
 	app: {},
-
-	// modules
 	modules: [
-		// styling & ui
 		"@nuxtjs/tailwindcss",
-		"nuxt-headlessui",
 		"nuxt-icons",
-		"@nuxtjs/color-mode",
-		// management
 		"@pinia/nuxt",
-		"@vueuse/nuxt",
-		// contents,
-		"@nuxt/content"
+		"@vueuse/nuxt"
 	],
 
 	css: [resolve("./assets/scss/_variables.scss"), resolve("./assets/scss/app.scss")],
-
+	pinia: {
+		autoImports: [["defineStore", "definePiniaStore"]]
+	}
 	// imports: {
 	// 	dirs: [resolve("./stores"), "@/stores"]
 	// },
-
-	// module::pinia
-	pinia: {
-		autoImports: [["defineStore", "definePiniaStore"]]
-	},
-
-	// module::headlessui
-	headlessui: {
-		prefix: "Headless"
-	},
-
-	// module::color-mode
-	colorMode: {
-		classSuffix: ""
-	}
 });

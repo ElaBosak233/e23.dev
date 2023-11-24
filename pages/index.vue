@@ -5,13 +5,15 @@
 				<span class="text-green-400 my-2 font-semibold font-mono">Hi, this is </span>
 				<span class="text-sky-400 mb-2 text-3xl md:text-8xl font-bold font-serif">@ElaBosak233.</span>
 				<span class="text-red-300 mb-4 text-6xl font-bold font-serif"> A Chinese Pegasus & CTFer. </span>
-				<div class="mb-4">I am indeed a CTFer, but I <span style="font-style: italic;">DO NOT</span> have any skills.</div>
+				<div class="mb-4">
+					I am indeed a CTFer, but I <span style="font-style: italic">DO NOT</span> have any skills.
+				</div>
 			</div>
 			<div class="md:flex md:justify-start">
 				<div class="pb-2 md:block">
 					<NuxtLink to="/about" class="flex rounded-2xl bg-green px-4 mx-2 py-2 font-mono">
 						<nuxt-icon name="star" class="py-1 pr-2" />
-						About Me
+						About
 					</NuxtLink>
 				</div>
 				<div class="pb-2 md:block">
@@ -26,12 +28,12 @@
 				</div>
 				<div class="pb-2 md:block">
 					<a
-						href="https://space.bilibili.com/155510267"
+						href="https://blog.e23.dev"
 						target="_blank"
 						class="flex rounded-2xl bg-pink-400 px-4 mx-2 py-2 font-mono"
 					>
-						<nuxt-icon name="bilibili" class="py-1 pr-2" />
-						Bilibili
+						<nuxt-icon name="blog" class="py-1 pr-2" />
+						Blog
 					</a>
 				</div>
 			</div>
