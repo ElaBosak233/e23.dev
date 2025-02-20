@@ -9,7 +9,7 @@
         "build": "astro build",
         "preview": "astro preview",
         "astro": "astro",
-        "prettier": "prettier --write ."
+        "format": "prettier --write ."
     },
     "dependencies": {
         "@astrojs/mdx": "^4.0.5",
@@ -21,9 +21,9 @@
         "sass": "^1.83.1"
     },
     "devDependencies": {
-        "@unocss/reset": "^65.4.0",
+        "@unocss/reset": "^66.0.0",
         "prettier": "^3.4.2",
         "prettier-plugin-astro": "^0.14.1",
-        "unocss": "^65.4.0"
+        "unocss": "^66.0.0"
     }
 }

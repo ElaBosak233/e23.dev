@@ -3,31 +3,31 @@ const { class: className, ...rest } = Astro.props;
 ---
 
 <div class=`wrapper2 ${className}` {...rest}>
-	<div class="container2">
-		<slot />
-	</div>
+    <div class="container2">
+        <slot />
+    </div>
 </div>
 
 <style>
-	.wrapper2 {
-		position: relative;
-		.container2 {
-			&::before {
-				content: "<";
-				display: block;
-				padding-bottom: 10px;
-				margin-left: -2rem;
-				font-size: 20px;
-				color: grey;
-			}
-			&::after {
-				content: "/>";
-				display: block;
-				padding-top: 16px;
-				margin-left: -2rem;
-				font-size: 20px;
-				color: grey;
-			}
-		}
-	}
+    .wrapper2 {
+        position: relative;
+        .container2 {
+            &::before {
+                content: "<";
+                display: block;
+                padding-bottom: 10px;
+                margin-left: -2rem;
+                font-size: 20px;
+                color: grey;
+            }
+            &::after {
+                content: "/>";
+                display: block;
+                padding-top: 16px;
+                margin-left: -2rem;
+                font-size: 20px;
+                color: grey;
+            }
+        }
+    }
 </style>
