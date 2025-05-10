@@ -1,0 +1,56 @@
+.prose * {
+    @apply scroll-m-32 break-words;
+}
+
+.prose pre {
+    @apply m-1 rounded-lg block whitespace-pre-wrap break-all;
+}
+
+.prose pre > code {
+    @apply p-[1em];
+}
+
+.prose pre > code > [data-line] {
+    @apply block relative pl-[3em];
+
+    counter-increment: line;
+}
+
+.prose pre > code > [data-line]::before {
+    @apply absolute left-0 w-[2em] pr-[1em] text-right border-r-2;
+
+    content: counter(line);
+}
+
+.prose > h1 > a,
+.prose > h2 > a,
+.prose > h3 > a,
+.prose > h4 > a,
+.prose > h5 > a,
+.prose > h6 > a {
+    @apply !no-underline;
+}
+
+.prose > h1 > a,
+.prose > h2 > a {
+    @apply !font-bold;
+}
+
+.prose > h3 > a,
+.prose > h4 > a {
+    @apply !font-semibold;
+}
+
+.prose > h1 > a:hover::after,
+.prose > h2 > a:hover::after,
+.prose > h3 > a:hover::after,
+.prose > h4 > a:hover::after,
+.prose > h5 > a:hover::after,
+.prose > h6 > a:hover::after {
+    content: "¶";
+    @apply text-primary opacity-60 ml-4;
+}
+
+.prose a:not(h1 > a, h2 > a, h3 > a, h4 > a, h5 > a, h6 > a) {
+    @apply text-primary !no-underline hover:!underline;
+}
