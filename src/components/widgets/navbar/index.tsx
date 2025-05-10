@@ -27,7 +27,7 @@ function Navbar() {
                     "container",
                     "ml-auto",
                     "mr-auto",
-                    "px-10",
+                    "px-5",
                     "max-w-[1300px]",
                     "flex",
                     "items-center",
