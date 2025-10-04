@@ -1,0 +1,45 @@
+{
+  "name": "e23.dev",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "react-router build",
+    "dev": "react-router dev",
+    "start": "react-router-serve ./build/server/index.js",
+    "typecheck": "react-router typegen && tsc"
+  },
+  "dependencies": {
+    "@fontsource-variable/ubuntu-sans": "^5.2.10",
+    "@fontsource-variable/ubuntu-sans-mono": "^5.2.10",
+    "@radix-ui/react-scroll-area": "^1.2.10",
+    "@radix-ui/react-slot": "^1.2.3",
+    "@react-router/node": "^7.9.3",
+    "@react-router/serve": "^7.9.3",
+    "class-variance-authority": "^0.7.1",
+    "framer-motion": "^12.23.22",
+    "isbot": "^5.1.31",
+    "lucide-react": "^0.544.0",
+    "nprogress": "^0.2.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "react-router": "^7.9.3",
+    "zustand": "^5.0.8"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.2.5",
+    "@react-router/dev": "^7.9.3",
+    "@tailwindcss/typography": "^0.5.19",
+    "@tailwindcss/vite": "^4.1.14",
+    "@types/node": "^24",
+    "@types/nprogress": "^0.2.3",
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "clsx": "^2.1.1",
+    "tailwind-merge": "^3.3.1",
+    "tailwindcss": "^4.1.14",
+    "tailwindcss-animate": "^1.0.7",
+    "typescript": "^5.9.3",
+    "vite": "^7.1.9",
+    "vite-tsconfig-paths": "^5.1.4"
+  }
+}
