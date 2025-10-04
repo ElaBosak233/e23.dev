@@ -5,3 +5,6 @@
 # React Router
 /.react-router/
 /build/
+
+# PNPM
+/pnpm-workspace.yaml
