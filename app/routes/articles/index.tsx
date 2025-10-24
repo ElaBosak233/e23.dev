@@ -12,13 +12,22 @@ export default function Articles() {
       className={cn([
         "flex-1",
         "flex",
+        "flex-col",
         "justify-center",
         "items-center",
-        "gap-2",
+        "gap-5",
       ])}
     >
-      <ConstructionIcon />
-      <span>Still under developping</span>
+      <img
+        src="/discovering.png"
+        alt="Discovering"
+        width={128}
+        draggable={false}
+      />
+      <div className={cn(["flex", "justify-center", "items-center", "gap-2"])}>
+        <ConstructionIcon />
+        <span>Still under development</span>
+      </div>
     </div>
   );
 }
