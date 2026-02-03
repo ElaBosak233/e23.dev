@@ -20,7 +20,7 @@ function FriendCard(props: FriendCardProps) {
         "border",
         "md:mx-4",
         "shadow-md",
-        "rounded-xl",
+        "rounded-2xl",
         "h-full",
         "w-full",
         className,

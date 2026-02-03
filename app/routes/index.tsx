@@ -1,3 +1,4 @@
+import { easeInOut, motion, useReducedMotion } from "framer-motion";
 import { cn } from "@/utils";
 import type { Route } from "./+types/index";
 
@@ -9,8 +10,26 @@ export function meta(_: Route.MetaArgs) {
 }
 
 export default function Home() {
+  const shouldReduceMotion = useReducedMotion();
+  const floatAnimate = shouldReduceMotion ? { y: 0 } : { y: [0, -12, 0] };
+  const floatTransition = shouldReduceMotion
+    ? { duration: 0 }
+    : { duration: 4, repeat: Infinity, ease: easeInOut };
+  const containerVariants = {
+    hidden: { opacity: 0, y: 18 },
+    show: {
+      opacity: 1,
+      y: 0,
+      transition: { staggerChildren: 0.08 },
+    },
+  };
+  const itemVariants = {
+    hidden: { opacity: 0, y: 18 },
+    show: { opacity: 1, y: 0 },
+  };
+
   return (
-    <div
+    <motion.div
       className={cn([
         "mx-10",
         "flex-1",
@@ -20,9 +39,16 @@ export default function Home() {
         "items-center",
         "select-none",
       ])}
+      animate={floatAnimate}
+      transition={floatTransition}
     >
-      <div className={cn(["flex", "flex-col"])}>
-        <span
+      <motion.div
+        className={cn(["flex", "flex-col"])}
+        variants={containerVariants}
+        initial="hidden"
+        animate="show"
+      >
+        <motion.span
           className={cn([
             "text-green-600",
             "dark:text-green-400",
@@ -30,10 +56,11 @@ export default function Home() {
             "font-semibold",
             "font-mono",
           ])}
+          variants={itemVariants}
         >
           Hi, this is
-        </span>
-        <span
+        </motion.span>
+        <motion.span
           className={cn([
             "text-sky-600",
             "dark:text-sky-400",
@@ -43,10 +70,11 @@ export default function Home() {
             "font-bold",
             "font-serif",
           ])}
+          variants={itemVariants}
         >
           @ElaBosak233
-        </span>
-        <span
+        </motion.span>
+        <motion.span
           className={cn([
             "text-red-400",
             "dark:text-red-300",
@@ -55,6 +83,7 @@ export default function Home() {
             "font-bold",
             "font-serif",
           ])}
+          variants={itemVariants}
         >
           <span>A </span>
           <span className={cn("text-pink-400", "dark:text-pink-200")}>
@@ -64,9 +93,26 @@ export default function Home() {
           <span className={cn("text-sky-400", "dark:text-sky-200")}>
             Developer
           </span>
-        </span>
-        <div className={cn(["mb-4"])}>Hoof to heart!</div>
-      </div>
-    </div>
+        </motion.span>
+        <motion.div className={cn(["mb-4"])} variants={itemVariants}>
+          Hoof to heart!
+          <motion.span
+            className={cn(["ml-2", "inline-block"])}
+            animate={
+              shouldReduceMotion
+                ? { y: 0 }
+                : { y: [0, -3, 0], rotate: [0, -4, 0] }
+            }
+            transition={
+              shouldReduceMotion
+                ? { duration: 0 }
+                : { duration: 1.2, repeat: Infinity, ease: "easeInOut" }
+            }
+          >
+            ✨
+          </motion.span>
+        </motion.div>
+      </motion.div>
+    </motion.div>
   );
 }

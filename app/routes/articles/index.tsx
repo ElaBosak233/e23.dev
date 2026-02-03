@@ -19,7 +19,7 @@ export default function Articles() {
       ])}
     >
       <img
-        src="/discovering.png"
+        src="/ela/discovering.png"
         alt="Discovering"
         width={128}
         draggable={false}

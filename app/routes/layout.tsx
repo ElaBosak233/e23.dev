@@ -28,7 +28,7 @@ export default function Layout() {
         pageAnimate: { opacity: 1 },
       }}
       transition={{ duration: 0.3, ease: "easeInOut" }}
-      className={cn(["flex", "flex-col", "min-h-[calc(100vh-64px)]"])}
+      className={cn(["flex", "flex-col", "min-h-[calc(100vh-90px)]"])}
     >
       <Outlet />
     </motion.main>

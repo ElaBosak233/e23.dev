@@ -9,21 +9,22 @@ export default function About() {
   return (
     <section
       className={cn([
-        "bg-card",
         "flex-1",
         "mx-auto",
-        "md:mx-30",
-        "lg:mx-40",
-        "xl:mx-80",
-        "p-12",
-        "xl:p-24",
-        "border-x-1",
+        "w-full",
+        "max-w-4xl",
+        "px-6",
+        "md:px-10",
+        "lg:px-12",
+        "py-10",
+        "md:py-12",
+        "xl:py-16",
       ])}
     >
       <Typography>
         <h2>Introduction</h2>
         <img
-          src="/avatar.png"
+          src="/ela/avatar.png"
           alt="Ela's avatar"
           draggable="false"
           className={cn([
@@ -197,7 +198,7 @@ export default function About() {
             Bilibili{" "}
             <a
               href="https://space.bilibili.com/155510267"
-              className="!text-pink-400 dark:!text-pink-200 hover:underline"
+              className="text-pink-400! dark:text-pink-200! hover:underline"
               target="_blank"
               rel="noopener"
             >

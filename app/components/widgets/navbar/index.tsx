@@ -11,11 +11,8 @@ function Navbar() {
       className={cn([
         "sticky",
         "top-0",
-        "h-16",
-        "bg-card/80",
-        "backdrop-blur-xs",
+        "p-4",
         "select-none",
-        "border-b-[1px]",
         "flex",
         "items-center",
         "z-10",
@@ -24,16 +21,29 @@ function Navbar() {
       <div
         className={cn([
           "container",
+          "bg-card/80",
           "ml-auto",
           "mr-auto",
           "px-5",
-          "max-w-[1300px]",
+          "py-2",
+          "max-w-325",
           "flex",
           "items-center",
           "justify-between",
+          "rounded-full",
+          "border",
+          "backdrop-blur-md",
         ])}
       >
-        <div className={cn(["flex", "gap-3", "px-5", "items-center"])}>
+        <div
+          className={cn([
+            "flex",
+            "gap-3",
+            "px-5",
+            "items-center",
+            "animate-slide-from-center-left",
+          ])}
+        >
           <img
             src={"/favicon.svg"}
             alt="Ela's cutie mark"
@@ -43,7 +53,15 @@ function Navbar() {
           />
           <AnimatedTitle />
         </div>
-        <div className={cn(["hidden", "lg:flex", "gap-3", "items-center"])}>
+        <div
+          className={cn([
+            "hidden",
+            "lg:flex",
+            "gap-3",
+            "items-center",
+            "animate-slide-from-center-right",
+          ])}
+        >
           <Button asChild icon={<HomeIcon />}>
             <Link to={"/"}>Home</Link>
           </Button>

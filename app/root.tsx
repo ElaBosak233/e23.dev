@@ -46,6 +46,15 @@ export function Layout({ children }: { children: React.ReactNode }) {
         >
           <Navbar />
           {children}
+          <img
+            src="/background.jpg"
+            alt="Background"
+            width={128}
+            draggable={false}
+            className={cn([
+              "left-0 print:hidden top-0 w-screen fixed h-screen pointer-events-none -z-10 object-cover opacity-10 blur-3xl",
+            ])}
+          />
         </ScrollArea>
         <ScrollRestoration />
         <Scripts />

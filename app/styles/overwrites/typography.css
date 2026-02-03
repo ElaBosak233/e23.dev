@@ -1,5 +1,5 @@
 .prose * {
-    @apply scroll-m-32 break-words;
+    @apply scroll-m-32 wrap-break-word;
 }
 
 .prose pre {
@@ -28,17 +28,17 @@
 .prose > h4 > a,
 .prose > h5 > a,
 .prose > h6 > a {
-    @apply !no-underline;
+    @apply no-underline!;
 }
 
 .prose > h1 > a,
 .prose > h2 > a {
-    @apply !font-bold;
+    @apply font-bold!;
 }
 
 .prose > h3 > a,
 .prose > h4 > a {
-    @apply !font-semibold;
+    @apply font-semibold!;
 }
 
 .prose > h1 > a:hover::after,
@@ -52,5 +52,23 @@
 }
 
 .prose a:not(h1 > a, h2 > a, h3 > a, h4 > a, h5 > a, h6 > a) {
-    @apply text-primary !no-underline hover:!underline;
+    @apply text-primary no-underline! hover:underline!;
+}
+
+.prose :where(code):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
+  color: var(--tw-prose-code);
+  background-color: color-mix(in oklab, var(--color-foreground) 10%, transparent);
+  font-weight: var(--font-weight-normal);
+  font-size: 0.875em;
+  border-radius: var(--radius-sm);
+  padding: .2em .4em;
+  white-space: break-spaces;
+}
+
+.prose :where(code):not(:where([class~="not-prose"],[class~="not-prose"] *))::before {
+  content: "";
+}
+
+.prose :where(code):not(:where([class~="not-prose"],[class~="not-prose"] *))::after {
+  content: "";
 }
