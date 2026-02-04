@@ -11,6 +11,7 @@
   "dependencies": {
     "@fontsource-variable/ubuntu-sans": "^5.2.10",
     "@fontsource-variable/ubuntu-sans-mono": "^5.2.10",
+    "@radix-ui/react-dropdown-menu": "^2.1.16",
     "@radix-ui/react-scroll-area": "^1.2.10",
     "@radix-ui/react-slot": "^1.2.4",
     "@react-router/node": "^7.13.0",

@@ -20,15 +20,19 @@ export default function Friends() {
           "md:px-10",
           "lg:px-12",
           "py-10",
-          "md:py-12",
-          "xl:py-16",
           "flex",
           "flex-col",
           "gap-5",
         ],
       ])}
     >
-      <div className={cn(["flex", "justify-end"])}>
+      <div className={cn(["flex", "justify-end", "items-end", "gap-2"])}>
+        <img
+          src={"/ela/meme/love.png"}
+          alt="love"
+          width={64}
+          draggable={false}
+        />
         <span className={cn(["italic", "text-secondary-foreground"])}>
           Friendship is Magic!
         </span>

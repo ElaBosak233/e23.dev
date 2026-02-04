@@ -27,13 +27,7 @@ export default function About() {
           src="/ela/avatar.png"
           alt="Ela's avatar"
           draggable="false"
-          className={cn([
-            "hidden",
-            "lg:block",
-            "rounded-full",
-            "float-right",
-            "mx-2",
-          ])}
+          className={cn(["rounded-full", "float-right", "mx-2"])}
           height={144}
           width={144}
         />
