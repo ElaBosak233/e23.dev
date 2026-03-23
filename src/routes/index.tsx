@@ -1,20 +1,24 @@
+import { createFileRoute } from "@tanstack/react-router";
 import { easeInOut, motion, useReducedMotion } from "framer-motion";
 import { cn } from "@/utils";
-import type { Route } from "./+types/index";
 
-export function meta(_: Route.MetaArgs) {
-  return [
-    { title: "E23.DEV" },
-    // { name: "description", content: "Welcome to React Router!" },
-  ];
-}
+export const Route = createFileRoute("/")({
+  head: () => ({
+    meta: [
+      {
+        title: "E23.DEV",
+      },
+    ],
+  }),
+  component: Home,
+});
 
-export default function Home() {
+function Home() {
   const shouldReduceMotion = useReducedMotion();
   const floatAnimate = shouldReduceMotion ? { y: 0 } : { y: [0, -12, 0] };
   const floatTransition = shouldReduceMotion
     ? { duration: 0 }
-    : { duration: 4, repeat: Infinity, ease: easeInOut };
+    : { duration: 4, repeat: Number.POSITIVE_INFINITY, ease: easeInOut };
   const containerVariants = {
     hidden: { opacity: 0, y: 18 },
     show: {
@@ -106,7 +110,11 @@ export default function Home() {
             transition={
               shouldReduceMotion
                 ? { duration: 0 }
-                : { duration: 1.2, repeat: Infinity, ease: "easeInOut" }
+                : {
+                    duration: 1.2,
+                    repeat: Number.POSITIVE_INFINITY,
+                    ease: "easeInOut",
+                  }
             }
           >
             ✨

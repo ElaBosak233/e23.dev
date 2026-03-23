@@ -1,11 +1,19 @@
+import { createFileRoute } from "@tanstack/react-router";
 import { Typography } from "@/components/ui/typography";
 import { cn } from "@/utils";
 
-export function meta() {
-  return [{ title: "About - E23.DEV" }];
-}
+export const Route = createFileRoute("/about")({
+  head: () => ({
+    meta: [
+      {
+        title: "About - E23.DEV",
+      },
+    ],
+  }),
+  component: About,
+});
 
-export default function About() {
+function About() {
   return (
     <section
       className={cn([
@@ -42,8 +50,8 @@ export default function About() {
           </span>
           . I have an extraordinary passion in this internet world. Let me
           guess, if you are using a{" "}
-          <span className="underline">large screen</span> to browse this page,
-          you may be able to see my{" "}
+          <span className="underline">large screen</span>
+          to browse this page, you may be able to see my{" "}
           <span className="text-yellow-500 dark:text-yellow-400 italic">
             cutie mark
           </span>{" "}

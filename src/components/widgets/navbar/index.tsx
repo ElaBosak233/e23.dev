@@ -1,6 +1,6 @@
+import { Link } from "@tanstack/react-router";
 import { HeartIcon, HomeIcon, LibraryIcon, Menu, Star } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
-import { Link } from "react-router";
 import { Button } from "@/components/ui/button";
 import {
   DropdownMenu,

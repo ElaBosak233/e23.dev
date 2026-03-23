@@ -1,12 +1,19 @@
+import { createFileRoute } from "@tanstack/react-router";
 import { ConstructionIcon } from "lucide-react";
 import { cn } from "@/utils";
-import type { Route } from "./+types/index";
 
-export function meta(_: Route.MetaArgs) {
-  return [{ title: "Articles - E23.DEV" }];
-}
+export const Route = createFileRoute("/articles")({
+  head: () => ({
+    meta: [
+      {
+        title: "Articles - E23.DEV",
+      },
+    ],
+  }),
+  component: Articles,
+});
 
-export default function Articles() {
+function Articles() {
   return (
     <div
       className={cn([

@@ -48,4 +48,5 @@ function FriendCard(props: FriendCardProps) {
     </div>
   );
 }
+
 export { FriendCard };

@@ -1,12 +1,19 @@
+import { createFileRoute } from "@tanstack/react-router";
 import { FriendCard } from "@/components/widgets/friend-card";
 import { cn } from "@/utils";
-import type { Route } from "./+types/index";
 
-export function meta(_: Route.MetaArgs) {
-  return [{ title: "Friends - E23.DEV" }];
-}
+export const Route = createFileRoute("/friends")({
+  head: () => ({
+    meta: [
+      {
+        title: "Friends - E23.DEV",
+      },
+    ],
+  }),
+  component: Friends,
+});
 
-export default function Friends() {
+function Friends() {
   return (
     <div
       className={cn([
@@ -27,12 +34,7 @@ export default function Friends() {
       ])}
     >
       <div className={cn(["flex", "justify-end", "items-end", "gap-2"])}>
-        <img
-          src={"/ela/meme/love.png"}
-          alt="love"
-          width={64}
-          draggable={false}
-        />
+        <img src="/ela/meme/love.png" alt="love" width={64} draggable={false} />
         <span className={cn(["italic", "text-secondary-foreground"])}>
           Friendship is Magic!
         </span>
