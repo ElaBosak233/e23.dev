@@ -10,18 +10,14 @@
 
 import { Route as rootRouteImport } from "./routes/__root"
 import { Route as FriendsRouteImport } from "./routes/friends"
-import { Route as ArticlesRouteImport } from "./routes/articles"
 import { Route as AboutRouteImport } from "./routes/about"
 import { Route as IndexRouteImport } from "./routes/index"
+import { Route as ArticlesIndexRouteImport } from "./routes/articles/index"
+import { Route as ArticlesSlugRouteImport } from "./routes/articles/$slug"
 
 const FriendsRoute = FriendsRouteImport.update({
   id: "/friends",
   path: "/friends",
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ArticlesRoute = ArticlesRouteImport.update({
-  id: "/articles",
-  path: "/articles",
   getParentRoute: () => rootRouteImport,
 } as any)
 const AboutRoute = AboutRouteImport.update({
@@ -34,39 +30,59 @@ const IndexRoute = IndexRouteImport.update({
   path: "/",
   getParentRoute: () => rootRouteImport,
 } as any)
+const ArticlesIndexRoute = ArticlesIndexRouteImport.update({
+  id: "/articles/",
+  path: "/articles/",
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ArticlesSlugRoute = ArticlesSlugRouteImport.update({
+  id: "/articles/$slug",
+  path: "/articles/$slug",
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   "/": typeof IndexRoute
   "/about": typeof AboutRoute
-  "/articles": typeof ArticlesRoute
   "/friends": typeof FriendsRoute
+  "/articles/$slug": typeof ArticlesSlugRoute
+  "/articles/": typeof ArticlesIndexRoute
 }
 export interface FileRoutesByTo {
   "/": typeof IndexRoute
   "/about": typeof AboutRoute
-  "/articles": typeof ArticlesRoute
   "/friends": typeof FriendsRoute
+  "/articles/$slug": typeof ArticlesSlugRoute
+  "/articles": typeof ArticlesIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   "/": typeof IndexRoute
   "/about": typeof AboutRoute
-  "/articles": typeof ArticlesRoute
   "/friends": typeof FriendsRoute
+  "/articles/$slug": typeof ArticlesSlugRoute
+  "/articles/": typeof ArticlesIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: "/" | "/about" | "/articles" | "/friends"
+  fullPaths: "/" | "/about" | "/friends" | "/articles/$slug" | "/articles/"
   fileRoutesByTo: FileRoutesByTo
-  to: "/" | "/about" | "/articles" | "/friends"
-  id: "__root__" | "/" | "/about" | "/articles" | "/friends"
+  to: "/" | "/about" | "/friends" | "/articles/$slug" | "/articles"
+  id:
+    | "__root__"
+    | "/"
+    | "/about"
+    | "/friends"
+    | "/articles/$slug"
+    | "/articles/"
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AboutRoute: typeof AboutRoute
-  ArticlesRoute: typeof ArticlesRoute
   FriendsRoute: typeof FriendsRoute
+  ArticlesSlugRoute: typeof ArticlesSlugRoute
+  ArticlesIndexRoute: typeof ArticlesIndexRoute
 }
 
 declare module "@tanstack/react-router" {
@@ -76,13 +92,6 @@ declare module "@tanstack/react-router" {
       path: "/friends"
       fullPath: "/friends"
       preLoaderRoute: typeof FriendsRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    "/articles": {
-      id: "/articles"
-      path: "/articles"
-      fullPath: "/articles"
-      preLoaderRoute: typeof ArticlesRouteImport
       parentRoute: typeof rootRouteImport
     }
     "/about": {
@@ -99,14 +108,29 @@ declare module "@tanstack/react-router" {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    "/articles/": {
+      id: "/articles/"
+      path: "/articles"
+      fullPath: "/articles/"
+      preLoaderRoute: typeof ArticlesIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    "/articles/$slug": {
+      id: "/articles/$slug"
+      path: "/articles/$slug"
+      fullPath: "/articles/$slug"
+      preLoaderRoute: typeof ArticlesSlugRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AboutRoute: AboutRoute,
-  ArticlesRoute: ArticlesRoute,
   FriendsRoute: FriendsRoute,
+  ArticlesSlugRoute: ArticlesSlugRoute,
+  ArticlesIndexRoute: ArticlesIndexRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

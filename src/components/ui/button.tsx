@@ -1,8 +1,6 @@
-"use client";
-
-import { Slot, Slottable } from "@radix-ui/react-slot";
 import { cva, type VariantProps } from "class-variance-authority";
 import { LoaderCircle } from "lucide-react";
+import { Slot } from "radix-ui";
 import type { ButtonHTMLAttributes, CSSProperties, Ref } from "react";
 import { cn } from "@/utils";
 
@@ -107,7 +105,7 @@ function Button(props: ButtonProps) {
   } = props;
 
   const Icon = loading ? <LoaderCircle className="animate-spin" /> : icon;
-  const Comp = asChild ? Slot : "button";
+  const Comp = asChild ? Slot.Root : "button";
   return (
     <Comp
       type={type}
@@ -124,7 +122,7 @@ function Button(props: ButtonProps) {
       {...rest}
     >
       {(!!icon || loading) && Icon}
-      <Slottable>{children}</Slottable>
+      <Slot.Slottable>{children}</Slot.Slottable>
     </Comp>
   );
 }

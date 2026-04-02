@@ -16,7 +16,7 @@ function FriendCard(props: FriendCardProps) {
     <div
       className={cn([
         "flex",
-        "bg-card",
+        "bg-card/30",
         "border",
         "md:mx-4",
         "shadow-md",

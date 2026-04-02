@@ -8,7 +8,7 @@ import {
 import { TanStackRouterDevtoolsPanel } from "@tanstack/react-router-devtools";
 import { motion } from "framer-motion";
 import nprogress from "nprogress";
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { ThemeWatcher } from "@/components/utils/theme-watcher";
 import { Navbar } from "@/components/widgets/navbar";
@@ -45,17 +45,28 @@ function RootDocument({ children }: { children: React.ReactNode }) {
   const pathname = useRouterState({
     select: (state) => state.location.pathname,
   });
-  const isLoading = useRouterState({
-    select: (state) => state.status === "pending",
+  const searchStr = useRouterState({
+    select: (state) => state.location.searchStr,
   });
+  const status = useRouterState({
+    select: (state) => state.status,
+  });
+  const routeKeyRef = useRef<string | null>(null);
 
   useEffect(() => {
-    if (isLoading) {
-      nprogress.start();
+    const key = `${pathname}${searchStr}`;
+    if (status === "pending") {
+      const isFirstNavigation = routeKeyRef.current === null;
+      const routeChanged =
+        routeKeyRef.current !== null && routeKeyRef.current !== key;
+      if (isFirstNavigation || routeChanged) {
+        nprogress.start();
+      }
     } else {
       nprogress.done();
+      routeKeyRef.current = key;
     }
-  }, [isLoading]);
+  }, [status, pathname, searchStr]);
 
   return (
     <html lang="en" suppressHydrationWarning>

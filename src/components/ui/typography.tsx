@@ -1,5 +1,3 @@
-"use client";
-
 import { useEffect } from "react";
 import { cn } from "@/utils";
 
@@ -10,10 +8,11 @@ function Typography(props: TypographyProps) {
 
   useEffect(() => {
     setTimeout(() => {
-      if (location.hash.replace("#", "").length > 0)
+      if (location.hash.replace("#", "").length > 0) {
         document
-          .getElementById(decodeURI(location.hash.replace("#", "")))
-          ?.scrollIntoView({ behavior: "smooth" });
+          .getElementById(decodeURIComponent(location.hash.replace("#", "")))
+          ?.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
     }, 100);
   }, []);
 

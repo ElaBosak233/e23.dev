@@ -8,6 +8,7 @@ export function getRouter() {
     scrollRestoration: true,
     defaultPreload: "intent",
     defaultPreloadStaleTime: 0,
+    defaultHashScrollIntoView: { behavior: "smooth", block: "start" },
   });
 
   return router;

@@ -1,9 +1,13 @@
 .DS_Store
 .env
 /node_modules/
+/.tanstack/
+/.pnpm-store/
 
 # PNPM
 /pnpm-workspace.yaml
 
 .output/
 dist/
+
+.content-collections/
