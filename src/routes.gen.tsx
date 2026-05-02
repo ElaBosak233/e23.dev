@@ -12,8 +12,6 @@ import { Route as rootRouteImport } from "./routes/__root"
 import { Route as FriendsRouteImport } from "./routes/friends"
 import { Route as AboutRouteImport } from "./routes/about"
 import { Route as IndexRouteImport } from "./routes/index"
-import { Route as ArticlesIndexRouteImport } from "./routes/articles/index"
-import { Route as ArticlesSlugRouteImport } from "./routes/articles/$slug"
 
 const FriendsRoute = FriendsRouteImport.update({
   id: "/friends",
@@ -30,59 +28,35 @@ const IndexRoute = IndexRouteImport.update({
   path: "/",
   getParentRoute: () => rootRouteImport,
 } as any)
-const ArticlesIndexRoute = ArticlesIndexRouteImport.update({
-  id: "/articles/",
-  path: "/articles/",
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ArticlesSlugRoute = ArticlesSlugRouteImport.update({
-  id: "/articles/$slug",
-  path: "/articles/$slug",
-  getParentRoute: () => rootRouteImport,
-} as any)
 
 export interface FileRoutesByFullPath {
   "/": typeof IndexRoute
   "/about": typeof AboutRoute
   "/friends": typeof FriendsRoute
-  "/articles/$slug": typeof ArticlesSlugRoute
-  "/articles/": typeof ArticlesIndexRoute
 }
 export interface FileRoutesByTo {
   "/": typeof IndexRoute
   "/about": typeof AboutRoute
   "/friends": typeof FriendsRoute
-  "/articles/$slug": typeof ArticlesSlugRoute
-  "/articles": typeof ArticlesIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   "/": typeof IndexRoute
   "/about": typeof AboutRoute
   "/friends": typeof FriendsRoute
-  "/articles/$slug": typeof ArticlesSlugRoute
-  "/articles/": typeof ArticlesIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: "/" | "/about" | "/friends" | "/articles/$slug" | "/articles/"
+  fullPaths: "/" | "/about" | "/friends"
   fileRoutesByTo: FileRoutesByTo
-  to: "/" | "/about" | "/friends" | "/articles/$slug" | "/articles"
-  id:
-    | "__root__"
-    | "/"
-    | "/about"
-    | "/friends"
-    | "/articles/$slug"
-    | "/articles/"
+  to: "/" | "/about" | "/friends"
+  id: "__root__" | "/" | "/about" | "/friends"
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AboutRoute: typeof AboutRoute
   FriendsRoute: typeof FriendsRoute
-  ArticlesSlugRoute: typeof ArticlesSlugRoute
-  ArticlesIndexRoute: typeof ArticlesIndexRoute
 }
 
 declare module "@tanstack/react-router" {
@@ -108,20 +82,6 @@ declare module "@tanstack/react-router" {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
-    "/articles/": {
-      id: "/articles/"
-      path: "/articles"
-      fullPath: "/articles/"
-      preLoaderRoute: typeof ArticlesIndexRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    "/articles/$slug": {
-      id: "/articles/$slug"
-      path: "/articles/$slug"
-      fullPath: "/articles/$slug"
-      preLoaderRoute: typeof ArticlesSlugRouteImport
-      parentRoute: typeof rootRouteImport
-    }
   }
 }
 
@@ -129,8 +89,6 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AboutRoute: AboutRoute,
   FriendsRoute: FriendsRoute,
-  ArticlesSlugRoute: ArticlesSlugRoute,
-  ArticlesIndexRoute: ArticlesIndexRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

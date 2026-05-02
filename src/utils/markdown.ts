@@ -44,10 +44,12 @@ function getHighlighter(): Promise<
   return highlighterSingleton;
 }
 
-export async function renderMarkdown(content: string): Promise<MarkdownResult> {
-  const result = await unified()
-    .use(remarkParse)
-    .use(remarkGfm)
+export async function renderMarkdown(
+  content: string
+): Promise<MarkdownResult> {
+  const pipeline = unified().use(remarkParse).use(remarkGfm);
+
+  const result = await pipeline
     .use(remarkRehype, { allowDangerousHtml: true })
     .use(rehypeRaw)
     .use(rehypeSlug)

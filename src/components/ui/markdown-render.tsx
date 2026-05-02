@@ -6,7 +6,6 @@ import parse, {
   type HTMLReactParserOptions,
 } from "html-react-parser";
 import { useEffect, useState } from "react";
-import { resolveArticleAssetUrl } from "@/utils/article-assets";
 import { type MarkdownResult, renderMarkdown } from "@/utils/markdown";
 
 const hashScrollOpts = { behavior: "smooth" as const, block: "start" as const };
@@ -17,8 +16,6 @@ function scrollToHeadingId(id: string) {
 
 type MarkdownRenderProps = {
   content: string;
-  /** Used to fix relative `./assets/...` image paths from the article folder. */
-  articleSlug?: string;
 };
 
 function renderInternalLink(
@@ -54,7 +51,7 @@ function renderInternalLink(
   );
 }
 
-export function MarkdownRender({ content, articleSlug }: MarkdownRenderProps) {
+export function MarkdownRender({ content }: MarkdownRenderProps) {
   const navigate = useNavigate();
   const [result, setResult] = useState<MarkdownResult | null>(null);
   const [isLoading, setIsLoading] = useState(true);
@@ -168,21 +165,6 @@ export function MarkdownRender({ content, articleSlug }: MarkdownRenderProps) {
             >
               {domToReact(domNode.children as DOMNode[], options)}
             </a>
-          );
-        }
-
-        if (domNode.name === "img" && articleSlug) {
-          const src = domNode.attribs.src;
-          const resolved = resolveArticleAssetUrl(articleSlug, src);
-          return (
-            <img
-              {...domNode.attribs}
-              src={resolved}
-              loading="lazy"
-              decoding="async"
-              className="rounded-lg shadow-md max-w-full h-auto my-4"
-              alt={domNode.attribs.alt || ""}
-            />
           );
         }
 

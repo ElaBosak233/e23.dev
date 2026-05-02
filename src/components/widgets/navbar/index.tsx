@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import { HeartIcon, HomeIcon, LibraryIcon, Menu, Star } from "lucide-react";
+import { HeartIcon, HomeIcon, Menu, Star } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 import { Button } from "@/components/ui/button";
 import {
@@ -75,7 +75,6 @@ function Navbar() {
 
   const links = [
     { href: "/", label: "Home", icon: <HomeIcon /> },
-    { href: "/articles", label: "Articles", icon: <LibraryIcon /> },
     {
       href: "/friends",
       label: "Friends",

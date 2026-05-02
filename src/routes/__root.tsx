@@ -9,6 +9,7 @@ import { TanStackRouterDevtoolsPanel } from "@tanstack/react-router-devtools";
 import { motion } from "framer-motion";
 import nprogress from "nprogress";
 import { useEffect, useRef } from "react";
+import { NotFound } from "@/components/not-found";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { ThemeWatcher } from "@/components/utils/theme-watcher";
 import { Navbar } from "@/components/widgets/navbar";
@@ -37,7 +38,7 @@ export const Route = createRootRoute({
       },
     ],
   }),
-  notFoundComponent: () => null,
+  notFoundComponent: NotFound,
   shellComponent: RootDocument,
 });
 

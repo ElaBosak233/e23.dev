@@ -1,4 +1,3 @@
-import contentCollections from "@content-collections/vite";
 import tailwindcss from "@tailwindcss/vite";
 import { devtools } from "@tanstack/devtools-vite";
 import { tanstackStart } from "@tanstack/react-start/plugin/vite";
@@ -9,7 +8,6 @@ import { defineConfig } from "vite";
 const config = defineConfig({
   plugins: [
     devtools(),
-    contentCollections(),
     tailwindcss(),
     tanstackStart({
       router: {
