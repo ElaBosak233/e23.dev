@@ -19,13 +19,12 @@
     "@tanstack/react-router-devtools": "latest",
     "@tanstack/react-router-ssr-query": "latest",
     "@tanstack/react-start": "latest",
-    "@tanstack/router-plugin": "^1.167.31",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "framer-motion": "^12.38.0",
     "html-react-parser": "^6.0.1",
     "lucide-react": "^1.14.0",
-    "nitro": "npm:nitro-nightly@3.0.1-20260501-123913-7d49dcae",
+    "nitro": "3.0.260429-beta",
     "nprogress": "^0.2.0",
     "radix-ui": "^1.4.3",
     "react": "^19.2.5",
@@ -48,7 +47,7 @@
     "zustand": "^5.0.12"
   },
   "devDependencies": {
-    "@biomejs/biome": "2.4.13",
+    "@biomejs/biome": "2.4.14",
     "@mdx-js/loader": "^3.1.1",
     "@mdx-js/mdx": "^3.1.1",
     "@mdx-js/react": "^3.1.1",
@@ -65,13 +64,9 @@
     "tailwindcss-animate": "^1.0.7",
     "typescript": "^6.0.3",
     "vite": "^8.0.10",
-    "vite-tsconfig-paths": "^6.1.1",
     "vitest": "^4.1.5"
   },
   "pnpm": {
-    "onlyBuiltDependencies": [
-      "esbuild",
-      "lightningcss"
-    ]
+    "onlyBuiltDependencies": ["esbuild", "lightningcss"]
   }
 }
