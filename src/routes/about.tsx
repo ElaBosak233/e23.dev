@@ -1,4 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { Image } from "@/components/ui/image";
 import { Typography } from "@/components/ui/typography";
 import { cn } from "@/utils";
 
@@ -31,13 +32,17 @@ function About() {
     >
       <Typography>
         <h2>Introduction</h2>
-        <img
+        <Image
           src="/ela/avatar.png"
           alt="Ela's avatar"
-          draggable="false"
-          className={cn(["rounded-full", "float-right", "mx-2"])}
-          height={144}
-          width={144}
+          className={cn([
+            "not-prose",
+            "rounded-full",
+            "float-right",
+            "mx-2",
+            "h-36",
+            "w-36",
+          ])}
         />
         <p>
           Hi, this is{" "}
@@ -48,14 +53,7 @@ function About() {
           <span className="text-pink-500 dark:text-pink-300 italic">
             pegasus
           </span>
-          . I have an extraordinary passion in this internet world. Let me
-          guess, if you are using a{" "}
-          <span className="underline">large screen</span>
-          to browse this page, you may be able to see my{" "}
-          <span className="text-yellow-500 dark:text-yellow-400 italic">
-            cutie mark
-          </span>{" "}
-          🌙.
+          . I have an extraordinary passion in this internet world 🌙.
         </p>
         <p>
           At present, I am still a undergraduate student, focusing on{" "}
@@ -81,13 +79,27 @@ function About() {
           Let's talk about the history of my nickname. You may have noticed a
           detail about my avatar. I like{" "}
           <span className="text-emerald-600 dark:text-emerald-400">green</span>{" "}
-          very much. I have the same name as one of the operators in{" "}
-          <span className="underline">Rainbow Six | Siege</span>, the
-          green-haired lady Ela from Poland. That's why my usual ID is{" "}
+          very much. I have the same name as one of the operators in Rainbow Six
+          | Siege. That's why my usual ID is{" "}
           <span className="text-emerald-600 dark:text-emerald-400 underline">
             ElaBosak233
           </span>
           .
+        </p>
+        <h2>About My Setting</h2>
+        <p>
+          One thing is for sure —{" "}
+          <span className="text-emerald-600 dark:text-emerald-400 italic">
+            Ela
+          </span>{" "}
+          is a{" "}
+          <span className="text-pink-500 dark:text-pink-300 italic">
+            pegasus
+          </span>
+          . But what kind of pegasus does she want to be? A fast flyer? A brave
+          one? Or maybe just an ordinary pony who loves code, music, and games?
+          The truth is, she hasn't figured that out yet. And that's perfectly
+          fine.
         </p>
         <h2>About My Basic Info</h2>
         <ul>
@@ -99,9 +111,7 @@ function About() {
             </span>
           </li>
           <li>
-            <span className="italic">Very</span> poor at mathematics. One of the
-            regrets in life is not being able to understand mathematics. (Ela's
-            physics is better than math!)
+            <span className="italic">Very</span> poor at mathematics.
           </li>
         </ul>
         <h2>About My Ponieality</h2>
@@ -109,7 +119,11 @@ function About() {
           <li>Sensitive, causing a bit of nervousness.</li>
           <li>Also eager to be cared for by other ponies.</li>
           <li>Usually very gentle, but sometimes it becomes very irritable.</li>
-          <li>Flight speed is not fast, unless it is a critical moment.</li>
+          <li>
+            Really not good at sports. Like,{" "}
+            <span className="italic">really</span> not good. Running, throwing,
+            catching — you name it, she fails it.
+          </li>
           <li>
             Be very frank with friends. It's difficult for me to pretend
             emotions.
@@ -124,26 +138,50 @@ function About() {
         <ul>
           <li>
             Game software{" "}
-            <span className="text-purple-500 dark:text-purple-400 font-semibold">
-              IntelliJ IDEA
+            <span className="text-sky-500 dark:text-sky-400 font-semibold">
+              Visual Studio Code
             </span>
-            . Hundreds of hours of gameplay. I've wasted most of my life on this
-            game.
+            . Hundreds of hours of gameplay.
+          </li>
+          <li>
+            Game software{" "}
+            <span className="text-orange-500 dark:text-orange-300 font-semibold">
+              RustRover
+            </span>
+            . It's a nice game to play with my Rust code.
+          </li>
+          <li>
+            FPS game software{" "}
+            <span className="text-sky-500 dark:text-sky-400 font-semibold">
+              Overwatch
+            </span>
+            . I learned English from it. (not serious)
+          </li>
+          <li>
+            Game series{" "}
+            <span className="text-blue-400 dark:text-blue-300 font-semibold">
+              Undertale
+            </span>{" "}
+            and{" "}
+            <span className="text-purple-400 dark:text-purple-300 font-semibold">
+              DELTARUNE
+            </span>
+            . I love Toby Fox's works so much — the music, the stories, the
+            characters. Determination fills my soul.
           </li>
           <li>
             Game series{" "}
             <span className="text-yellow-500 dark:text-yellow-400 font-semibold">
               The Legend of Zelda
             </span>
-            . Maybe I was a great swordsman to save the princess Zelda.
+            . Maybe I was a great kenshi to save the princess Zelda.
           </li>
           <li>
             Animation{" "}
             <span className="text-pink-400 dark:text-pink-300 font-semibold">
               My Little Pony
             </span>
-            . See my avatar and my cutie mark, no more explanation. I love RD&TS
-            so much.
+            . See my avatar and my cutie mark, no more explanation.
           </li>
           <li>
             Game software{" "}
@@ -152,17 +190,6 @@ function About() {
             </span>
             . I learned Java from it.{" "}
             <span className="line-through">(also Jvav)</span>
-          </li>
-          <li>
-            FPS game softwares{" "}
-            <span className="text-orange-400 dark:text-orange-200 font-semibold">
-              Valorant
-            </span>
-            ,{" "}
-            <span className="text-sky-500 dark:text-sky-400 font-semibold">
-              Overwatch
-            </span>
-            . I learned English from them. (not serious)
           </li>
           <li>
             Tetris game softwares{" "}
@@ -177,8 +204,7 @@ function About() {
             <span className="text-red-600 dark:text-red-500 font-semibold">
               Tetris 99
             </span>
-            . They all make me enjoyable! And my favorite TEC level is
-            Metamorphosis.
+            . I'm not very good at them, but I can enjoy the process.
           </li>
         </ul>
         <h2>Contact Me</h2>

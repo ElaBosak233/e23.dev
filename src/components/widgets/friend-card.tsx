@@ -1,5 +1,6 @@
 import type React from "react";
 import type { ReactNode } from "react";
+import { Image } from "@/components/ui/image";
 import { cn } from "@/utils";
 
 type FriendCardProps = React.ComponentProps<"div"> & {
@@ -37,12 +38,10 @@ function FriendCard(props: FriendCardProps) {
       <div
         className={cn(["flex", "items-center", "justify-end", "px-4", "py-4"])}
       >
-        <img
-          className="rounded-full"
+        <Image
+          className={cn(["rounded-full", "w-25"])}
           src={avatar}
-          alt=""
-          draggable="false"
-          width="100"
+          delay={0}
         />
       </div>
     </div>
